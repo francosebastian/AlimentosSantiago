@@ -42,12 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="DetalleMenu.cs" />
     <Compile Include="DetallePedido.cs" />
+    <Compile Include="DetallePromocion.cs" />
     <Compile Include="DireccionCliente.cs" />
     <Compile Include="EstadoPedido.cs" />
     <Compile Include="HistorialPedido.cs" />
     <Compile Include="LayerSuperType.cs" />
     <Compile Include="Empresa.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Plato.cs" />
     <Compile Include="Promocion.cs" />

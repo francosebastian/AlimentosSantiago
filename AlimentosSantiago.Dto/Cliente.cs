@@ -16,10 +16,9 @@ namespace AlimentosSantiago.Dto
         public Cliente()
         {
             Pedidos = new List<Pedido>();
+            DirecionClientes = new List<DireccionCliente>();
+            MenuClientes = new List<Menu>();
         }
-        /// <summary>
-        /// Asignamos el foreingKey
-        /// </summary>
         [Key, ForeignKey("Usuario")]
         public int UsuarioId { get; set; }
         /// <summary>
@@ -41,6 +40,10 @@ namespace AlimentosSantiago.Dto
         public virtual Empresa Empresa { get; set; }
         public String  Telefono { get; set; }
         public virtual ICollection<Pedido> Pedidos { get; set; }
+
+        public virtual ICollection<DireccionCliente> DirecionClientes { get; set; }
+
+        public virtual ICollection<Menu> MenuClientes { get; set; }
 
     }
 }

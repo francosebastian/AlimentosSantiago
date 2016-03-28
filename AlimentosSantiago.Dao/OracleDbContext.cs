@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AlimentosSantiago.Dao
 {
-    public class OracleDbContext :DbContext
+    public class OracleDbContext : DbContext
     {
         public DbSet<Cliente> Cliente { set; get; }
         public DbSet<DetallePedido> DetallePedido { set; get; }
@@ -29,5 +29,5 @@ namespace AlimentosSantiago.Dao
         {
             modelBuilder.HasDefaultSchema("ALIMENTOSSANTIAGO");
         }
-        }
+    }
 }

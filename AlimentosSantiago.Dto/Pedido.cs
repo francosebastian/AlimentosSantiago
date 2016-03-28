@@ -13,14 +13,24 @@ namespace AlimentosSantiago.Dto
         public Pedido()
         {
             DetallePedidos = new List<DetallePedido>();
+            HistorialPedidos = new List<HistorialPedido>();
+            TipoPagos = new List<TipoPago>();
         }
         public virtual ICollection<DetallePedido> DetallePedidos { get; set; }
+        public virtual ICollection<HistorialPedido> HistorialPedidos { get; set; }
+        public virtual ICollection<TipoPago> TipoPagos { get; set; }
+
+
+        public virtual EstadoPedido EstadoPedido { get; set; }
+
         [Required]
         public int Total { get; set; }
         public int ClienteId { get; set; }
 
         [ForeignKey("ClienteId")]
         public virtual Cliente Cliente { get; set; }
+
+        public virtual Repartidor Repartidor { get; set; }
     }
 
 }

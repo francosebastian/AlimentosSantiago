@@ -11,5 +11,8 @@ namespace AlimentosSantiago.Dto
     {
         [Required]
         public String Nombre { get; set; }
+        [Required]
+        public String Descripcion { get; set; }
+        public virtual Pedido Pedido { get; set; }
     }
 }

@@ -10,6 +10,12 @@ namespace AlimentosSantiago.Dto
 {
     public class Plato : LayerSuperType 
     {
+        public Plato()
+        {
+            DetalleMenus = new List<DetalleMenu>();
+            DetallePedidos = new List<DetallePedido>();
+            DetallePromocion = new List<DetallePromocion>();
+        }
         public int ProveedorId { get; set; }
 
         [ForeignKey("ProveedorId")]
@@ -22,5 +28,10 @@ namespace AlimentosSantiago.Dto
         public String Descripcion { get; set; }
         [Required]
         public String Codigo { get; set; }
+        [Required]
+        public int TiempoPreparacion { get; set; }
+        public virtual ICollection<DetalleMenu> DetalleMenus { get; set; }
+        public virtual ICollection<DetallePedido> DetallePedidos { get; set; }
+        public virtual ICollection<DetallePromocion> DetallePromocion { get; set; }
     }
 }

@@ -1,47 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="AlimentosSantiago.Dto.Cliente">
-    <Position X="8.5" Y="2.5" Width="1.5" />
+    <Position X="22" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAIAAAAACCAIEAgAAAAA=</HashCode>
+      <HashCode>ABAABAAAAAAAAAAAAIAAAAAAAIAAAAACCAIEAgAAAAA=</HashCode>
       <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Usuario" />
       <Property Name="Empresa" />
+      <Property Name="Usuario" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
+      <Property Name="DirecionClientes" />
+      <Property Name="MenuClientes" />
       <Property Name="Pedidos" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="AlimentosSantiago.Dto.Empresa">
-    <Position X="8.5" Y="0.5" Width="1.5" />
+  <Class Name="AlimentosSantiago.Dto.DetalleMenu">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAIBACAAAAAAAAAAAA=</HashCode>
+      <FileName>DetalleMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.DetallePedido">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAMAAEAAAAAAAAIAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DetallePedido.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pedido" />
+      <Property Name="Plato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.DetallePromocion">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DetallePromocion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Plato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.DireccionCliente">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAADCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DireccionCliente.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.Empresa" Collapsed="true">
+    <Position X="24.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>Empresa.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Clientes" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="AlimentosSantiago.Dto.EstadoPedido">
-    <Position X="16.25" Y="5.75" Width="1.5" />
+    <Position X="29" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>EstadoPedido.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AlimentosSantiago.Dto.LayerSuperType" Collapsed="true">
-    <Position X="12.75" Y="4.5" Width="1.5" />
+  <Class Name="AlimentosSantiago.Dto.HistorialPedido">
+    <Position X="33.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HistorialPedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.LayerSuperType">
+    <Position X="24.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAAABAA=</HashCode>
       <FileName>LayerSuperType.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AlimentosSantiago.Dto.Plato">
-    <Position X="7.25" Y="5.75" Width="1.5" />
+  <Class Name="AlimentosSantiago.Dto.Menu">
+    <Position X="19" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAgAARAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAABCAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="DetalleMenus" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.Pedido">
+    <Position X="31.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABCAAAACAAAAQAAIAAMQAAAAAAA=</HashCode>
+      <FileName>Pedido.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+      <Property Name="Repartidor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DetallePedidos" />
+      <Property Name="HistorialPedidos" />
+      <Property Name="TipoPagos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.Plato">
+    <Position X="35.75" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAARAAAAAAAAAAgAARAAAAAAAAAAAQAAAAIAA=</HashCode>
       <FileName>Plato.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -49,14 +119,17 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="AlimentosSantiago.Dto.Promocion">
-    <Position X="9.5" Y="5.75" Width="1.5" />
+    <Position X="12.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAABAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Promocion.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="DetallePromociones" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="AlimentosSantiago.Dto.Proveedor">
-    <Position X="18.5" Y="5.75" Width="1.5" />
+    <Position X="26.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAACAAgAAAAIAAAACAAAAEAgACAAA=</HashCode>
       <FileName>Proveedor.cs</FileName>
@@ -70,17 +143,27 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="AlimentosSantiago.Dto.Repartidor">
-    <Position X="2" Y="6" Width="1.5" />
+    <Position X="29" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAAEAAAAAAA=</HashCode>
       <FileName>Repartidor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Usuario" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Pedidos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.TipoPago">
+    <Position X="38" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TipoPago.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Class Name="AlimentosSantiago.Dto.TipoProveedor">
-    <Position X="14" Y="5.75" Width="1.5" />
+    <Position X="17.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TipoProveedor.cs</FileName>
@@ -90,34 +173,11 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="AlimentosSantiago.Dto.Usuario">
-    <Position X="5" Y="5.75" Width="1.5" />
+    <Position X="26.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAgAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="AlimentosSantiago.Dto.Pedido">
-    <Position X="11.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABCAAAAAAAAAQAAAAAAQAAAAAAA=</HashCode>
-      <FileName>Pedido.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Cliente" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="DetallePedidos" />
-    </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="AlimentosSantiago.Dto.DetallePedido">
-    <Position X="20.75" Y="5.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAEAAAAEAAEAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DetallePedido.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Pedido" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

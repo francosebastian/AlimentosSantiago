@@ -53,6 +53,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201603282144389_Creacion.cs" />
+    <Compile Include="Migrations\201603282144389_Creacion.Designer.cs">
+      <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +72,11 @@
       <Project>{e28912b1-43fd-44bc-aa33-d1da17f9e891}</Project>
       <Name>AlimentosSantiago.Dto</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603282144389_Creacion.resx">
+      <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

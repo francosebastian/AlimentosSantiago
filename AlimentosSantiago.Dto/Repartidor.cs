@@ -19,5 +19,13 @@ namespace AlimentosSantiago.Dto
         /// Relacionamos el foreingKey
         /// </summary>
         public virtual Usuario Usuario { get; set; }
+
+
+        public Repartidor()
+        {
+            Pedidos = new List<Pedido>();
+        }
+
+        public virtual ICollection<Pedido> Pedidos { get; set; }
     }
 }
