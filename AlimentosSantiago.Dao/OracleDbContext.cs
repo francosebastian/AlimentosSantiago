@@ -10,6 +10,10 @@ namespace AlimentosSantiago.Dao
 {
     public class OracleDbContext : DbContext
     {
+        public OracleDbContext()
+            : base("OracleDbContext")
+        {
+        }
         public DbSet<Cliente> Cliente { set; get; }
         public DbSet<DetallePedido> DetallePedido { set; get; }
         public DbSet<DireccionCliente> DireccionCliente { get; set; }
