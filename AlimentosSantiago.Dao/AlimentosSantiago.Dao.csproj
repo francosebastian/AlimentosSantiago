@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201603282144389_Creacion.Designer.cs">
       <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604182235493_ModificacionDatabase001.cs" />
+    <Compile Include="Migrations\201604182235493_ModificacionDatabase001.Designer.cs">
+      <DependentUpon>201604182235493_ModificacionDatabase001.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +80,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201603282144389_Creacion.resx">
       <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604182235493_ModificacionDatabase001.resx">
+      <DependentUpon>201604182235493_ModificacionDatabase001.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

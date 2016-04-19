@@ -15,5 +15,6 @@ namespace AlimentosSantiago.Dto
         public int PlatoId { get; set; }
         [ForeignKey("PlatoId")]
         public virtual Plato Plato { get; set; }
+
     }
 }

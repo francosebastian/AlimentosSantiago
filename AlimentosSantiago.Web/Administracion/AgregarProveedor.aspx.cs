@@ -9,24 +9,24 @@ using System.Web.UI.WebControls;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class AgregarTipoProveedor : System.Web.UI.Page
+    public partial class AgregarProveedor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        public void FvTipoProveedor_InsertItem()
+        public void FvProveedor_InsertItem()
         {
-            TipoProveedor tipoProveedor = new TipoProveedor();
-            TryUpdateModel(tipoProveedor);
+            Proveedor proveedor = new Proveedor();
+            TryUpdateModel(proveedor);
             if (ModelState.IsValid)
             {
                 using (OracleDbContext db = new OracleDbContext())
                 {
-                    tipoProveedor.Creado = System.DateTime.Now;
-                    tipoProveedor.Modificado = System.DateTime.Now;
-                    db.TipoProveedor.Add(tipoProveedor);
+                    proveedor.Creado = System.DateTime.Now;
+                    proveedor.Modificado = System.DateTime.Now;
+                    db.Proveedor.Add(proveedor);
                     db.SaveChanges();
                 }
             }

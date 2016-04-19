@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class ModificarPlato : System.Web.UI.Page
+    public partial class ModificarTipoProveedor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,15 +16,15 @@ namespace AlimentosSantiago.Web.Administracion
 
         // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
-        public AlimentosSantiago.Dto.Plato FvPlato_GetItem(int id)
+        public AlimentosSantiago.Dto.TipoProveedor FvTipoProveedor_GetItem(int id)
         {
             return null;
         }
 
         // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
-        public void FvPlato_UpdateItem(int id)
+        public void FvTipoProveedor_UpdateItem(int id)
         {
-            AlimentosSantiago.Dto.Plato item = null;
+            AlimentosSantiago.Dto.TipoProveedor item = null;
             // Cargar el elemento aquí, por ejemplo item = MyDataLayer.Find(id);
             if (item == null)
             {

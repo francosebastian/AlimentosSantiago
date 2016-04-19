@@ -36,6 +36,11 @@ namespace AlimentosSantiago.Dto
         /// Relacionamos el foreingKey
         /// </summary>
         public virtual Usuario Usuario { get; set; }
+        public bool Eliminado { get; set; }
+        public bool Deshabilitado { get; set; }
+        public DateTime Creado { get; set; }
+        public DateTime Modificado { get; set; }
+
 
     }
 }

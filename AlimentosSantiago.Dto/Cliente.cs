@@ -44,6 +44,11 @@ namespace AlimentosSantiago.Dto
         public virtual ICollection<DireccionCliente> DirecionClientes { get; set; }
 
         public virtual ICollection<Menu> MenuClientes { get; set; }
+        public bool Eliminado { get; set; }
+        public bool Deshabilitado { get; set; }
+        public DateTime Creado { get; set; }
+        public DateTime Modificado { get; set; }
+
 
     }
 }

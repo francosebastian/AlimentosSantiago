@@ -7,24 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class ModificarPlato : System.Web.UI.Page
+    public partial class ModificarEstadoPedido : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
-        // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
-        public AlimentosSantiago.Dto.Plato FvPlato_GetItem(int id)
-        {
-            return null;
-        }
-
         // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
-        public void FvPlato_UpdateItem(int id)
+        public void FvEstadoPedido_UpdateItem(int id)
         {
-            AlimentosSantiago.Dto.Plato item = null;
+            AlimentosSantiago.Dto.EstadoPedido item = null;
             // Cargar el elemento aquí, por ejemplo item = MyDataLayer.Find(id);
             if (item == null)
             {
@@ -38,6 +31,13 @@ namespace AlimentosSantiago.Web.Administracion
                 // Guarde los cambios aquí, por ejemplo MyDataLayer.SaveChanges();
 
             }
+        }
+
+        // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
+        // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
+        public AlimentosSantiago.Dto.EstadoPedido FvEstadoPedido_GetItem(int id)
+        {
+            return null;
         }
     }
 }

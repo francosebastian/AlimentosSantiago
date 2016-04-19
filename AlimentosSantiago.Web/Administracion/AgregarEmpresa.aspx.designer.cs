@@ -10,15 +10,15 @@
 namespace AlimentosSantiago.Web.Administracion {
     
     
-    public partial class EliminarTipoPago {
+    public partial class AgregarEmpresa {
         
         /// <summary>
-        /// Control FvTipoPago.
+        /// Control FvEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FvTipoPago;
+        protected global::System.Web.UI.WebControls.FormView FvEmpresa;
     }
 }
