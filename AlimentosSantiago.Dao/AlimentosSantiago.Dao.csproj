@@ -53,13 +53,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201603282144389_Creacion.cs" />
-    <Compile Include="Migrations\201603282144389_Creacion.Designer.cs">
-      <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
+    <Compile Include="Migrations\201604271504369_CreacionDatabase.cs" />
+    <Compile Include="Migrations\201604271504369_CreacionDatabase.Designer.cs">
+      <DependentUpon>201604271504369_CreacionDatabase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604182235493_ModificacionDatabase001.cs" />
-    <Compile Include="Migrations\201604182235493_ModificacionDatabase001.Designer.cs">
-      <DependentUpon>201604182235493_ModificacionDatabase001.cs</DependentUpon>
+    <Compile Include="Migrations\201604281904027_ModificacionBaseDatos.cs" />
+    <Compile Include="Migrations\201604281904027_ModificacionBaseDatos.Designer.cs">
+      <DependentUpon>201604281904027_ModificacionBaseDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605021449508_updatedatabase.cs" />
+    <Compile Include="Migrations\201605021449508_updatedatabase.Designer.cs">
+      <DependentUpon>201605021449508_updatedatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605022026558_UpdatedatabaseCampos.cs" />
+    <Compile Include="Migrations\201605022026558_UpdatedatabaseCampos.Designer.cs">
+      <DependentUpon>201605022026558_UpdatedatabaseCampos.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
@@ -78,11 +86,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201603282144389_Creacion.resx">
-      <DependentUpon>201603282144389_Creacion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604271504369_CreacionDatabase.resx">
+      <DependentUpon>201604271504369_CreacionDatabase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604182235493_ModificacionDatabase001.resx">
-      <DependentUpon>201604182235493_ModificacionDatabase001.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604281904027_ModificacionBaseDatos.resx">
+      <DependentUpon>201604281904027_ModificacionBaseDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605021449508_updatedatabase.resx">
+      <DependentUpon>201605021449508_updatedatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605022026558_UpdatedatabaseCampos.resx">
+      <DependentUpon>201605022026558_UpdatedatabaseCampos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

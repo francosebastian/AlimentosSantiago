@@ -13,18 +13,5 @@ namespace AlimentosSantiago.Web.Administracion
         {
 
         }
-
-        // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
-        public void FvPlato_DeleteItem(int id)
-        {
-
-        }
-
-        // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
-        // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
-        public AlimentosSantiago.Dto.Plato FvPlato_GetItem(int id)
-        {
-            return null;
-        }
     }
 }

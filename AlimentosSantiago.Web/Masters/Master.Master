@@ -4,18 +4,188 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta charset="utf-8" />
+    <title>Alimentos Santiago </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="../Content/bootstrap.css" />
+    <link rel="stylesheet" href="../Content/font-awesome.css" />
+    <link rel="stylesheet" href="../Content/templatemo_style.css" />
+    <link rel="stylesheet" href="../Content/templatemo_misc.css" />
+    <link rel="stylesheet" href="../Content/flexslider.css" />
+    <link rel="stylesheet" href="../Content/testimonails-slider.css" />
+
+    <script src="Scripts/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+  <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+            <header>
+                <div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="home-account">
+                                    <a href="#">Home</a>
+                                    <a href="#">Mi cuenta</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cart-info">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    (<a href="#">5 productos</a>) en tu carro (<a href="#">$45.80</a>)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="../images/logo.png" title="Grill Template" alt="Grill Website Template" /></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">Acerca de</a></li>
+                                        <li><a href="products.html">Productos</a></li>
+                                        <li><a href="contact-us.html">Contacto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="search-box">  
+                                    <form name="search_form" method="get" class="search_form">
+                                        <input id="search" type="text" />
+                                        <input type="submit" id="search-button" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+  <form id="form1" runat="server">
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-    </div>
-    </form>
+
+    
+        <script src="../Scripts/vendor/jquery-1.11.0.min.js"></script>
+        <script src="../Scripts/vendor/jquery.gmap3.min.js"></script>
+        <script src="../Scripts/plugins.js"></script>
+        <script src="../Scripts/main.js"></script>
+      </form>
+
+      <footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="subscribe-form">
+                                    <span>Suscribete al newsletter</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="social-bottom">
+                                    <span>Siguenos en redes sociales:</span>
+                                    <ul>
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-rss"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="about">
+                                    <h4 class="footer-title">Acerca de</h4>
+                                    <p>Grill is free HTML5 template by <span class="blue">template</span><span class="green">mo</span> and it is a free responsive bootstrap layout that can be applied for any purpose.
+                                    <br><br>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for photos used in this template. Nam commodo erat quis ligula placerat viverra.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">Categorias de platos</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>New Grill Menu</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Healthy Fresh Juices</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Spicy Delicious Meals</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Simple Italian Pizzas</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Pure Good Yogurts</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>Ice-cream for kids</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="recent-posts">
+                                    <h4 class="footer-title">Entradas recientes</h4>
+                                    <div class="recent-post">
+                                        <div class="recent-post-thumb">
+                                            <img src="../images/recent-post1.jpg" alt="">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h6><a href="#">Menus saludables y deliciosos</a></h6>
+                                            <span>24/12/2084</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post">
+                                        <div class="recent-post-thumb">
+                                            <img src="../images/recent-post2.jpg" alt="">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h6><a href="#">Colaciones economicas</a></h6>
+                                            <span>18/12/2084</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="more-info">
+                                    <h4 class="footer-title">Mas informacion</h4>
+                                    <p>Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.</p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-020-0340</li>
+                                        <li><i class="fa fa-globe"></i>123 Dagon Studio, Yakin Street, Digital Estate</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <p>
+                        	<span>Copyright © 2084 <a href="#">Your Company Name</a> 
+                            | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent"><span class="blue">template</span><span class="green">mo</span></a></span>
+                        </p>
+                    </div>
+                    
+                </div>
+            </footer>
+
+    
+
 </body>
 </html>
 

@@ -41,28 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="DetalleMenu.cs" />
-    <Compile Include="DetallePedido.cs" />
-    <Compile Include="DetallePromocion.cs" />
-    <Compile Include="DireccionCliente.cs" />
-    <Compile Include="EstadoPedido.cs" />
-    <Compile Include="HistorialPedido.cs" />
-    <Compile Include="LayerSuperType.cs" />
+    <Compile Include="CategoriaPlato.cs" />
+    <Compile Include="DetallePedidoMenu.cs" />
+    <Compile Include="DireccionUsuario.cs" />
     <Compile Include="Empresa.cs" />
-    <Compile Include="Menu.cs" />
-    <Compile Include="Pedido.cs" />
+    <Compile Include="EstadoPedido.cs" />
+    <Compile Include="LayerSuperType.cs" />
+    <Compile Include="LogPedidoMenu.cs" />
+    <Compile Include="LogSaldo.cs" />
+    <Compile Include="PedidoMenu.cs" />
     <Compile Include="Plato.cs" />
-    <Compile Include="Promocion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proveedor.cs" />
-    <Compile Include="Repartidor.cs" />
     <Compile Include="TipoPago.cs" />
-    <Compile Include="TipoProveedor.cs" />
+    <Compile Include="TipoUsuario.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DiagramaClases.cd" />
+    <None Include="DiagramaClase.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

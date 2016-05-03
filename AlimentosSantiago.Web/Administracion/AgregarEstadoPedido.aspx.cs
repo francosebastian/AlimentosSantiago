@@ -31,5 +31,10 @@ namespace AlimentosSantiago.Web.Administracion
                 }
             }
         }
+
+        protected void chbDesabiilitado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

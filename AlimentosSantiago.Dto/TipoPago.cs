@@ -9,10 +9,11 @@ namespace AlimentosSantiago.Dto
 {
     public class TipoPago : LayerSuperType
     {
+        public TipoPago() { PedidosMenus = new List<PedidoMenu>(); }
         [Required]
         public String Nombre { get; set; }
         [Required]
         public String Descripcion { get; set; }
-        public virtual Pedido Pedido { get; set; }
+        public virtual ICollection<PedidoMenu> PedidosMenus { get; set; }
     }
 }

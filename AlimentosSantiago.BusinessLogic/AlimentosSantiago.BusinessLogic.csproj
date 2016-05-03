@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EnviadorCorreoHelpers\EnviadorCorreo.cs" />
+    <Compile Include="EnviadorCorreoHelpers\PlantillaCorreoHelper.cs" />
+    <Compile Include="EnviadorCorreoHelpers\SerializadorObjetosHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

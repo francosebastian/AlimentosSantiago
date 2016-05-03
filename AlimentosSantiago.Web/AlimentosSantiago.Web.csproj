@@ -63,6 +63,10 @@
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.EntityDataSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.EntityDataSource.6.0.0\lib\net40\Microsoft.AspNet.EntityDataSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -88,41 +92,98 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\ExternalLibs\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\ExternalLibs\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed">
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf">
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf">
+      <HintPath>..\ExternalLibs\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Maths, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Maths.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2015.2.826.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalLibs\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administracion\AgregarCliente.aspx" />
+    <Content Include="AdministracionEmpresa\AgregarTrabajador.aspx" />
+    <Content Include="AdministracionEmpresa\CargarSaldo.aspx" />
+    <Content Include="AdministracionEmpresa\EliminarTrabajador.aspx" />
+    <Content Include="AdministracionEmpresa\MiEmpresa.aspx" />
+    <Content Include="AdministracionProveedor\AgregarPlato.aspx" />
+    <Content Include="AdministracionProveedor\EliminarPlato.aspx" />
+    <Content Include="AdministracionProveedor\ModificarPlato.aspx" />
+    <Content Include="Administracion\AgregarCategoriaPlato.aspx" />
     <Content Include="Administracion\AgregarEmpresa.aspx" />
     <Content Include="Administracion\AgregarEstadoPedido.aspx" />
     <Content Include="Administracion\AgregarPlato.aspx" />
-    <Content Include="Administracion\AgregarPromocion.aspx" />
-    <Content Include="Administracion\AgregarProveedor.aspx" />
-    <Content Include="Administracion\AgregarRepartidor.aspx" />
     <Content Include="Administracion\AgregarTipoPago.aspx" />
-    <Content Include="Administracion\AgregarTipoProveedor.aspx" />
+    <Content Include="Administracion\AgregarTipoUsuario.aspx" />
     <Content Include="Administracion\AgregarUsuario.aspx" />
-    <Content Include="Administracion\EliminarCliente.aspx" />
+    <Content Include="Administracion\EliminarCategoriaPlato.aspx" />
     <Content Include="Administracion\EliminarEmpresa.aspx" />
     <Content Include="Administracion\EliminarEstadoPedido.aspx" />
     <Content Include="Administracion\EliminarPlato.aspx" />
-    <Content Include="Administracion\EliminarPromocion.aspx" />
-    <Content Include="Administracion\EliminarRepartidor.aspx" />
     <Content Include="Administracion\EliminarTipoPago.aspx" />
-    <Content Include="Administracion\EliminarTipoProveedor.aspx" />
+    <Content Include="Administracion\EliminarTipoUsuario.aspx" />
     <Content Include="Administracion\EliminarUsuario.aspx" />
-    <Content Include="Administracion\ModificarCliente.aspx" />
+    <Content Include="Administracion\ModificarCategoriaPlato.aspx" />
     <Content Include="Administracion\ModificarEmpresa.aspx" />
     <Content Include="Administracion\ModificarEstadoPedido.aspx" />
     <Content Include="Administracion\ModificarPlato.aspx" />
-    <Content Include="Administracion\ModificarPromocion.aspx" />
-    <Content Include="Administracion\ModificarProveedor.aspx" />
-    <Content Include="Administracion\ModificarRepartidor.aspx" />
     <Content Include="Administracion\ModificarTipoPago.aspx" />
-    <Content Include="Administracion\ModificarTipoProveedor.aspx" />
+    <Content Include="Administracion\ModificarTipoUsuario.aspx" />
     <Content Include="Administracion\ModificarUsuario.aspx" />
+    <Content Include="Administracion\VerCategoriaPlatos.aspx" />
+    <Content Include="Administracion\VerEmpresas.aspx" />
+    <Content Include="Administracion\VerEstadoPedido.aspx" />
+    <Content Include="Administracion\VerTipoPago.aspx" />
+    <Content Include="Administracion\VerTipoUsuario.aspx" />
+    <Content Include="Administracion\VerUsuarios.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MiCuenta\CambiarPassword.aspx" />
+    <Content Include="MiCuenta\MisDirecciones.aspx" />
+    <Content Include="MiCuenta\NuevoPassword.aspx" />
     <Content Include="packages.config" />
     <Content Include="Masters\Master.Master" />
+    <Content Include="Wuc\Modal.ascx" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
+    <Content Include="Pedidos\NuevoPedido.aspx" />
+    <Content Include="Pedidos\VerPedido.aspx" />
+    <Content Include="Pedidos\VerPedidos.aspx" />
+    <Content Include="PlantillasCorreo\Master.xslt" />
+    <Content Include="PlantillasCorreo\NuevaOrden.xslt" />
+    <Content Include="RegistroCliente.aspx" />
+    <Content Include="Repartidor\MisRutas.aspx" />
+    <Content Include="Repartidor\VerRuta.aspx" />
     <Content Include="Scripts\jquery-2.2.2.js" />
     <Content Include="Scripts\jquery-2.2.2.min.js" />
     <Content Include="Scripts\jquery-2.2.2.min.map" />
@@ -137,12 +198,61 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administracion\AgregarCliente.aspx.cs">
-      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    <Compile Include="AdministracionEmpresa\AgregarTrabajador.aspx.cs">
+      <DependentUpon>AgregarTrabajador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\AgregarCliente.aspx.designer.cs">
-      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    <Compile Include="AdministracionEmpresa\AgregarTrabajador.aspx.designer.cs">
+      <DependentUpon>AgregarTrabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\CargarSaldo.aspx.cs">
+      <DependentUpon>CargarSaldo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\CargarSaldo.aspx.designer.cs">
+      <DependentUpon>CargarSaldo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\EliminarTrabajador.aspx.cs">
+      <DependentUpon>EliminarTrabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\EliminarTrabajador.aspx.designer.cs">
+      <DependentUpon>EliminarTrabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\MiEmpresa.aspx.cs">
+      <DependentUpon>MiEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\MiEmpresa.aspx.designer.cs">
+      <DependentUpon>MiEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\AgregarPlato.aspx.cs">
+      <DependentUpon>AgregarPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\AgregarPlato.aspx.designer.cs">
+      <DependentUpon>AgregarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\EliminarPlato.aspx.cs">
+      <DependentUpon>EliminarPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\EliminarPlato.aspx.designer.cs">
+      <DependentUpon>EliminarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\ModificarPlato.aspx.cs">
+      <DependentUpon>ModificarPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\ModificarPlato.aspx.designer.cs">
+      <DependentUpon>ModificarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AgregarCategoriaPlato.aspx.cs">
+      <DependentUpon>AgregarCategoriaPlato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\AgregarCategoriaPlato.aspx.designer.cs">
+      <DependentUpon>AgregarCategoriaPlato.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\AgregarEmpresa.aspx.cs">
       <DependentUpon>AgregarEmpresa.aspx</DependentUpon>
@@ -165,27 +275,6 @@
     <Compile Include="Administracion\AgregarPlato.aspx.designer.cs">
       <DependentUpon>AgregarPlato.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\AgregarPromocion.aspx.cs">
-      <DependentUpon>AgregarPromocion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\AgregarPromocion.aspx.designer.cs">
-      <DependentUpon>AgregarPromocion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion\AgregarProveedor.aspx.cs">
-      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\AgregarProveedor.aspx.designer.cs">
-      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion\AgregarRepartidor.aspx.cs">
-      <DependentUpon>AgregarRepartidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\AgregarRepartidor.aspx.designer.cs">
-      <DependentUpon>AgregarRepartidor.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Administracion\AgregarTipoPago.aspx.cs">
       <DependentUpon>AgregarTipoPago.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,12 +282,12 @@
     <Compile Include="Administracion\AgregarTipoPago.aspx.designer.cs">
       <DependentUpon>AgregarTipoPago.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\AgregarTipoProveedor.aspx.cs">
-      <DependentUpon>AgregarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\AgregarTipoUsuario.aspx.cs">
+      <DependentUpon>AgregarTipoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\AgregarTipoProveedor.aspx.designer.cs">
-      <DependentUpon>AgregarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\AgregarTipoUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarTipoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
@@ -207,12 +296,12 @@
     <Compile Include="Administracion\AgregarUsuario.aspx.designer.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\EliminarCliente.aspx.cs">
-      <DependentUpon>EliminarCliente.aspx</DependentUpon>
+    <Compile Include="Administracion\EliminarCategoriaPlato.aspx.cs">
+      <DependentUpon>EliminarCategoriaPlato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\EliminarCliente.aspx.designer.cs">
-      <DependentUpon>EliminarCliente.aspx</DependentUpon>
+    <Compile Include="Administracion\EliminarCategoriaPlato.aspx.designer.cs">
+      <DependentUpon>EliminarCategoriaPlato.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\EliminarEmpresa.aspx.cs">
       <DependentUpon>EliminarEmpresa.aspx</DependentUpon>
@@ -235,20 +324,6 @@
     <Compile Include="Administracion\EliminarPlato.aspx.designer.cs">
       <DependentUpon>EliminarPlato.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\EliminarPromocion.aspx.cs">
-      <DependentUpon>EliminarPromocion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\EliminarPromocion.aspx.designer.cs">
-      <DependentUpon>EliminarPromocion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion\EliminarRepartidor.aspx.cs">
-      <DependentUpon>EliminarRepartidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\EliminarRepartidor.aspx.designer.cs">
-      <DependentUpon>EliminarRepartidor.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Administracion\EliminarTipoPago.aspx.cs">
       <DependentUpon>EliminarTipoPago.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -256,12 +331,12 @@
     <Compile Include="Administracion\EliminarTipoPago.aspx.designer.cs">
       <DependentUpon>EliminarTipoPago.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\EliminarTipoProveedor.aspx.cs">
-      <DependentUpon>EliminarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\EliminarTipoUsuario.aspx.cs">
+      <DependentUpon>EliminarTipoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\EliminarTipoProveedor.aspx.designer.cs">
-      <DependentUpon>EliminarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\EliminarTipoUsuario.aspx.designer.cs">
+      <DependentUpon>EliminarTipoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\EliminarUsuario.aspx.cs">
       <DependentUpon>EliminarUsuario.aspx</DependentUpon>
@@ -270,12 +345,12 @@
     <Compile Include="Administracion\EliminarUsuario.aspx.designer.cs">
       <DependentUpon>EliminarUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\ModificarCliente.aspx.cs">
-      <DependentUpon>ModificarCliente.aspx</DependentUpon>
+    <Compile Include="Administracion\ModificarCategoriaPlato.aspx.cs">
+      <DependentUpon>ModificarCategoriaPlato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\ModificarCliente.aspx.designer.cs">
-      <DependentUpon>ModificarCliente.aspx</DependentUpon>
+    <Compile Include="Administracion\ModificarCategoriaPlato.aspx.designer.cs">
+      <DependentUpon>ModificarCategoriaPlato.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\ModificarEmpresa.aspx.cs">
       <DependentUpon>ModificarEmpresa.aspx</DependentUpon>
@@ -298,27 +373,6 @@
     <Compile Include="Administracion\ModificarPlato.aspx.designer.cs">
       <DependentUpon>ModificarPlato.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\ModificarPromocion.aspx.cs">
-      <DependentUpon>ModificarPromocion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\ModificarPromocion.aspx.designer.cs">
-      <DependentUpon>ModificarPromocion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion\ModificarProveedor.aspx.cs">
-      <DependentUpon>ModificarProveedor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\ModificarProveedor.aspx.designer.cs">
-      <DependentUpon>ModificarProveedor.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administracion\ModificarRepartidor.aspx.cs">
-      <DependentUpon>ModificarRepartidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administracion\ModificarRepartidor.aspx.designer.cs">
-      <DependentUpon>ModificarRepartidor.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Administracion\ModificarTipoPago.aspx.cs">
       <DependentUpon>ModificarTipoPago.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -326,12 +380,12 @@
     <Compile Include="Administracion\ModificarTipoPago.aspx.designer.cs">
       <DependentUpon>ModificarTipoPago.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administracion\ModificarTipoProveedor.aspx.cs">
-      <DependentUpon>ModificarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\ModificarTipoUsuario.aspx.cs">
+      <DependentUpon>ModificarTipoUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administracion\ModificarTipoProveedor.aspx.designer.cs">
-      <DependentUpon>ModificarTipoProveedor.aspx</DependentUpon>
+    <Compile Include="Administracion\ModificarTipoUsuario.aspx.designer.cs">
+      <DependentUpon>ModificarTipoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\ModificarUsuario.aspx.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>
@@ -340,12 +394,61 @@
     <Compile Include="Administracion\ModificarUsuario.aspx.designer.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administracion\VerCategoriaPlatos.aspx.cs">
+      <DependentUpon>VerCategoriaPlatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerCategoriaPlatos.aspx.designer.cs">
+      <DependentUpon>VerCategoriaPlatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerEmpresas.aspx.cs">
+      <DependentUpon>VerEmpresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerEmpresas.aspx.designer.cs">
+      <DependentUpon>VerEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerEstadoPedido.aspx.cs">
+      <DependentUpon>VerEstadoPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerEstadoPedido.aspx.designer.cs">
+      <DependentUpon>VerEstadoPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerTipoPago.aspx.cs">
+      <DependentUpon>VerTipoPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerTipoPago.aspx.designer.cs">
+      <DependentUpon>VerTipoPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerTipoUsuario.aspx.cs">
+      <DependentUpon>VerTipoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerTipoUsuario.aspx.designer.cs">
+      <DependentUpon>VerTipoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerUsuarios.aspx.cs">
+      <DependentUpon>VerUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerUsuarios.aspx.designer.cs">
+      <DependentUpon>VerUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Masters\Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -354,15 +457,82 @@
     <Compile Include="Masters\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="MiCuenta\CambiarPassword.aspx.cs">
+      <DependentUpon>CambiarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiCuenta\CambiarPassword.aspx.designer.cs">
+      <DependentUpon>CambiarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiCuenta\MisDirecciones.aspx.cs">
+      <DependentUpon>MisDirecciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiCuenta\MisDirecciones.aspx.designer.cs">
+      <DependentUpon>MisDirecciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiCuenta\NuevoPassword.aspx.cs">
+      <DependentUpon>NuevoPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiCuenta\NuevoPassword.aspx.designer.cs">
+      <DependentUpon>NuevoPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\NuevoPedido.aspx.cs">
+      <DependentUpon>NuevoPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedidos\NuevoPedido.aspx.designer.cs">
+      <DependentUpon>NuevoPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\VerPedido.aspx.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedidos\VerPedido.aspx.designer.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\VerPedidos.aspx.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedidos\VerPedidos.aspx.designer.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroCliente.aspx.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroCliente.aspx.designer.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repartidor\MisRutas.aspx.cs">
+      <DependentUpon>MisRutas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repartidor\MisRutas.aspx.designer.cs">
+      <DependentUpon>MisRutas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repartidor\VerRuta.aspx.cs">
+      <DependentUpon>VerRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repartidor\VerRuta.aspx.designer.cs">
+      <DependentUpon>VerRuta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebUtils\eTipoPlanillaExcel.cs" />
     <Compile Include="WebUtils\ExcelReader.cs" />
+    <Compile Include="WebUtils\PaginaBase.cs" />
+    <Compile Include="Wuc\Modal.ascx.cs">
+      <DependentUpon>Modal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\Modal.ascx.designer.cs">
+      <DependentUpon>Modal.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AlimentosSantiago.BusinessLogic\AlimentosSantiago.BusinessLogic.csproj">
-      <Project>{8a243a9e-7d7c-4cfb-b255-883442a1434b}</Project>
-      <Name>AlimentosSantiago.BusinessLogic</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AlimentosSantiago.Dao\AlimentosSantiago.Dao.csproj">
       <Project>{3b5d5871-2ceb-492c-b57a-dddf60cab00f}</Project>
       <Name>AlimentosSantiago.Dao</Name>
@@ -372,7 +542,12 @@
       <Name>AlimentosSantiago.Dto</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Bandeja\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

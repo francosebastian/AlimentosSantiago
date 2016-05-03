@@ -8,30 +8,25 @@ using System.Threading.Tasks;
 
 namespace AlimentosSantiago.Dto
 {
-    public class Plato : LayerSuperType 
+    public class Plato : LayerSuperType
     {
-        public Plato()
-        {
-            DetalleMenus = new List<DetalleMenu>();
-            DetallePedidos = new List<DetallePedido>();
-            DetallePromocion = new List<DetallePromocion>();
-        }
-        public int ProveedorId { get; set; }
-
-        [ForeignKey("ProveedorId")]
-        public virtual Proveedor Proveedor { get; set; }
+        public Plato() { DetallesPedidoMenu = new List<DetallePedidoMenu>(); }
+        [Required]
+        public string Nombre { get; set; }
+        [Required]
+        public string Descripcion { get; set; }
         [Required]
         public int Precio { get; set; }
-        [Required]
-        public String Nombre { get; set; }
-        [Required]
-        public String Descripcion { get; set; }
-        [Required]
-        public String Codigo { get; set; }
-        [Required]
-        public int TiempoPreparacion { get; set; }
-        public virtual ICollection<DetalleMenu> DetalleMenus { get; set; }
-        public virtual ICollection<DetallePedido> DetallePedidos { get; set; }
-        public virtual ICollection<DetallePromocion> DetallePromocion { get; set; }
+        public int PrecioPromocion { get; set; }
+        public bool PromocionActiva { get; set; }
+        public string RutaImagen { get; set; }
+        public int CategoriaPlatoId { get; set; }
+        [ForeignKey("CategoriaPlatoId")]
+        public virtual CategoriaPlato CategoriaPlato { get; set; }
+        public int ProveedorId { get; set; }
+        [ForeignKey("ProveedorId")]
+        public virtual Usuario Proveedor { get; set; }
+        public virtual ICollection<DetallePedidoMenu> DetallesPedidoMenu { get; set; }
+
     }
 }

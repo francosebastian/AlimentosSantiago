@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AlimentosSantiago.Dao;
+using AlimentosSantiago.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,18 +19,14 @@ namespace AlimentosSantiago.Web.Administracion
         // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         public void FvTipoPago_UpdateItem(int id)
         {
-            AlimentosSantiago.Dto.TipoPago item = null;
-            // Cargar el elemento aquí, por ejemplo item = MyDataLayer.Find(id);
-            if (item == null)
+            using (OracleDbContext db = new OracleDbContext())
             {
-                // No se encontró el elemento
-                ModelState.AddModelError("", String.Format("No se encontró el elemento con id. {0}", id));
-                return;
-            }
-            TryUpdateModel(item);
-            if (ModelState.IsValid)
-            {
-                // Guarde los cambios aquí, por ejemplo MyDataLayer.SaveChanges();
+                TipoPago item = db.TipoPago.SingleOrDefault(t => t.Id == id);
+                TryUpdateModel(item);
+                if (ModelState.IsValid)
+                {
+                    db.SaveChanges();
+                }
 
             }
         }
@@ -37,7 +35,10 @@ namespace AlimentosSantiago.Web.Administracion
         // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
         public AlimentosSantiago.Dto.TipoPago FvTipoPago_GetItem(int id)
         {
-            return null;
+            using (OracleDbContext db = new OracleDbContext())
+            {
+                return db.TipoPago.SingleOrDefault(t => t.Id == id);
+            };
         }
     }
 }

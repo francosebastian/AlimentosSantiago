@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AlimentosSantiago.Dto.Usuario">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <Members>
+      <Property Name="PedidosMenusCliente" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABEAAIAAACAAEAEEAAAggAAAAAAAAAACAAAAAoAAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Empresa" />
+      <Property Name="TipoUsuario" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DireccionUsuarios" />
+      <Property Name="PedidosMenusRepartidor" />
+      <Property Name="PlatosProveedor" />
+      <Property Name="LogsSaldo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.DireccionUsuario">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAABIAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>DireccionUsuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PedidosUsuario" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.Empresa">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Empresa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Usuarios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.EstadoPedido">
+    <Position X="16.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoPedido.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LogsPedidoMenu" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.LayerSuperType" Collapsed="true">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAAABAA=</HashCode>
+      <FileName>LayerSuperType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.LogPedidoMenu">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>LogPedidoMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PedidoMenu" />
+      <Property Name="EstadoPedido" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.LogSaldo">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>LogSaldo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.PedidoMenu">
+    <Position X="18.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEgAAEAABCAAAAAAAAEAAAIAAEAIAAAABA=</HashCode>
+      <FileName>PedidoMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TipoPago" />
+      <Property Name="Cliente" />
+      <Property Name="Repartidor" />
+      <Property Name="DireccionUsuario" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DetallesPedidoMenu" />
+      <Property Name="LogsPedidoMenu" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.Plato">
+    <Position X="23" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAgAARACAEAAAAAAAAIAQAAEA=</HashCode>
+      <FileName>Plato.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CategoriaPlato" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="DetallesPedidoMenu" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.TipoPago">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TipoPago.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PedidosMenus" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.TipoUsuario">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>TipoUsuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Usuarios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.DetallePedidoMenu">
+    <Position X="20.75" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAEAgAAIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DetallePedidoMenu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PedidoMenu" />
+      <Property Name="Plato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AlimentosSantiago.Dto.CategoriaPlato">
+    <Position X="14" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAABAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>CategoriaPlato.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Platos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

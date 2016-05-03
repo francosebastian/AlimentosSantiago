@@ -19,13 +19,15 @@ namespace AlimentosSantiago.Web.Administracion
         public void FvUsuario_InsertItem()
         {
             Usuario usuario = new Usuario();
+            usuario.Creado = System.DateTime.Now;
+            usuario.Modificado = System.DateTime.Now;
+            usuario.Password = "1234";
             TryUpdateModel(usuario);
             if (ModelState.IsValid)
             {
-                using (OracleDbContext db= new OracleDbContext())
+                using (OracleDbContext db = new OracleDbContext())
                 {
-                    usuario.Creado = System.DateTime.Now;
-                    usuario.Modificado = System.DateTime.Now;
+                   
                     db.Usuario.Add(usuario);
                     db.SaveChanges();
                 }

@@ -1,12 +1,12 @@
-﻿using AlimentosSantiago.Dto;
-using AlimentosSantiago.Dao;
+﻿using AlimentosSantiago.Dao;
+using AlimentosSantiago.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.ModelBinding;
 
 namespace AlimentosSantiago.Web.Administracion
 {
@@ -20,10 +20,10 @@ namespace AlimentosSantiago.Web.Administracion
         // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         public void FvUsuario_UpdateItem(int id)
         {
-            using (OracleDbContext db=new OracleDbContext())
+            using (OracleDbContext db = new OracleDbContext())
             {
-                Usuario usuario = db.Usuario.Find(id);
-                TryUpdateModel(usuario);
+                Usuario item = db.Usuario.SingleOrDefault(t => t.Id == id);
+                TryUpdateModel(item);
                 if (ModelState.IsValid)
                 {
                     db.SaveChanges();
@@ -37,8 +37,7 @@ namespace AlimentosSantiago.Web.Administracion
         {
             using (OracleDbContext db = new OracleDbContext())
             {
-                Usuario usuario = db.Usuario.SingleOrDefault(t => t.Id == id);
-                return usuario;
+                return db.Usuario.SingleOrDefault(t => t.Id == id);
             }
         }
     }

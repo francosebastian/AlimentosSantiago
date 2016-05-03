@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,10 @@ namespace AlimentosSantiago.Dto
     {
         public Empresa()
         {
-            Clientes = new List<Cliente>();
+            Usuarios = new List<Usuario>();
         }
-        public virtual ICollection<Cliente> Clientes { get; set; }
-        public String Nombre { get; set; }
+        [Required]
+        public string Nombre { get; set; }
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }
