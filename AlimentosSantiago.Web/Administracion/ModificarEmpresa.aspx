@@ -6,13 +6,46 @@
         DataKeyNames="Id" DefaultMode="Edit" UpdateMethod="FvEmpresa_UpdateItem" SelectMethod="FvEmpresa_GetItem"
         RenderOuterTable="false">
           <EditItemTemplate>
-             <h4>Modificar Empresa</h4>
-                          <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
-                            title="Ingrese nombre de estado pedido." placeholder="Ingrese estado Pedido"
-                            myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
-                          <asp:CheckBox ID="chbDesabiilitado" runat="server" Text="Deshabilitado" OnCheckedChanged="chbDesabiilitado_CheckedChanged" AutoPostBack="false"
-                            Checked="<%# BindItem.Deshabilitado %>" />
-            <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Update"/>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="heading-section">
+                              <h2>Modificar Empresa</h2>
+                              <img src="../images/under-heading.png" alt="" />
+                          </div>
+                      </div>
+                  </div>
+                  <div id="contact-us">
+                      <div class="container">
+                          <div class="row">
+                              <div class="product-item col-md-12">
+                                  <div class="row">
+                                      <div class="col-md-8">
+                                          <div class="message-form">
+                                              <div class="row">
+                                                  <div class="name col-md-12">
+                                                      <asp:Label ID="lblNombreEmpresa" runat="server">Nombre Empresa</asp:Label>
+                                                      <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
+                                                          title="Ingrese Nueva Empresa." placeholder="Empresa"
+                                                          myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
+                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
+                                                          Checked="<%# BindItem.Deshabilitado %>" />
+                                                      <asp:Button runat="server" Text="Guardar" ID="btnGuardar" CommandName="Update" />
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
         </EditItemTemplate>
     </asp:FormView>
 </asp:Content>
+
+
+
+

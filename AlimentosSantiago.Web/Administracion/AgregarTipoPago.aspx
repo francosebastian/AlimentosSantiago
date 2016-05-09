@@ -10,7 +10,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="heading-section">
-                                        <h2>Tipo de Pago</h2>
+                                        <h2>Agregar Tipo de Pago</h2>
                                         <img src="../images/under-heading.png" alt="" />
                                     </div>
                                 </div>
@@ -24,9 +24,9 @@
                                                     <div class="message-form">
                                                         <div class="row">
                                                             <div class="name col-md-12">
-                                                                <asp:Label ID="Label1" runat="server">Nombre Empresa</asp:Label>
-                                                                <asp:TextBox ID="txtTipoDePago" runat="server" TextMode="SingleLine"
-                                                                    title="Tipo de Pago." placeholder="Tipo Pago"
+                                                                <asp:Label ID="lblAgregarTipoPago" runat="server">Agregar Tipo de Pago</asp:Label>
+                                                                <asp:TextBox ID="txtArgegarTipoDePago" runat="server" TextMode="SingleLine"
+                                                                    title="Agregar Tipo de Pago." placeholder="Agregar Tipo Pago"
                                                                     myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"

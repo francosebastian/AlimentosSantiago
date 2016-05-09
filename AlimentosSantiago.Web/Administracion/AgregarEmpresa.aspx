@@ -27,7 +27,7 @@
                                                         <div class="row">
                                                             <div class="name col-md-12">
                                                                 <asp:Label ID="lblNombre" runat="server">Nombre Empresa</asp:Label>
-                                                                <asp:TextBox ID="txtEstadoPedido" runat="server" TextMode="SingleLine"
+                                                                <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
                                                                     title="Ingrese Nueva Empresa." placeholder="Empresa"
                                                                     myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>

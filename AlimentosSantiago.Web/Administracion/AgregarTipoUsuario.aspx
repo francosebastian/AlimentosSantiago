@@ -26,12 +26,12 @@
                                                         <div class="row">
                                                             <div class="name col-md-12">
                                                                 <asp:Label ID="lblTipoUsuario" runat="server">Ingrese el Tipo de Usuario</asp:Label>
-                                                                <asp:TextBox ID="txtTipoTrabajador" runat="server" TextMode="SingleLine"
-                                                                    title="Ingrese Tipo de Trabajadpr." placeholder="Ingrese Tipo de Trabajador"
+                                                                <asp:TextBox ID="txtTipoUsuario" runat="server" TextMode="SingleLine"
+                                                                    title="Ingrese Tipo de Usuario." placeholder="Ingrese Tipo de Usuario"
                                                                     myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                                                 <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
-                                                                    title="Ingrese Detalle del Trabajador." placeholder="Detalle del Trabajador"
+                                                                    title="Ingrese Detalle del Usuario." placeholder="Detalle del Usuario"
                                                                     myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
