@@ -133,6 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Acerca.aspx" />
     <Content Include="AdministracionEmpresa\AgregarTrabajador.aspx" />
     <Content Include="AdministracionEmpresa\CargarSaldo.aspx" />
     <Content Include="AdministracionEmpresa\EliminarTrabajador.aspx" />
@@ -168,6 +169,7 @@
     <Content Include="Administracion\VerTipoUsuario.aspx" />
     <Content Include="Administracion\VerUsuarios.aspx" />
     <Content Include="BootStrap.js" />
+    <Content Include="Contactos.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MenuPrincipal.aspx" />
@@ -201,6 +203,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acerca.aspx.cs">
+      <DependentUpon>Acerca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acerca.aspx.designer.cs">
+      <DependentUpon>Acerca.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministracionEmpresa\AgregarTrabajador.aspx.cs">
       <DependentUpon>AgregarTrabajador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -438,6 +447,13 @@
     </Compile>
     <Compile Include="Administracion\VerUsuarios.aspx.designer.cs">
       <DependentUpon>VerUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactos.aspx.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactos.aspx.designer.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
