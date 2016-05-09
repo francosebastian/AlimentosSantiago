@@ -11,5 +11,23 @@ namespace AlimentosSantiago.Web.Productos {
     
     
     public partial class Productos {
+        
+        /// <summary>
+        /// Control rptCategoriaProductos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptCategoriaProductos;
+        
+        /// <summary>
+        /// Control efCategoriaPlato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::Microsoft.AspNet.EntityDataSource.EntityDataSource efCategoriaPlato;
     }
 }

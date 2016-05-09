@@ -19,7 +19,9 @@ namespace AlimentosSantiago.Dto
         public int Precio { get; set; }
         public int PrecioPromocion { get; set; }
         public bool PromocionActiva { get; set; }
-        public string RutaImagen { get; set; }
+        public string RutaFisicaImagen { get; set; }
+        public string RutaVirtualImagen { get; set; }
+
         public int CategoriaPlatoId { get; set; }
         [ForeignKey("CategoriaPlatoId")]
         public virtual CategoriaPlato CategoriaPlato { get; set; }

@@ -27,12 +27,12 @@
                     <div class="row">
                         <div class="filters col-md-12 col-xs-12">
                             <ul id="filters" class="clearfix">
-                                <li><span class="filter" data-filter="all">All</span></li>
-                                <li><span class="filter" data-filter=".ginger">Ginger</span></li>
-                                <li><span class="filter" data-filter=".pizza">Pizza</span></li>
-                                <li><span class="filter" data-filter=".pasta">Pasta</span></li>
-                                <li><span class="filter" data-filter=".drink">Drink</span></li>
-                                <li><span class="filter" data-filter=".hamburger">Hamburger</span></li>
+                                <li><span class="filter" data-filter="all">Todos</span></li>
+                                <asp:Repeater ID="rptCategoriaProductos" runat="server" DataSourceID="efCategoriaPlato">
+                                    <ItemTemplate>
+                                         <li><span class="filter" data-filter=".<%# Eval("nombre") %>"><%# Eval("nombre") %></span></li>
+                                    </ItemTemplate>
+                                </asp:Repeater> 
                             </ul>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                     </div>     
                 </div>
             </div>
-
+            
 
 
     
@@ -266,5 +266,11 @@
         <script src="../Scripts/vendor/jquery.gmap3.min.js"></script>
         <script src="../Scripts/plugins.js"></script>
         <script src="../Scripts/main.js"></script>
+
+       <ef:EntityDataSource ID="efCategoriaPlato" runat="server"
+                                                        ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
+                                                        EntitySetName="CategoriaPlato"
+                                                        Select="it.Id,it.Nombre, it.Descripcion">
+                                                    </ef:EntityDataSource>
 
 </asp:Content>

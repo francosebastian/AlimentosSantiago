@@ -36,8 +36,8 @@
                                                             myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
                                                         <asp:Label ID="lblFotografia" runat="server">Fotografia</asp:Label>
                                                              
-                <telerik:RadAsyncUpload runat="server" ID="AsyncUpload1" RenderMode="Auto"
-                AllowedFileExtensions=".jpg,.png"  Localization-Select="Abrir" Skin="Bootstrap" MultipleFileSelection="Disabled"/>
+                                                        <telerik:RadAsyncUpload runat="server" ID="rauFoto" RenderMode="Auto"
+                                                         AllowedFileExtensions=".jpg,.png"  Localization-Select="Abrir" Skin="Bootstrap" MultipleFileSelection="Disabled"/>
                                                         <asp:Label ID="lblPrecio" runat="server">Precio</asp:Label>
                                                         <asp:TextBox ID="txtPrecio" runat="server" TextMode="Number"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Precio Plato"

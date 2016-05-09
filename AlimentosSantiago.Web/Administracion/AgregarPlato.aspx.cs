@@ -1,14 +1,20 @@
-﻿using System;
+﻿using AlimentosSantiago.Dao;
+using AlimentosSantiago.Dto;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Telerik.Web.UI;
 
 namespace AlimentosSantiago.Web.Administracion
 {
     public partial class AgregarPlato : System.Web.UI.Page
     {
+        private RadAsyncUpload radUpload;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,13 +22,28 @@ namespace AlimentosSantiago.Web.Administracion
 
         public void FvPlato_InsertItem()
         {
-            var item = new AlimentosSantiago.Dto.Plato();
-            TryUpdateModel(item);
+            radUpload = (RadAsyncUpload)FvPlato.FindControl("rauFoto");
+            Plato plato = new Plato();
+            TryUpdateModel(plato);
             if (ModelState.IsValid)
             {
-                // Save changes here
-
+                using (OracleDbContext db = new OracleDbContext())
+                {
+                    plato.RutaFisicaImagen = IntentarSubirFoto(this.radUpload.UploadedFiles[0]);
+                    plato.Creado = System.DateTime.Now;
+                    plato.Modificado = System.DateTime.Now;
+                    db.Plato.Add(plato);
+                    db.SaveChanges();
+                }
             }
+        }
+
+        private String IntentarSubirFoto(UploadedFile uploadFile)
+        {
+            String _nombreUnicoArchivo = DateTime.Now.Ticks.ToString() + uploadFile.FileName;
+            String rutaVirtual = WebConfigurationManager.AppSettings["RutaBandeja"] + @"\" + _nombreUnicoArchivo;
+            uploadFile.SaveAs(Path.Combine(WebConfigurationManager.AppSettings["RutaBandeja"], _nombreUnicoArchivo));
+            return rutaVirtual;
         }
     }
 }
