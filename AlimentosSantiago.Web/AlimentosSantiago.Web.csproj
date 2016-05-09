@@ -167,8 +167,10 @@
     <Content Include="Administracion\VerTipoPago.aspx" />
     <Content Include="Administracion\VerTipoUsuario.aspx" />
     <Content Include="Administracion\VerUsuarios.aspx" />
+    <Content Include="BootStrap.js" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MenuPrincipal.aspx" />
     <Content Include="MiCuenta\CambiarPassword.aspx" />
     <Content Include="MiCuenta\MisDirecciones.aspx" />
     <Content Include="MiCuenta\NuevoPassword.aspx" />
@@ -456,6 +458,13 @@
     </Compile>
     <Compile Include="Masters\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiCuenta\CambiarPassword.aspx.cs">
       <DependentUpon>CambiarPassword.aspx</DependentUpon>
