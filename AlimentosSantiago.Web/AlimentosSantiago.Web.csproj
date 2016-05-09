@@ -176,6 +176,7 @@
     <Content Include="MiCuenta\NuevoPassword.aspx" />
     <Content Include="packages.config" />
     <Content Include="Masters\Master.Master" />
+    <Content Include="Productos\Productos.aspx" />
     <Content Include="Wuc\Modal.ascx" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
     <Content Include="Pedidos\NuevoPedido.aspx" />
@@ -507,6 +508,13 @@
     </Compile>
     <Compile Include="Pedidos\VerPedidos.aspx.designer.cs">
       <DependentUpon>VerPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Productos\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistroCliente.aspx.cs">
