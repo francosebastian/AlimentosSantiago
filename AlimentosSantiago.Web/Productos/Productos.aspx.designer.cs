@@ -22,6 +22,15 @@ namespace AlimentosSantiago.Web.Productos {
         protected global::System.Web.UI.WebControls.Repeater rptCategoriaProductos;
         
         /// <summary>
+        /// Control rptProductos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptProductos;
+        
+        /// <summary>
         /// Control efCategoriaPlato.
         /// </summary>
         /// <remarks>
@@ -29,5 +38,14 @@ namespace AlimentosSantiago.Web.Productos {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::Microsoft.AspNet.EntityDataSource.EntityDataSource efCategoriaPlato;
+        
+        /// <summary>
+        /// Control efPlato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::Microsoft.AspNet.EntityDataSource.EntityDataSource efPlato;
     }
 }
