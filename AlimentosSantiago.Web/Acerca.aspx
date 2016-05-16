@@ -7,8 +7,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-content">
-                                <h2>About Us</h2>
-                                <span>Home / <a href="about-us.html">About us</a></span>
+                                <h2>ACERCA DE "EL COMILÓN"</h2>
+                                <span>Inicio / <a href="about-us.html">Acerca de</a></span>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Who We Are</h2>
+                                <h2>ACERCA DEL COMILON</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                             <p>Nulla sodales ut tellus blandit accumsan. Aliquam erat volutpat. Morbi quis vestibulum erat. Nam malesuada lobortis tempus. Fusce fermentum libero fringilla odio pharetra malesuada. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultrices lectus quis consequat fringilla. Mauris non ex et purus sollicitudin tempus vitae quis nisi.</p>
                         </div>
                         <div class="col-md-6">
-                        	<h3>Team Management</h3>
+                        	<h3>Equipo de Trabajo</h3>
                             <p>Suspendisse quis consectetur nisi, vitae consequat sem. In et quam id libero venenatis venenatis. Morbi vitae justo vulputate, auctor augue eu, pulvinar augue. Vestibulum placerat sem eu posuere laoreet. Ut ac ex nec urna maximus tristique interdum eget ipsum. Duis at pharetra neque, ut condimentum ex. Nunc tincidunt magna nec aliquam rhoncus. Morbi a posuere nunc.</p>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="team-thumb">
                                     <div class="author">
-                                        <img src="images/author1.jpg" alt="Tracy - templatemo">
+                                        <img src="images/author1.jpg" alt="Franco Arraño - templatemo">
                                     </div>
                                     <div class="overlay">
                                         <div class="author-caption">
@@ -152,14 +152,14 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Tracy</h2>
-                                     <span>Designer</span>
+                                     <h2>Franco A.</h2>
+                                     <span>Ingeniero en Informatica</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="team-thumb">
                                     <div class="author">
-                                        <img src="images/author2.jpg" alt="Mary - templatemo">
+                                        <img src="images/author2.jpg" alt="Alan Muñoz - templatemo">
                                     </div>
                                     <div class="overlay">
                                         <div class="author-caption">
@@ -172,14 +172,14 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Mary</h2>
-                                     <span>Developer</span>
+                                     <h2>Alan M.</h2>
+                                     <span>Ingeniero en Informatica</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="team-thumb">
                                     <div class="author">
-                                        <img src="images/author3.jpg" alt="Julia - templatemo">
+                                        <img src="images/author3.jpg" alt="Hecor Montero - templatemo">
                                     </div>
                                     <div class="overlay">
                                         <div class="author-caption">
@@ -192,28 +192,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Julia</h2>
-                                     <span>Director</span>
-                                 </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="team-thumb">
-                                    <div class="author">
-                                        <img src="images/author4.jpg" alt="Linda - templatemo">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="author-caption">
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="author-details">
-                                     <h2>Linda</h2>
-                                     <span>Manager</span>
+                                     <h2>Hector M.</h2>
+                                     <span>Ingeniero en Informatica</span>
                                  </div>
                             </div>
                         </div>

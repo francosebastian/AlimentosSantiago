@@ -5,7 +5,20 @@
      <asp:FormView ID="FvUsuario" runat="server" ItemType="AlimentosSantiago.Dto.Usuario"
         DataKeyNames="Id" DefaultMode="Edit" UpdateMethod="FvUsuario_UpdateItem" SelectMethod="FvUsuario_GetItem"
         RenderOuterTable="false">
+
          <EditItemTemplate>
+             <div id="heading">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-md-12">
+                             <div class="heading-content">
+                                 <h2>ELIMINAR USUARIOS</h2>
+                                 <span><a href="../MenuPrincipal.aspx">Menu / </a><a href="VerUsuarios.aspx">Volver</a></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
              <div class="container">
                  <div class="row">
                      <div class="col-md-12">

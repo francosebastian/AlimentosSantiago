@@ -2,6 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+           <div id="heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-content">
+                                            <h2>TIPOS DE USUARIOS</h2>
+                                            <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="../MenuPrincipal.aspx">Volver</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
      <div class="panel-body">
         <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Auto"></asp:ScriptManager>
         <telerik:RadGrid ID="RadGridTipoUsuario" DataSourceID="efTipoUsuario" AutoGenerateColumns="false"  AllowPaging="True" AllowSorting="false"

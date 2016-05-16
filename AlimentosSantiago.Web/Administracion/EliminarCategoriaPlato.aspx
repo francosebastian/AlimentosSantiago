@@ -7,6 +7,18 @@
         DataKeyNames="Id" DefaultMode="ReadOnly" DeleteMethod="FvCategoriaPlato_DeleteItem" SelectMethod="FvCategoriaPlato_GetItem"
         RenderOuterTable="false">
         <ItemTemplate>
+            <div id="heading">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-content">
+                                <h2>ELIMINAR CATEGORIA PLATO</h2>
+                                <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerCategoriaPlatos.aspx">Volver</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h4>Eliminar Categoria Plato</h4>
             <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
                 title="Ingrese nombre de estado pedido." placeholder="Ingrese categoria Plato"
