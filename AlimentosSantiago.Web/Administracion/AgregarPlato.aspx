@@ -81,7 +81,7 @@
                                                           <ef:EntityDataSource ID="efProveedor" runat="server"
                                                             ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                             EntitySetName="Usuario"
-                                                            Select="it.Id,it.Nombre" Where="it.TipoUsuarioId = 22">
+                                                            Select="it.Id,it.Nombre" Where="it.TipoUsuarioId = 13">
                                                         </ef:EntityDataSource>
                                                         <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                         <asp:CheckBox ID="chbDeshabilitado" runat="server"  AutoPostBack="false"
