@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlPlatos.cs" />
     <Compile Include="EnviadorCorreoHelpers\EnviadorCorreo.cs" />
     <Compile Include="EnviadorCorreoHelpers\PlantillaCorreoHelper.cs" />
     <Compile Include="EnviadorCorreoHelpers\SerializadorObjetosHelper.cs" />

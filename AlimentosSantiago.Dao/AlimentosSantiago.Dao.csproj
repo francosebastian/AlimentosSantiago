@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201605092056140_actualizacionbasedatos003.Designer.cs">
       <DependentUpon>201605092056140_actualizacionbasedatos003.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605162013568_quitarequiredapellido.cs" />
+    <Compile Include="Migrations\201605162013568_quitarequiredapellido.Designer.cs">
+      <DependentUpon>201605162013568_quitarequiredapellido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605092056140_actualizacionbasedatos003.resx">
       <DependentUpon>201605092056140_actualizacionbasedatos003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605162013568_quitarequiredapellido.resx">
+      <DependentUpon>201605162013568_quitarequiredapellido.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

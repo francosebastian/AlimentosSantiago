@@ -44,7 +44,7 @@
                                                     <asp:Label ID="lblApellido" runat="server">Apellido</asp:Label>
                                                     <asp:TextBox ID="txtApellido" runat="server" TextMode="SingleLine"
                                                         title="Ingrese apellido Usuario." placeholder="Ingrese apellido Usuario"
-                                                        myMaxLength="60" Text='<%# BindItem.Apellido %>' required data-validation-required-message="Completa Este Campo" /><br />
+                                                        myMaxLength="60" Text='<%# BindItem.Apellido %>' /><br />
                                                     <asp:Label ID="lblTelefono1" runat="server">Telefono Fijo</asp:Label>
                                                     <asp:TextBox ID="txtTelefono1" runat="server" TextMode="Phone"
                                                         title="Ingrese fijo Usuario." placeholder="Ingrese telefono fijo Usuario"

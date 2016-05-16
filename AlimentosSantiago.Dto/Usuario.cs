@@ -20,7 +20,7 @@ namespace AlimentosSantiago.Dto
                             PlatosProveedor = new List<Plato>(); }
         [Required]
         public string Nombre { get; set; }
-        [Required]
+        
         public string Apellido { get; set;}
         [Required]
         public string Telefono { get; set; }
