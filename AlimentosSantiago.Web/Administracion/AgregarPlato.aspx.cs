@@ -29,8 +29,7 @@ namespace AlimentosSantiago.Web.Administracion
             {
                 using (OracleDbContext db = new OracleDbContext())
                 {
-                    plato.RutaFisicaImagen = IntentarSubirFoto(this.radUpload.UploadedFiles[0]);
-                    plato.RutaVirtualImagen = ObtenerRutaRelativa(this.radUpload.UploadedFiles[0]); ;
+                    plato = IntentarSubirFoto(this.radUpload.UploadedFiles[0],plato);
                     plato.Creado = System.DateTime.Now;
                     plato.Modificado = System.DateTime.Now;
                     db.Plato.Add(plato);
@@ -39,18 +38,15 @@ namespace AlimentosSantiago.Web.Administracion
             }
         }
 
-        private String IntentarSubirFoto(UploadedFile uploadFile)
+        private Plato IntentarSubirFoto(UploadedFile uploadFile, Plato plato)
         {
             String _nombreUnicoArchivo = DateTime.Now.Ticks.ToString() + uploadFile.FileName;
-            String rutaFisica = WebConfigurationManager.AppSettings["RutaBandeja"] + @"\" + _nombreUnicoArchivo;
+            plato.RutaFisicaImagen = WebConfigurationManager.AppSettings["RutaBandeja"] + @"\" + _nombreUnicoArchivo;
             uploadFile.SaveAs(Path.Combine(WebConfigurationManager.AppSettings["RutaBandeja"], _nombreUnicoArchivo));
-            return rutaFisica;
+            plato.RutaVirtualImagen = "../Bandeja/" + _nombreUnicoArchivo;
+            return plato;
         }
 
-        private String ObtenerRutaRelativa(UploadedFile uploadFile)
-        {
-            String RelativePath = "~/Bandeja/" + uploadFile.FileName;
-            return RelativePath;
-        }
+       
     }
 }
