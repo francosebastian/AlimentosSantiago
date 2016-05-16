@@ -6,6 +6,18 @@
         DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvTipoPago_InsertItem"
         RenderOuterTable="false">
           <InsertItemTemplate>
+                          <div id="heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-content">
+                                            <h2>NUEVO TIPO DE PAGO</h2>
+                                            <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -27,11 +39,11 @@
                                                                 <asp:Label ID="lblAgregarTipoPago" runat="server">Agregar Tipo de Pago</asp:Label>
                                                                 <asp:TextBox ID="txtArgegarTipoDePago" runat="server" TextMode="SingleLine"
                                                                     title="Agregar Tipo de Pago." placeholder="Agregar Tipo Pago"
-                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                                     Checked="<%# BindItem.Deshabilitado %>" />
-                                                                <asp:Button runat="server" Text="Guardar" ID="Button1" CommandName="Insert" />
+                                                                <asp:Button runat="server" Text="Guardar" ID="btnGuardar" CommandName="Insert" />
                                                             </div>
                                                         </div>
                                                     </div>

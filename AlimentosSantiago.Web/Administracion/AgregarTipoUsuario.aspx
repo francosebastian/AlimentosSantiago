@@ -7,6 +7,18 @@
         RenderOuterTable="false">
         
             <InsertItemTemplate>
+                            <div id="heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-content">
+                                            <h2>NUEVO TIPO DE USUARIO</h2>
+                                            <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -28,11 +40,11 @@
                                                                 <asp:Label ID="lblTipoUsuario" runat="server">Ingrese el Tipo de Usuario</asp:Label>
                                                                 <asp:TextBox ID="txtTipoUsuario" runat="server" TextMode="SingleLine"
                                                                     title="Ingrese Tipo de Usuario." placeholder="Ingrese Tipo de Usuario"
-                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                                 <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                                     title="Ingrese Detalle del Usuario." placeholder="Detalle del Usuario"
-                                                                    myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
+                                                                    myMaxLength="60" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                                     Checked="<%# BindItem.Deshabilitado %>" />

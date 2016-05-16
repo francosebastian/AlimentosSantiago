@@ -6,6 +6,18 @@
         DataKeyNames="Id" DefaultMode="Edit" UpdateMethod="FvTipoUsuario_UpdateItem" SelectMethod="FvTipoUsuario_GetItem"
         RenderOuterTable="false">
           <EditItemTemplate>
+              <div id="heading">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="heading-content">
+                                  <h2>MODIFICAR TIPO USUARIO</h2>
+                                  <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerTipoUsuario.aspx">Volver</a></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
@@ -46,7 +58,7 @@
                       </div>
                   </div>
               </div>
-        </EditItemTemplate>
+          </EditItemTemplate>
     </asp:FormView>
 </asp:Content>
 

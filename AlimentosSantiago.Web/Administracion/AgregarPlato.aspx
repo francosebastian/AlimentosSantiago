@@ -8,6 +8,18 @@
             DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvPlato_InsertItem"
             RenderOuterTable="false">
             <InsertItemTemplate>
+                            <div id="heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-content">
+                                            <h2>NUEVO PLATO</h2>
+                                            <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -29,11 +41,11 @@
                                                         <asp:Label ID="lblNombre" runat="server">Nombre</asp:Label>
                                                         <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
                                                             title="Ingrese Nombre Plato." placeholder="Ingrese Nombre Plato"
-                                                            myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                            myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                         <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                         <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Descripcion Plato"
-                                                            myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
+                                                            myMaxLength="60" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                         <asp:Label ID="lblFotografia" runat="server">Fotografia</asp:Label>
                                                              
                                                         <telerik:RadAsyncUpload runat="server" ID="rauFoto" RenderMode="Auto"
@@ -41,11 +53,11 @@
                                                         <asp:Label ID="lblPrecio" runat="server">Precio</asp:Label>
                                                         <asp:TextBox ID="txtPrecio" runat="server" TextMode="Number"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Precio Plato"
-                                                            myMaxLength="60" Text='<%# BindItem.Precio %>' /><br />
+                                                            myMaxLength="60" Text='<%# BindItem.Precio %>' required data-validation-required-message="Completa Este Camp.o" /> <br />
                                                         <asp:Label ID="lblPrecioPromocion" runat="server">Precio</asp:Label>
                                                         <asp:TextBox ID="TextBox1" runat="server" TextMode="Number"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Precio Promocion"
-                                                            myMaxLength="60" Text='<%# BindItem.PrecioPromocion %>' /><br />
+                                                            myMaxLength="60" Text='<%# BindItem.PrecioPromocion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                         <asp:Label ID="Label1" runat="server">Promocion Activa</asp:Label>
                                                         <asp:CheckBox ID="CheckBox1" runat="server" AutoPostBack="false"
                                                             Checked="<%# BindItem.PromocionActiva %>" />

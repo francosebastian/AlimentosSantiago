@@ -6,6 +6,18 @@
         DataKeyNames="Id" DefaultMode="ReadOnly" DeleteMethod="FvEstadoPedido_DeleteItem" SelectMethod="FvEstadoPedido_GetItem"
         RenderOuterTable="false">
           <ItemTemplate>
+                         <div id="heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading-content">
+                                            <h2>ELIMINAR ESTAADO PEDIDO</h2>
+                                            <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerCategoriaPlatos.aspx">Volver</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
               <div class="container">
          <div class="row">
              <div class="col-md-12">

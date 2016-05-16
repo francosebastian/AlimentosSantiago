@@ -7,8 +7,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-content">
-                                <h2>About Us</h2>
-                                <span>Home / <a href="about-us.html">About us</a></span>
+                                <h2>ACERCA DE "EL COMILÓN"</h2>
+                                <span>Inicio / <a href="about-us.html">Acerca de</a></span>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Who We Are</h2>
+                                <h2>ACERCA DEL COMILON</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
