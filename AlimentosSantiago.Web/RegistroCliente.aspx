@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:FormView ID="FvUsuario" runat="server" ItemType="AlimentosSantiago.Dto.Usuario"
-        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvUsuario_InsertItem"
+        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvUsuario_InsertItem" OnItemInserting="FvUsuario_ItemInserting"
         RenderOuterTable="false">
         <InsertItemTemplate>
                         <div id="heading">
@@ -11,7 +11,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="heading-content">
-                                            <h2>AGREGAR CLIENTE</h2>
+                                            <h2>REGISTRO CLIENTE</h2>
                                             <span><a href="../MenuPrincipal.aspx">Volver</a></span>
                                         </div>
                                     </div>
@@ -22,7 +22,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading-section">
-                            <h2>Agregar Nuevo Usuario Cliente</h2>
+                            <h2>Registro Cliente</h2>
                             <img src="../images/under-heading.png" alt="" />
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                                                     <asp:TextBox ID="txtApellido" runat="server" TextMode="SingleLine"
                                                         title="Ingrese apellido Usuario." placeholder="Ingrese apellido Usuario"
                                                         myMaxLength="60" Text='<%# BindItem.Apellido %>' /><br />
-                                                    <asp:Label ID="lblPassword1" runat="server">Password</asp:Label>
+                                                    <asp:Label ID="lblPassword" runat="server">Password</asp:Label>
                                                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"
                                                         title="Ingrese Password." placeholder="Ingrese Password"
                                                         myMaxLength="60" Text='<%# BindItem.Password %>' required data-validation-required-message="Completa Este Campo" /><br />

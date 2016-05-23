@@ -171,10 +171,7 @@
     <Content Include="BootStrap.js" />
     <Content Include="Contactos.aspx" />
     <Content Include="Index.aspx" />
-    <Content Include="Index\MenuRepartidor.aspx" />
-    <Content Include="Index\MenuUsuario.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Index\MenuAdministrativo.aspx" />
     <Content Include="MiCuenta\CambiarPassword.aspx" />
     <Content Include="MiCuenta\MisDirecciones.aspx" />
     <Content Include="MiCuenta\NuevoPassword.aspx" />
@@ -465,20 +462,6 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Index\MenuRepartidor.aspx.cs">
-      <DependentUpon>MenuRepartidor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index\MenuRepartidor.aspx.designer.cs">
-      <DependentUpon>MenuRepartidor.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index\MenuUsuario.aspx.cs">
-      <DependentUpon>MenuUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index\MenuUsuario.aspx.designer.cs">
-      <DependentUpon>MenuUsuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -492,13 +475,6 @@
     </Compile>
     <Compile Include="Masters\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Index\MenuAdministrativo.aspx.cs">
-      <DependentUpon>MenuAdministrativo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index\MenuAdministrativo.aspx.designer.cs">
-      <DependentUpon>MenuAdministrativo.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiCuenta\CambiarPassword.aspx.cs">
       <DependentUpon>CambiarPassword.aspx</DependentUpon>
@@ -590,6 +566,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AlimentosSantiago.BusinessLogic\AlimentosSantiago.BusinessLogic.csproj">
+      <Project>{8a243a9e-7d7c-4cfb-b255-883442a1434b}</Project>
+      <Name>AlimentosSantiago.BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AlimentosSantiago.Dao\AlimentosSantiago.Dao.csproj">
       <Project>{3b5d5871-2ceb-492c-b57a-dddf60cab00f}</Project>
       <Name>AlimentosSantiago.Dao</Name>

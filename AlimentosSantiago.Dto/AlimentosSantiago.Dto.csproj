@@ -45,6 +45,7 @@
     <Compile Include="DetallePedidoMenu.cs" />
     <Compile Include="DireccionUsuario.cs" />
     <Compile Include="Empresa.cs" />
+    <Compile Include="Enumeraciones.cs" />
     <Compile Include="EstadoPedido.cs" />
     <Compile Include="LayerSuperType.cs" />
     <Compile Include="LogPedidoMenu.cs" />
