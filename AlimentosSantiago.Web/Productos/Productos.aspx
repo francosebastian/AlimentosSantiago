@@ -30,7 +30,7 @@
                                 <li><span class="filter" data-filter="all">Todos</span></li>
                                 <asp:Repeater ID="rptCategoriaProductos" runat="server" DataSourceID="efCategoriaPlato">
                                     <ItemTemplate>
-                                         <li><span class="filter" data-filter=".<%# Eval("nombre") %>"><%# Eval("nombre") %></span></li>
+                                         <li><span class="filter" data-filter=".<%#Eval("nombre")%>"><%#Eval("nombre")%></span></li>
                                     </ItemTemplate>
                                 </asp:Repeater> 
                             </ul>
@@ -39,20 +39,20 @@
                       <div class="row" id="Container">
                     <asp:Repeater ID="rptProductos" runat="server" DataSourceID="efPlato">
                         <ItemTemplate>                         
-                                <div class="col-md-3 col-sm-6 mix portfolio-item <%# Eval("CategoriaPlato.Nombre") %>">
+                                <div class="col-md-3 col-sm-6 mix portfolio-item <%#Eval("CategoriaPlato.Nombre")%>">
                                     <div class="portfolio-wrapper">
                                         <div class="portfolio-thumb">
                                             <img src=" <%# Eval("RutaVirtualImagen") %>" alt="" />
                                             <div class="hover">
                                                 <div class="hover-iner">
-                                                    <a class="fancybox" href="<%# Eval("RutaVirtualImagen") %>">
+                                                    <a class="fancybox" href="<%#Eval("RutaVirtualImagen")%>">
                                                         <img src="<%# Eval("RutaVirtualImagen") %>" alt="" /></a>
-                                                    <span><%# Eval("CategoriaPlato.Nombre") %></span>
+                                                    <span><%# Eval("Descripcion") %></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="label-text">
-                                            <h3><a href="single-post.html"><%# Eval("Nombre") %></a></h3>
+                                            <h3><a href="../Productos/Producto.aspx?id=<%# Eval("Id") %>"><%# Eval("Nombre") %></a></h3>
                                             <span class="text-category">$<%# Eval("Precio") %></span>
                                         </div>
                                     </div>
