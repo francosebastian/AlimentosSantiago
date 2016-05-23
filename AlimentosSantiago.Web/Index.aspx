@@ -12,7 +12,7 @@
                     <li>
                         <div class="slider-caption">
                             <h1>Colaciones</h1>
-                            <p>Donec justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
+                            <p>Done justo dui, semper vitae aliquam euzali, ornare pretium enim. Maecenas molestie diam
                             <br><br>eget tellus luctus fermentum.</p>
                             <a href="single-post.html">Shop Now</a>
                         </div>
