@@ -12,7 +12,7 @@
                                     <div class="col-md-12">
                                         <div class="heading-content">
                                             <h2>ESTADO DE PEDIDO</h2>
-                                            <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                            <span><a href="../MenuPrincipal.aspx">Volver</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                                                 <asp:Label ID="lblEstadoPedido" runat="server">Ingrese el Estado del Pedido</asp:Label>
                                                                 <asp:TextBox ID="txtEstadoPedido" runat="server" TextMode="SingleLine"
                                                                     title="Ingrese Estado Pedido." placeholder="Ingrese Estado Pedido"
-                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br /><br />
                                                                 <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                                     title="Ingrese Detalle del Pedido." placeholder="Detalle del Pedido"

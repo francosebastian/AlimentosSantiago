@@ -12,7 +12,7 @@
                                  <div class="col-md-12">
                                      <div class="heading-content">
                                          <h2>NUEVA CATEGORIA DE PLATO</h2>
-                                         <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                         <span><a href="../MenuPrincipal.aspx">Volver</a></span>
                                      </div>
                                  </div>
                              </div>
