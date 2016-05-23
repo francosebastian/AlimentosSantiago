@@ -13,7 +13,7 @@
                                     <div class="col-md-12">
                                         <div class="heading-content">
                                             <h2>NUEVO USUARIO</h2>
-                                            <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                                            <span><a href="../MenuPrincipal.aspx">Volver</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -68,7 +68,6 @@
                                                         EntitySetName="TipoUsuario"
                                                         Select="it.Id,it.Nombre">
                                                     </ef:EntityDataSource>
-                                                    <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                     <asp:CheckBox ID="chbDeshabilitado" runat="server" Text="Deshabilitado" AutoPostBack="false"
                                                         Checked="<%# BindItem.Deshabilitado %>" />
                                                     <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Insert" />

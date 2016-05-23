@@ -13,7 +13,7 @@
                        <div class="col-md-12">
                            <div class="heading-content">
                                <h2>NUEVA EMPRESA</h2>
-                               <span><a href="../MenuPrincipal.aspx">Menu</a></span>
+                               <span><a href="../MenuPrincipal.aspx">Volver</a></span>
                            </div>
                        </div>
                    </div>
@@ -40,7 +40,7 @@
                                                    <asp:Label ID="lblNombre" runat="server">Nombre Empresa</asp:Label>
                                                    <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
                                                        title="Ingrese Nueva Empresa." placeholder="Empresa"
-                                                       myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                       myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br /><br />
                                                    <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                    <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                        Checked="<%# BindItem.Deshabilitado %>" />

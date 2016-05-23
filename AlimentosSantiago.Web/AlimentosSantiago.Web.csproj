@@ -171,8 +171,10 @@
     <Content Include="BootStrap.js" />
     <Content Include="Contactos.aspx" />
     <Content Include="Index.aspx" />
+    <Content Include="Index\MenuRepartidor.aspx" />
+    <Content Include="Index\MenuUsuario.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="MenuPrincipal.aspx" />
+    <Content Include="Index\MenuAdministrativo.aspx" />
     <Content Include="MiCuenta\CambiarPassword.aspx" />
     <Content Include="MiCuenta\MisDirecciones.aspx" />
     <Content Include="MiCuenta\NuevoPassword.aspx" />
@@ -463,6 +465,20 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Index\MenuRepartidor.aspx.cs">
+      <DependentUpon>MenuRepartidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index\MenuRepartidor.aspx.designer.cs">
+      <DependentUpon>MenuRepartidor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index\MenuUsuario.aspx.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index\MenuUsuario.aspx.designer.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -477,12 +493,12 @@
     <Compile Include="Masters\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.aspx.cs">
-      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    <Compile Include="Index\MenuAdministrativo.aspx.cs">
+      <DependentUpon>MenuAdministrativo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.aspx.designer.cs">
-      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    <Compile Include="Index\MenuAdministrativo.aspx.designer.cs">
+      <DependentUpon>MenuAdministrativo.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiCuenta\CambiarPassword.aspx.cs">
       <DependentUpon>CambiarPassword.aspx</DependentUpon>
