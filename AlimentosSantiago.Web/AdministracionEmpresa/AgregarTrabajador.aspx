@@ -11,7 +11,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="heading-content">
-                                            <h2>NUEVO USUARIO</h2>
+                                            <h2>NUEVO USUARIO TRABAJADOR</h2>
                                             <span><a href="../MenuPrincipal.aspx">Menu</a></span>
                                         </div>
                                     </div>
