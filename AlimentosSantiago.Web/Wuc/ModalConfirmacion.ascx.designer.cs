@@ -7,45 +7,36 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AlimentosSantiago.Web.Masters {
+namespace AlimentosSantiago.Web.Wuc {
     
     
-    public partial class Master {
+    public partial class ModalConfirmacion {
         
         /// <summary>
-        /// Control head.
+        /// Control panelConfirmacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Panel panelConfirmacion;
         
         /// <summary>
-        /// Control form1.
+        /// Control lblMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblMensaje;
         
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
-        /// <summary>
-        /// Control wucModalMostararMensaje.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::AlimentosSantiago.Web.Wuc.Modal wucModalMostararMensaje;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

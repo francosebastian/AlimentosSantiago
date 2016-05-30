@@ -10,13 +10,13 @@ namespace AlimentosSantiago.Dto
     [NotMapped]
     public static class Enumeraciones
     {
-        public enum TiposUsuario : int
+        public enum TiposUsuario 
         {
             Administrador = 1 ,
             EncargadoPedidos = 21,
             EncargadoEmpresaProveedora = 22,
             Cliente = 23,
-            EncargadoConvenioEmpresa = 22,
+            EncargadoConvenioEmpresa = 24,
             Repartidor = 25
         };
     }

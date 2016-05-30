@@ -180,6 +180,7 @@
     <Content Include="Productos\Producto.aspx" />
     <Content Include="Productos\Productos.aspx" />
     <Content Include="Wuc\Modal.ascx" />
+    <Content Include="Wuc\ModalConfirmacion.ascx" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
     <Content Include="Pedidos\NuevoPedido.aspx" />
     <Content Include="Pedidos\VerPedido.aspx" />
@@ -554,15 +555,27 @@
     <Compile Include="Repartidor\VerRuta.aspx.designer.cs">
       <DependentUpon>VerRuta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebUtils\BoostrapModalReference.cs" />
+    <Compile Include="WebUtils\CarritoCompras.cs" />
     <Compile Include="WebUtils\eTipoPlanillaExcel.cs" />
     <Compile Include="WebUtils\ExcelReader.cs" />
-    <Compile Include="WebUtils\PaginaBase.cs" />
+    <Compile Include="WebUtils\JqueryBuilderHelper.cs" />
+    <Compile Include="WebUtils\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Wuc\Modal.ascx.cs">
       <DependentUpon>Modal.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Wuc\Modal.ascx.designer.cs">
       <DependentUpon>Modal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Wuc\ModalConfirmacion.ascx.cs">
+      <DependentUpon>ModalConfirmacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\ModalConfirmacion.ascx.designer.cs">
+      <DependentUpon>ModalConfirmacion.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

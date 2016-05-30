@@ -6,14 +6,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using AlimentosSantiago.Web.WebUtils;
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class AgregarCategoriaPlato : System.Web.UI.Page
+    public partial class AgregarCategoriaPlato : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         public void FvCategoriaPlato_InsertItem()
@@ -28,8 +28,20 @@ namespace AlimentosSantiago.Web.Administracion
                     categoriaPlato.Modificado = System.DateTime.Now;
                     db.CategoriaPlato.Add(categoriaPlato);
                     db.SaveChanges();
+
                 }
             }
+            base.MostrarMensaje("Registro Insertado correctamente");
+          
+        }
+
+        protected void wucModalConfirmarAceptarFlujo_Confirmar(object sender, EventArgs e)
+        {
+        }
+
+        protected void FvCategoriaPlato_ItemInserting(object sender, FormViewInsertEventArgs e)
+        {
+            wucModalConfirmarAceptarFlujo.Mostrar("¿Está seguro que desea agregar Categoria de plato?", base.RegistrarJqueryBloque);
         }
     }
 }
