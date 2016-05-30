@@ -7,10 +7,11 @@ using System.Web;
 using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AlimentosSantiago.Web.WebUtils;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class EliminarTipoPago : System.Web.UI.Page
+    public partial class EliminarTipoPago : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -39,7 +40,9 @@ namespace AlimentosSantiago.Web.Administracion
                 {
                     db.SaveChanges();
                 }
+                
             }
+            base.MostrarMensaje("Eliminado correctamente");
         }
     }
 }

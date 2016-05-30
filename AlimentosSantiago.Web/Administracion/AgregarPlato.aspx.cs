@@ -9,10 +9,10 @@ using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Telerik.Web.UI;
-
+using AlimentosSantiago.Web.WebUtils;
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class AgregarPlato : System.Web.UI.Page
+    public partial class AgregarPlato : PaginaBase
     {
         private RadAsyncUpload radUpload;
         protected void Page_Load(object sender, EventArgs e)
@@ -36,6 +36,7 @@ namespace AlimentosSantiago.Web.Administracion
                     db.SaveChanges();
                 }
             }
+            base.MostrarMensaje("Registro Insertado correctamente");
         }
 
         private Plato IntentarSubirFoto(UploadedFile uploadFile, Plato plato)

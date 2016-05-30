@@ -6,10 +6,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AlimentosSantiago.Web.WebUtils;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class AgregarUsuario : System.Web.UI.Page
+    public partial class AgregarUsuario : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,6 +33,8 @@ namespace AlimentosSantiago.Web.Administracion
                     db.SaveChanges();
                 }
             }
+            base.MostrarMensaje("Registro Insertado correctamente");
+
         }
     }
 }
