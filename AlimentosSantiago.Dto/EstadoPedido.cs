@@ -11,8 +11,10 @@ namespace AlimentosSantiago.Dto
     {
         public EstadoPedido() { LogsPedidoMenu = new List<LogPedidoMenu>(); }
         [Required]
+        [StringLength(100)]
         public string Nombre { get; set; }
         [Required]
+        [StringLength(100)]
         public string Descripcion { get; set; }
         public virtual ICollection<LogPedidoMenu> LogsPedidoMenu {get; set;}
     }

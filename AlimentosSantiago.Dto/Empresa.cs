@@ -14,6 +14,7 @@ namespace AlimentosSantiago.Dto
             Usuarios = new List<Usuario>();
         }
         [Required]
+        [StringLength(100)]
         public string Nombre { get; set; }
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }

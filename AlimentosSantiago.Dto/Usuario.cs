@@ -19,15 +19,20 @@ namespace AlimentosSantiago.Dto
                             PedidosMenusRepartidor = new List<PedidoMenu>();
                             PlatosProveedor = new List<Plato>(); }
         [Required]
+        [StringLength(100)]
         public string Nombre { get; set; }
-        
+        [StringLength(100)]
         public string Apellido { get; set;}
         [Required]
+        [StringLength(100)]
         public string Telefono { get; set; }
+        [StringLength(100)]
         public string Telefono2 { get; set; }
         [Required]
+        [StringLength(100)]
         public string Email { get; set; }
         [Required]
+        [StringLength(100)]
         public string Password { get; set; }
         public int? EmpresaId { get; set; }
 

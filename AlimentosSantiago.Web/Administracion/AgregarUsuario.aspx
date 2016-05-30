@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:FormView ID="FvUsuario" runat="server" ItemType="AlimentosSantiago.Dto.Usuario"
-        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvUsuario_InsertItem"
+        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvUsuario_InsertItem" OnItemInserting="FvUsuario_ItemInserting"
         RenderOuterTable="false">
         <InsertItemTemplate>
                         <div id="heading">
@@ -56,6 +56,10 @@
                                                     <asp:Label ID="lblEmail" runat="server">Email</asp:Label>
                                                     <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"
                                                         title="Ingrese Email Usuario." placeholder="Ingrese Email Usuario"
+                                                        myMaxLength="60" Text='<%# BindItem.Email %>' required data-validation-required-message="Completa Este Campo" /><br />
+                                                    <asp:Label ID="lblEmail2" runat="server">Email</asp:Label>
+                                                    <asp:TextBox ID="txtEmail2" runat="server" TextMode="Email"
+                                                        title="Re-Ingrese Email Usuario." placeholder="Re-Ingrese Email Usuario"
                                                         myMaxLength="60" Text='<%# BindItem.Email %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                     <asp:Label ID="lblTipoUsuario" runat="server">Tipo Usuario</asp:Label>
                                                     <asp:DropDownList ID="ddlTipoUsuario" runat="server"

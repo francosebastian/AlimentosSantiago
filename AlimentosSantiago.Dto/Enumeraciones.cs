@@ -12,12 +12,21 @@ namespace AlimentosSantiago.Dto
     {
         public enum TiposUsuario 
         {
-            Administrador = 1 ,
-            EncargadoPedidos = 21,
-            EncargadoEmpresaProveedora = 22,
-            Cliente = 23,
-            EncargadoConvenioEmpresa = 24,
-            Repartidor = 25
+            Administrador = 2 ,
+            EncargadoPedidos = 4,
+            EncargadoEmpresaProveedora = 3,
+            Cliente = 1,
+            EncargadoConvenioEmpresa = 6,
+            Repartidor = 5
+        };
+        public enum EstadosPedido
+        {
+            Realizado = 1,
+            Recibido = 2,
+            EnPreparacion = 3,
+            EnReparto = 4,
+            Finalizado = 5,
+            Repartidor = 6
         };
     }
 }

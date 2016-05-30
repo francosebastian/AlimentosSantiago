@@ -8,10 +8,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using AlimentosSantiago.BusinessLogic.Encriptador;
 using static AlimentosSantiago.Dto.Enumeraciones;
+using AlimentosSantiago.Web.WebUtils;
+using AlimentosSantiago.BusinessLogic;
 
 namespace AlimentosSantiago.Web
 {
-    public partial class RegistroCliente : System.Web.UI.Page
+    public partial class RegistroCliente : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,14 +30,20 @@ namespace AlimentosSantiago.Web
             if (!txtPassword.Text.Equals(txtPassword2.Text))
             {
                 e.Cancel = true;
-                //ACA DEBERIA MANDAR UN MENSAJE
+                base.MostrarMensaje("El password debe coincidir");
             }
 
             if (!txtEmail.Text.Equals(txtEmail2.Text))
             {
                 e.Cancel = true;
-                //ACA DEBERIA MANDAR UN MENSAJE
+                base.MostrarMensaje("El correo electronico debe coincidir");
             }
+            if (ValidadorCorreo.ValidarCorreo(txtEmail.Text))
+            {
+                e.Cancel = true;
+                base.MostrarMensaje("El correo electronico ya posee un usuario registrado");
+            }
+           
         }
 
         public void FvUsuario_InsertItem()

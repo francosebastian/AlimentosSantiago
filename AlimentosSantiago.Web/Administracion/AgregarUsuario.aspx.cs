@@ -6,10 +6,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using AlimentosSantiago.Web.WebUtils;
+using AlimentosSantiago.BusinessLogic;
+using AlimentosSantiago.BusinessLogic.Encriptador;
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class AgregarUsuario : System.Web.UI.Page
+    public partial class AgregarUsuario : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,10 +20,11 @@ namespace AlimentosSantiago.Web.Administracion
 
         public void FvUsuario_InsertItem()
         {
+            EncriptadorSHA256 encriptador = new EncriptadorSHA256();
             Usuario usuario = new Usuario();
             usuario.Creado = System.DateTime.Now;
             usuario.Modificado = System.DateTime.Now;
-            usuario.Password = "1234";
+            usuario.Password = encriptador.SHA256Encrypt("1234");
             TryUpdateModel(usuario);
             if (ModelState.IsValid)
             {
@@ -31,6 +34,23 @@ namespace AlimentosSantiago.Web.Administracion
                     db.Usuario.Add(usuario);
                     db.SaveChanges();
                 }
+            }
+        }
+
+        protected void FvUsuario_ItemInserting(object sender, FormViewInsertEventArgs e)
+        {
+            TextBox txtEmail = (TextBox)FvUsuario.FindControl("txtEmail");
+            TextBox txtEmail2 = (TextBox)FvUsuario.FindControl("txtEmail2");
+
+            if (!txtEmail.Text.Equals(txtEmail2.Text))
+            {
+                e.Cancel = true;
+                base.MostrarMensaje("El correo electronico debe coincidir");
+            }
+            if (ValidadorCorreo.ValidarCorreo(txtEmail.Text))
+            {
+                e.Cancel = true;
+                base.MostrarMensaje("El correo electronico ya posee un usuario registrado");
             }
         }
     }

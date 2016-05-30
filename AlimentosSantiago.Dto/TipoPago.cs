@@ -11,8 +11,10 @@ namespace AlimentosSantiago.Dto
     {
         public TipoPago() { PedidosMenus = new List<PedidoMenu>(); }
         [Required]
+        [StringLength(100)]
         public String Nombre { get; set; }
         [Required]
+        [StringLength(100)]
         public String Descripcion { get; set; }
         public virtual ICollection<PedidoMenu> PedidosMenus { get; set; }
     }

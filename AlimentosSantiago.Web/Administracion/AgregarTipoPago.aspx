@@ -36,14 +36,18 @@
                                                     <div class="message-form">
                                                         <div class="row">
                                                             <div class="name col-md-12">
-                                                                <asp:Label ID="lblAgregarTipoPago" runat="server">Agregar Tipo de Pago</asp:Label>
-                                                                <asp:TextBox ID="txtArgegarTipoDePago" runat="server" TextMode="SingleLine"
-                                                                    title="Agregar Tipo de Pago." placeholder="Agregar Tipo Pago"
-                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                                <asp:Label ID="lblTipoUsuario" runat="server">Ingrese el Tipo de pago</asp:Label>
+                                                                <asp:TextBox ID="txtTipoUsuario" runat="server" TextMode="SingleLine"
+                                                                    title="Ingrese Tipo de pago." placeholder="Ingrese Tipo de pago"
+                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Campo" /><br /><br />
+                                                                <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
+                                                                <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
+                                                                    title="Ingrese Detalle del tipo pago." placeholder="Detalle del tipo pago"
+                                                                    myMaxLength="60" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                                     Checked="<%# BindItem.Deshabilitado %>" />
-                                                                <asp:Button runat="server" Text="Guardar" ID="btnGuardar" CommandName="Insert" />
+                                                                <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Insert" />
                                                             </div>
                                                         </div>
                                                     </div>

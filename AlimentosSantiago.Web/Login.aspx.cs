@@ -21,16 +21,17 @@ namespace AlimentosSantiago.Web
         protected void BtnEntrar_Click(object sender, EventArgs e)
         {
             Boolean respuesta = ValidarUsuario();
-            if (respuesta == true) Response.Redirect("Home.aspx");
+            if (respuesta == true) Response.Redirect("Index.aspx");
         }
 
         public Boolean ValidarUsuario()
         {
             Usuario usuario = new Usuario();
             EncriptadorSHA256 encriptador = new EncriptadorSHA256();
+            String password = encriptador.SHA256Encrypt(txtPassword.Text);
             using (OracleDbContext db = new OracleDbContext())
             {
-                 usuario = db.Usuario.SingleOrDefault(t => t.Email == txtEmail.Text && t.Password == encriptador.SHA256Encrypt(txtPassword.Text));
+                 usuario = db.Usuario.SingleOrDefault(t => t.Email == txtEmail.Text && t.Password == password);
             }
 
             if (usuario == null)

@@ -43,7 +43,7 @@
 
 
                                 <asp:Label ID="lblPassword" runat="server">Contraseña    <a href="/sessions/forgot_password">(Olvido la Contraseña?)</a </asp:Label>
-                                <asp:TextBox ID="txtPassword" runat="server" TextMode="SingleLine"
+                                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"
                                     title="Ingresar Contraseña." placeholder="Ingresar Contraseña "
                                     myMaxLength="60" /><br />
 

@@ -7,13 +7,13 @@ namespace AlimentosSantiago.Dao.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class UpdatedatabaseCampos : IMigrationMetadata
+    public sealed partial class NuevaBD2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdatedatabaseCampos));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NuevaBD2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201605022026558_UpdatedatabaseCampos"; }
+            get { return "201605302103178_NuevaBD2"; }
         }
         
         string IMigrationMetadata.Source
