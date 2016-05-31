@@ -56,20 +56,18 @@ namespace AlimentosSantiago.Web
             {
                 case (int)TiposUsuario.Administrador:
                     Session["TipoUsuario"] = TiposUsuario.Administrador.ToString();
-
                 break;
                 case (int)TiposUsuario.Cliente:
                     Session["TipoUsuario"] = TiposUsuario.Cliente.ToString();
                     Session["IdEmpresa"] = usuario.EmpresaId;
-
                     break;
                 case (int)TiposUsuario.EncargadoConvenioEmpresa:
                     Session["TipoUsuario"] = TiposUsuario.EncargadoConvenioEmpresa.ToString();
                     Session["IdEmpresa"] = usuario.EmpresaId;
-
                     break;
                 case (int)TiposUsuario.EncargadoEmpresaProveedora:
                     Session["TipoUsuario"] = TiposUsuario.EncargadoEmpresaProveedora.ToString();
+                    Session["IdProveedor"] = usuario.Id;
                     break;
                 case (int)TiposUsuario.EncargadoPedidos:
                     Session["TipoUsuario"] = TiposUsuario.EncargadoPedidos.ToString();

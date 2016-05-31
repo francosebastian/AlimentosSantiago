@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="AgregarTrabajador.aspx.cs" Inherits="AlimentosSantiago.Web.AdministracionEmpresa.AgregarTrabajador" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="ModificarTrabajador.aspx.cs" Inherits="AlimentosSantiago.Web.AdministracionEmpresa.ModificarTrabajador" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <asp:FormView ID="FvUsuario" runat="server" ItemType="AlimentosSantiago.Dto.Usuario"
-        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvUsuario_InsertItem" OnItemInserting="FvUsuario_ItemInserting"
+    <asp:FormView ID="FvUsuario" runat="server" ItemType="AlimentosSantiago.Dto.Usuario"
+        DataKeyNames="Id" DefaultMode="Edit" SelectMethod="FvUsuario_GetItem" UpdateMethod="FvUsuario_UpdateItem"
         RenderOuterTable="false">
-        <InsertItemTemplate>
+        <EditItemTemplate>
                         <div id="heading">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="heading-content">
-                                            <h2>NUEVO USUARIO TRABAJADOR</h2>
+                                            <h2>EDITAR USUARIO TRABAJADOR</h2>
                                             <span><a href="../MenuPrincipal.aspx">Menu</a></span>
                                         </div>
                                     </div>
@@ -56,21 +56,10 @@
                                                     <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"
                                                         title="Ingrese Email Usuario." placeholder="Ingrese Email Usuario"
                                                         myMaxLength="60" Text='<%# BindItem.Email %>' required data-validation-required-message="Completa Este Campo" /><br />
-                                                    <asp:Label ID="lblTipoUsuario" runat="server">Tipo Usuario</asp:Label>
-                                                    <asp:DropDownList ID="ddlTipoUsuario" runat="server"
-                                                        DataSourceID="efTipoUsuario" DataTextField="Nombre" DataValueField="Id" SelectedValue='<%# BindItem.TipoUsuarioId %>'
-                                                        AppendDataBoundItems="true">
-                                                        <asp:ListItem Value="" Text="Seleccionar"></asp:ListItem>
-                                                    </asp:DropDownList><br />
-                                                    <ef:EntityDataSource ID="efTipoUsuario" runat="server"
-                                                        ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
-                                                        EntitySetName="TipoUsuario"
-                                                        Select="it.Id,it.Nombre">
-                                                    </ef:EntityDataSource>
                                                     <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                     <asp:CheckBox ID="chbDeshabilitado" runat="server" Text="Deshabilitado" AutoPostBack="false"
                                                         Checked="<%# BindItem.Deshabilitado %>" />
-                                                    <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Insert" />
+                                                    <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Update" />
                                                 </div>
                                             </div>
                                         </div>
@@ -81,6 +70,6 @@
                     </div>
                 </div>
             </div>
-        </InsertItemTemplate>
+        </EditItemTemplate>
     </asp:FormView>
 </asp:Content>
