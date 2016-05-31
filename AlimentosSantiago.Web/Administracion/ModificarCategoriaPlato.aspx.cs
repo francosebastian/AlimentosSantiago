@@ -7,10 +7,11 @@ using System.Web;
 using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AlimentosSantiago.Web.WebUtils;
 
 namespace AlimentosSantiago.Web.Administracion
 {
-    public partial class ModificarCategoriaPlato : System.Web.UI.Page
+    public partial class ModificarCategoriaPlato : PaginaBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,7 +29,9 @@ namespace AlimentosSantiago.Web.Administracion
                 {
                     db.SaveChanges();
                 }
+                
             }
+            base.MostrarMensaje("Modificado correctamente");
         }
 
         // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control

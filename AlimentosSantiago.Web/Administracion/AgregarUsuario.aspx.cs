@@ -6,9 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using AlimentosSantiago.Web.WebUtils;
-using AlimentosSantiago.BusinessLogic;
-using AlimentosSantiago.BusinessLogic.Encriptador;
+
 namespace AlimentosSantiago.Web.Administracion
 {
     public partial class AgregarUsuario : PaginaBase
@@ -52,6 +50,8 @@ namespace AlimentosSantiago.Web.Administracion
                 e.Cancel = true;
                 base.MostrarMensaje("El correo electronico ya posee un usuario registrado");
             }
+            base.MostrarMensaje("Registro Insertado correctamente");
+
         }
     }
 }

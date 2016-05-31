@@ -85,13 +85,14 @@
         </div>
     </header>
     <form id="form1" runat="server">
-
+        
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
 
 
 
     </form>
+     <Pulse:wucModal ID="wucModalMostararMensaje" runat="server" />
 
     <footer>
         <div class="container">
@@ -190,7 +191,7 @@
     </footer>
 
 
-    <Pulse:wucModal ID="wucModalMostararMensaje" runat="server" />
+   
 </body>
 </html>
 
