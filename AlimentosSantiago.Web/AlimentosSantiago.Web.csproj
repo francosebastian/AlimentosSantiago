@@ -138,9 +138,11 @@
     <Content Include="AdministracionEmpresa\CargarSaldo.aspx" />
     <Content Include="AdministracionEmpresa\EliminarTrabajador.aspx" />
     <Content Include="AdministracionEmpresa\MiEmpresa.aspx" />
+    <Content Include="AdministracionEmpresa\ModificarTrabajador.aspx" />
     <Content Include="AdministracionProveedor\AgregarPlato.aspx" />
     <Content Include="AdministracionProveedor\EliminarPlato.aspx" />
     <Content Include="AdministracionProveedor\ModificarPlato.aspx" />
+    <Content Include="AdministracionProveedor\VerPlatos.aspx" />
     <Content Include="Administracion\AgregarCategoriaPlato.aspx" />
     <Content Include="Administracion\AgregarEmpresa.aspx" />
     <Content Include="Administracion\AgregarEstadoPedido.aspx" />
@@ -239,6 +241,13 @@
     <Compile Include="AdministracionEmpresa\MiEmpresa.aspx.designer.cs">
       <DependentUpon>MiEmpresa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministracionEmpresa\ModificarTrabajador.aspx.cs">
+      <DependentUpon>ModificarTrabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEmpresa\ModificarTrabajador.aspx.designer.cs">
+      <DependentUpon>ModificarTrabajador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministracionProveedor\AgregarPlato.aspx.cs">
       <DependentUpon>AgregarPlato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,6 +268,13 @@
     </Compile>
     <Compile Include="AdministracionProveedor\ModificarPlato.aspx.designer.cs">
       <DependentUpon>ModificarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPlatos.aspx.cs">
+      <DependentUpon>VerPlatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPlatos.aspx.designer.cs">
+      <DependentUpon>VerPlatos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\AgregarCategoriaPlato.aspx.cs">
       <DependentUpon>AgregarCategoriaPlato.aspx</DependentUpon>
