@@ -12,14 +12,18 @@ namespace AlimentosSantiago.Dto
     {
         public Plato() { DetallesPedidoMenu = new List<DetallePedidoMenu>(); }
         [Required]
+        [StringLength(100)]
         public string Nombre { get; set; }
         [Required]
+        [StringLength(100)]
         public string Descripcion { get; set; }
         [Required]
         public int Precio { get; set; }
         public int PrecioPromocion { get; set; }
         public bool PromocionActiva { get; set; }
+        [StringLength(300)]
         public string RutaFisicaImagen { get; set; }
+        [StringLength(300)]
         public string RutaVirtualImagen { get; set; }
 
         public int CategoriaPlatoId { get; set; }

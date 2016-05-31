@@ -11,8 +11,10 @@ namespace AlimentosSantiago.Dto
     {
         public TipoUsuario() { Usuarios = new List<Usuario>(); }
         [Required]
+        [StringLength(100)]
         public String Nombre { get; set; }
         [Required]
+        [StringLength(100)]
         public String Descripcion { get; set; }
         public IList<Usuario> Usuarios { get; set; }
     }

@@ -3,7 +3,7 @@ namespace AlimentosSantiago.Dao.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreacionDatabase : DbMigration
+    public partial class NuevaBD : DbMigration
     {
         public override void Up()
         {
@@ -12,8 +12,8 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Descripcion = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 100),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
@@ -26,24 +26,25 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Descripcion = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 100),
                         Precio = c.Decimal(nullable: false, precision: 10, scale: 0),
                         PrecioPromocion = c.Decimal(nullable: false, precision: 10, scale: 0),
                         PromocionActiva = c.Decimal(nullable: false, precision: 1, scale: 0),
-                        RutaImagen = c.String(),
+                        RutaFisicaImagen = c.String(maxLength: 100),
+                        RutaVirtualImagen = c.String(maxLength: 100),
                         CategoriaPlatoId = c.Decimal(nullable: false, precision: 10, scale: 0),
+                        ProveedorId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
                         Modificado = c.DateTime(nullable: false),
-                        Usuario_Id = c.Decimal(precision: 10, scale: 0),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("ALIMENTOSSANTIAGO.CategoriaPlatoes", t => t.CategoriaPlatoId, cascadeDelete: true)
-                .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.Usuario_Id)
+                .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.ProveedorId, cascadeDelete: true)
                 .Index(t => t.CategoriaPlatoId)
-                .Index(t => t.Usuario_Id);
+                .Index(t => t.ProveedorId);
             
             CreateTable(
                 "ALIMENTOSSANTIAGO.DetallePedidoMenus",
@@ -73,7 +74,7 @@ namespace AlimentosSantiago.Dao.Migrations
                         Fecha = c.DateTime(nullable: false),
                         TipoPagoId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         ClienteId = c.Decimal(nullable: false, precision: 10, scale: 0),
-                        RepartidorId = c.Decimal(nullable: false, precision: 10, scale: 0),
+                        RepartidorId = c.Decimal(precision: 10, scale: 0),
                         DireccionUsuarioId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
@@ -87,7 +88,7 @@ namespace AlimentosSantiago.Dao.Migrations
                 .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.Usuario_Id)
                 .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.Usuario_Id1)
                 .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.ClienteId, cascadeDelete: true)
-                .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.RepartidorId, cascadeDelete: true)
+                .ForeignKey("ALIMENTOSSANTIAGO.Usuarios", t => t.RepartidorId)
                 .ForeignKey("ALIMENTOSSANTIAGO.TipoPagoes", t => t.TipoPagoId, cascadeDelete: true)
                 .Index(t => t.TipoPagoId)
                 .Index(t => t.ClienteId)
@@ -101,13 +102,13 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Apellido = c.String(nullable: false),
-                        Telefono = c.String(nullable: false),
-                        Telefono2 = c.String(),
-                        Email = c.String(nullable: false),
-                        Password = c.String(nullable: false),
-                        EmpresaId = c.Decimal(nullable: false, precision: 10, scale: 0),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Apellido = c.String(maxLength: 100),
+                        Telefono = c.String(nullable: false, maxLength: 100),
+                        Telefono2 = c.String(maxLength: 100),
+                        Email = c.String(nullable: false, maxLength: 100),
+                        Password = c.String(nullable: false, maxLength: 100),
+                        EmpresaId = c.Decimal(precision: 10, scale: 0),
                         TipoUsuarioId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
@@ -115,7 +116,7 @@ namespace AlimentosSantiago.Dao.Migrations
                         Modificado = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("ALIMENTOSSANTIAGO.Empresas", t => t.EmpresaId, cascadeDelete: true)
+                .ForeignKey("ALIMENTOSSANTIAGO.Empresas", t => t.EmpresaId)
                 .ForeignKey("ALIMENTOSSANTIAGO.TipoUsuarios", t => t.TipoUsuarioId, cascadeDelete: true)
                 .Index(t => t.EmpresaId)
                 .Index(t => t.TipoUsuarioId);
@@ -125,7 +126,7 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Direccion = c.String(nullable: false),
+                        Direccion = c.String(nullable: false, maxLength: 100),
                         UsuarioId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
@@ -141,7 +142,7 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
@@ -154,7 +155,7 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Log = c.String(),
+                        Log = c.String(maxLength: 100),
                         UsuarioId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
@@ -170,8 +171,8 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Descripcion = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 100),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
@@ -184,7 +185,7 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Log = c.String(),
+                        Log = c.String(maxLength: 100),
                         PedidoMenuId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         EstadoPedidoId = c.Decimal(nullable: false, precision: 10, scale: 0),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
@@ -203,8 +204,8 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Descripcion = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 100),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
@@ -217,8 +218,8 @@ namespace AlimentosSantiago.Dao.Migrations
                 c => new
                     {
                         Id = c.Decimal(nullable: false, precision: 10, scale: 0, identity: true),
-                        Nombre = c.String(nullable: false),
-                        Descripcion = c.String(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 100),
                         Eliminado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Deshabilitado = c.Decimal(nullable: false, precision: 1, scale: 0),
                         Creado = c.DateTime(nullable: false),
@@ -238,7 +239,7 @@ namespace AlimentosSantiago.Dao.Migrations
             DropForeignKey("ALIMENTOSSANTIAGO.DetallePedidoMenus", "PedidoMenuId", "ALIMENTOSSANTIAGO.PedidoMenus");
             DropForeignKey("ALIMENTOSSANTIAGO.PedidoMenus", "ClienteId", "ALIMENTOSSANTIAGO.Usuarios");
             DropForeignKey("ALIMENTOSSANTIAGO.Usuarios", "TipoUsuarioId", "ALIMENTOSSANTIAGO.TipoUsuarios");
-            DropForeignKey("ALIMENTOSSANTIAGO.Platoes", "Usuario_Id", "ALIMENTOSSANTIAGO.Usuarios");
+            DropForeignKey("ALIMENTOSSANTIAGO.Platoes", "ProveedorId", "ALIMENTOSSANTIAGO.Usuarios");
             DropForeignKey("ALIMENTOSSANTIAGO.PedidoMenus", "Usuario_Id1", "ALIMENTOSSANTIAGO.Usuarios");
             DropForeignKey("ALIMENTOSSANTIAGO.PedidoMenus", "Usuario_Id", "ALIMENTOSSANTIAGO.Usuarios");
             DropForeignKey("ALIMENTOSSANTIAGO.LogSaldoes", "UsuarioId", "ALIMENTOSSANTIAGO.Usuarios");
@@ -260,7 +261,7 @@ namespace AlimentosSantiago.Dao.Migrations
             DropIndex("ALIMENTOSSANTIAGO.PedidoMenus", new[] { "TipoPagoId" });
             DropIndex("ALIMENTOSSANTIAGO.DetallePedidoMenus", new[] { "PlatoId" });
             DropIndex("ALIMENTOSSANTIAGO.DetallePedidoMenus", new[] { "PedidoMenuId" });
-            DropIndex("ALIMENTOSSANTIAGO.Platoes", new[] { "Usuario_Id" });
+            DropIndex("ALIMENTOSSANTIAGO.Platoes", new[] { "ProveedorId" });
             DropIndex("ALIMENTOSSANTIAGO.Platoes", new[] { "CategoriaPlatoId" });
             DropTable("ALIMENTOSSANTIAGO.TipoPagoes");
             DropTable("ALIMENTOSSANTIAGO.EstadoPedidoes");

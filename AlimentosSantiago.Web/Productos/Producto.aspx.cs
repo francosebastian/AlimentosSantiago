@@ -25,5 +25,10 @@ namespace AlimentosSantiago.Web.Productos
                 return db.Plato.SingleOrDefault(t => t.Id == id);
             }
         }
+
+        protected void BtnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

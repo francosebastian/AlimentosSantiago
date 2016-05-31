@@ -7,7 +7,7 @@
         DataKeyNames="Id" DefaultMode="ReadOnly" SelectMethod="FvProducto_GetItem"
         RenderOuterTable="false">
         <ItemTemplate>
-            
+
             <div id="heading">
                 <div class="container">
                     <div class="row">
@@ -48,14 +48,15 @@
                                                     <span class="subtitle">4 comments</span>
                                                 </div>
                                                 <p>
-                                                   <%# Eval("Descripcion")%>
+                                                    <%# Eval("Descripcion")%>
                                                 </p>
                                             </div>
                                             <div class="divide-line">
                                                 <img src="../images/div-line.png" alt="" />
                                             </div>
-                                  
-  
+                                            <div class="col-md-8">
+                                                <asp:Button runat="server" Text="Agregar al pedido" class="btn btn-sm btn-default" ID="BtnAgregar" OnClick="BtnAgregar_Click" />
+                                            </div>
                                         </div>
                                         <div class="col-md-3 col-md-offset-1">
                                             <div class="side-bar">

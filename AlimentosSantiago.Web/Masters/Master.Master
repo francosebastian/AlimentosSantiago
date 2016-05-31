@@ -65,8 +65,7 @@
                     <div class="col-md-6">
                         <div class="main-menu">
                             <ul>
-                                <li><a href="../
-                                            .aspx">Inicio</a></li>
+                                <li><a href="../Index.aspx">Inicio</a></li>
                                 <li><a href="../Acerca.aspx">Acerca de</a></li>
                                 <li><a href="../Productos/Productos.aspx">Productos</a></li>
                                 <li><a href="../Contactos.aspx">Contacto</a></li>
