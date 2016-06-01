@@ -39,7 +39,7 @@
                                                        <asp:Label ID="lbl" runat="server">Nombre Empresa</asp:Label>
                                                        <asp:TextBox ID="txtModificarTipoDePago" runat="server" TextMode="SingleLine"
                                                            title="Modificar Tipo de Pago." placeholder="Modificar Tipo Pago"
-                                                           myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                        <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                        <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                            Checked="<%# BindItem.Deshabilitado %>" />

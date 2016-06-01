@@ -39,7 +39,7 @@
                                                      <asp:Label ID="lblNombreEmpresa" runat="server">Nombre Empresa</asp:Label>
                                                      <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
                                                          title="Ingrese Nueva Empresa." placeholder="Empresa"
-                                                         myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                         MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                          Checked="<%# BindItem.Deshabilitado %>" />

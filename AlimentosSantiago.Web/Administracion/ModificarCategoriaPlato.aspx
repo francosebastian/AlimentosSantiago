@@ -39,11 +39,11 @@
                                                        <asp:Label ID="lblCategoriaPlato" runat="server" required autofocus>Categoria Plato a Modificar </asp:Label>
                                                        <asp:TextBox ID="txtCategoriaPlato" runat="server" TextMode="SingleLine"
                                                            title="Ingrese Nueva Categoria" placeholder="Ingrese nueva Categoria de Platos"
-                                                           myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                        <asp:Label ID="Label1" runat="server">Descripcion</asp:Label>
                                                        <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                            title="Ingrese Detalle de la Categoria." placeholder="Detalle de la Categoria"
-                                                           myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Descripcion %>' /><br />
                                                        <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                        <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                            Checked="<%# BindItem.Deshabilitado %>" />

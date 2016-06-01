@@ -40,23 +40,23 @@
                                                        <asp:Label ID="lblNombre" runat="server">Nombre</asp:Label>
                                                        <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
                                                            title="Ingrese Nombre Usuario." placeholder="Ingrese Nombre Usuario"
-                                                           myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                        <asp:Label ID="lblApellido" runat="server">Apellido</asp:Label>
                                                        <asp:TextBox ID="txtApellido" runat="server" TextMode="SingleLine"
                                                            title="Ingrese apellido Usuario." placeholder="Ingrese apellido Usuario"
-                                                           myMaxLength="60" Text='<%# BindItem.Apellido %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Apellido %>' /><br />
                                                        <asp:Label ID="lblTelefono1" runat="server">Telefono Fijo</asp:Label>
                                                        <asp:TextBox ID="txtTelefono1" runat="server" TextMode="Phone"
                                                            title="Ingrese fijo Usuario." placeholder="Ingrese telefono fijo Usuario"
-                                                           myMaxLength="60" Text='<%# BindItem.Telefono %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Telefono %>' /><br />
                                                        <asp:Label ID="lblTelefono2" runat="server">Telefono Movil</asp:Label>
                                                        <asp:TextBox ID="txtTelefono2" runat="server" TextMode="Phone"
                                                            title="Ingrese movil Usuario." placeholder="Ingrese telefono movil Usuario"
-                                                           myMaxLength="60" Text='<%# BindItem.Telefono2 %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Telefono2 %>' /><br />
                                                        <asp:Label ID="lblEmail" runat="server">Email</asp:Label>
                                                        <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"
                                                            title="Ingrese Email Usuario." placeholder="Ingrese Email Usuario"
-                                                           myMaxLength="60" Text='<%# BindItem.Email %>' /><br />
+                                                           MaxLength="100" Text='<%# BindItem.Email %>' /><br />
                                                        <asp:Label ID="lblTipoUsuario" runat="server">Tipo Usuario</asp:Label>
                                                        <asp:DropDownList ID="ddlTipoUsuario" runat="server"
                                                            DataSourceID="efTipoUsuario" DataTextField="Nombre" DataValueField="Id" SelectedValue='<%# BindItem.TipoUsuarioId %>'

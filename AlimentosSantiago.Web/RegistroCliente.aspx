@@ -47,11 +47,11 @@
                                                     <asp:Label ID="lblPassword" runat="server">Password</asp:Label>
                                                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"
                                                         title="Ingrese Password." placeholder="Ingrese Password"
-                                                        myMaxLength="60" Text='<%# BindItem.Password %>' required data-validation-required-message="Completa Este Campo" /><br />
+                                                        MaxLength="30" Text='<%# BindItem.Password %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                     <asp:Label ID="lblPassword2" runat="server">ReIngresar Password </asp:Label>
                                                     <asp:TextBox ID="txtPassword2" runat="server" TextMode="Password"
                                                         title="ReIngresar Password" placeholder="ReIngresar Password"
-                                                        myMaxLength="60" Text='<%# BindItem.Password %>' required data-validation-required-message="Completa Este Campo" /><br />
+                                                        myMaxLength="20" Text='<%# BindItem.Password %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                     <asp:Label ID="lblEmail" runat="server">Email</asp:Label>
                                                     <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"
                                                         title="Ingrese Email Usuario." placeholder="Ingrese Email Usuario"

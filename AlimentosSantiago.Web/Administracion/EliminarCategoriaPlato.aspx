@@ -19,16 +19,42 @@
                     </div>
                 </div>
             </div>
-            <h4>Eliminar Categoria Plato</h4>
-            <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
-                title="Ingrese nombre de estado pedido." placeholder="Ingrese categoria Plato"
-                myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
-            <asp:TextBox ID="lblDescripcion" runat="server" TextMode="MultiLine"
-                title="Ingrese descripcion de estado pedido." placeholder="Ingrese descripcion Plato"
-                myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
-            <asp:CheckBox ID="chbDesabiilitado" runat="server" Text="Deshabilitado" AutoPostBack="false"
-                Checked="<%# BindItem.Deshabilitado %>" />
-            <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Delete" />
-        </ItemTemplate>
+              <div class="container">
+                   <div class="row">
+                       <div class="col-md-12">
+                           <div class="heading-section">
+                               <h2>Eliminar Categoria</h2>
+                               <img src="../images/under-heading.png" alt="" />
+                           </div>
+                       </div>
+                   </div>
+                   <div id="contact-us">
+                       <div class="container">
+                           <div class="row">
+                               <div class="product-item col-md-12">
+                                   <div class="row">
+                                       <div class="col-md-8">
+                                           <div class="message-form">
+                                               <div class="row">
+                                                   <div class="name col-md-12">
+                                                       <asp:Label ID="lblEliminarCategoria" runat="server">Eliminar Categoria</asp:Label>
+                                                       <asp:TextBox ID="txtCategoria" runat="server" TextMode="SingleLine"
+                                                           title="Eliminar Categoria." placeholder="Eliminar Categoria" Enabled="false"
+                                                           MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
+                                                       <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
+                                                       <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
+                                                           Checked="<%# BindItem.Deshabilitado %>" />
+                                                       <asp:Button runat="server" Text="Guardar" ID="btnGuardar" CommandName="Delete" />
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </ItemTemplate>
     </asp:FormView>
 </asp:Content>

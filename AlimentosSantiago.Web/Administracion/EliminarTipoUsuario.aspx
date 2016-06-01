@@ -26,11 +26,11 @@
                                                             <div class="name col-md-12">
                                                                 <asp:Label ID="lblEliminarTipoUsuario" runat="server">Eliminar el Tipo de Usuario</asp:Label>
                                                                 <asp:TextBox ID="txtEliminarTipoUsuario" runat="server" TextMode="SingleLine"
-                                                                    title="Eliminar Tipo de Usuario." placeholder="Eliminar Tipo de Usuario"
+                                                                    title="Eliminar Tipo de Usuario." placeholder="Eliminar Tipo de Usuario" Enabled="false"
                                                                     myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                                                 <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
-                                                                    title="Eliminar Detalle del Usuario." placeholder="Detalle del Usuario"
+                                                                    title="Eliminar Detalle del Usuario." placeholder="Detalle del Usuario" Enabled="false"
                                                                     myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"

@@ -38,7 +38,7 @@
                                                  <div class="name col-md-12">
                                                      <asp:Label ID="lbl" runat="server">Nombre Empresa</asp:Label>
                                                      <asp:TextBox ID="txtEliminarTipoDePago" runat="server" TextMode="SingleLine"
-                                                         title="Eliminar Tipo de Pago." placeholder="Modificar Tipo Pago"
+                                                         title="Eliminar Tipo de Pago." placeholder="Modificar Tipo Pago" Enabled="false"
                                                          myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
