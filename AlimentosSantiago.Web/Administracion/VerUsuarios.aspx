@@ -26,7 +26,7 @@
                 </NoRecordsTemplate>
                 <Columns>
                     <telerik:GridBoundColumn DataField="Nombre" HeaderText="Nombre"></telerik:GridBoundColumn>
-                    <telerik:GridBoundColumn DataField="Email" HeaderText="Tipo Usuario" ItemStyle-CssClass="text-uppercase"></telerik:GridBoundColumn>
+                    <telerik:GridBoundColumn DataField="Email" HeaderText="Email" ItemStyle-CssClass="text-uppercase"></telerik:GridBoundColumn>
                     <telerik:GridBoundColumn DataField="TipoUsuario.Nombre" HeaderText="Tipo Usuario" ItemStyle-CssClass="text-uppercase"></telerik:GridBoundColumn>
                     <telerik:GridHyperLinkColumn DataTextFormatString="+"
                         DataNavigateUrlFields="Id" UniqueName="modificarUsuaro" DataNavigateUrlFormatString="../Administracion/ModificarUsuario.aspx?id={0}"

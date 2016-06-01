@@ -167,6 +167,7 @@
     <Content Include="Administracion\VerCategoriaPlatos.aspx" />
     <Content Include="Administracion\VerEmpresas.aspx" />
     <Content Include="Administracion\VerEstadoPedido.aspx" />
+    <Content Include="Administracion\VerPlatos.aspx" />
     <Content Include="Administracion\VerTipoPago.aspx" />
     <Content Include="Administracion\VerTipoUsuario.aspx" />
     <Content Include="Administracion\VerUsuarios.aspx" />
@@ -446,6 +447,13 @@
     </Compile>
     <Compile Include="Administracion\VerEstadoPedido.aspx.designer.cs">
       <DependentUpon>VerEstadoPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\VerPlatos.aspx.cs">
+      <DependentUpon>VerPlatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administracion\VerPlatos.aspx.designer.cs">
+      <DependentUpon>VerPlatos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administracion\VerTipoPago.aspx.cs">
       <DependentUpon>VerTipoPago.aspx</DependentUpon>
