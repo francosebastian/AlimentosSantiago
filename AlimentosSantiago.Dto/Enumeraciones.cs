@@ -10,6 +10,7 @@ namespace AlimentosSantiago.Dto
     [NotMapped]
     public static class Enumeraciones
     {
+        [FlagsAttribute]
         public enum TiposUsuario 
         {
             Administrador = 2 ,
@@ -19,14 +20,14 @@ namespace AlimentosSantiago.Dto
             EncargadoConvenioEmpresa = 6,
             Repartidor = 5
         };
+        [FlagsAttribute]
         public enum EstadosPedido
         {
             Realizado = 1,
             Recibido = 2,
             EnPreparacion = 3,
             EnReparto = 4,
-            Finalizado = 5,
-            Repartidor = 6
+            Finalizado = 5
         };
     }
 }

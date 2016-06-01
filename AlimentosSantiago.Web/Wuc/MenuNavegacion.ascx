@@ -1,0 +1,82 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuNavegacion.ascx.cs" Inherits="AlimentosSantiago.Web.Wuc.MenuNavegacion" %>
+<nav class="navbar navbar-default" role="navigation" runat="server" id="navBar">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../Login.aspx">Login</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+
+            <li class="dropdown" runat="server" id="navAdministracion" visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Administracion/AgregarUsuario.aspx">Agregar usuario</a></li>
+                    <li><a href="../Administracion/AgregarTipoUsuario.aspx">Agregar Tipo Usuario</a></li>
+                    <li><a href="../Administracion/AgregarPlato.aspx">Agregar Plato</a></li>
+                    <li><a href="../Administracion/AgregarEmpresa.aspx">Agregar Empresa</a></li>
+                    <li><a href="../Administracion/AgregarCategoriaPlato.aspx">Agregar Categoria plato</a></li>
+                    <li><a href="../Administracion/AgregarEstadoPedido.aspx">Agregar Estado Pedido</a></li>
+                    <li><a href="../Administracion/AgregarTipoPago.aspx">Agregar TipoPago</a></li>
+
+                    <li class="divider"></li>
+                    <li><a href="../Administracion/VerUsuarios.aspx">Ver Usuarios</a></li>
+                    <li><a href="../Administracion/VerTipoUsuario.aspx">Ver Tipo Usuarios</a></li>
+                    <li><a href="../Administracion/VerPlato.aspx">Ver Platos</a></li>
+                    <li><a href="../Administracion/VerEmpresas.aspx">Ver Empresas</a></li>
+                    <li><a href="../Administracion/VerCategoriaPlatos.aspx">Ver Categoria platos</a></li>
+                    <li><a href="../Administracion/VerEstadoPedido.aspx">Ver Estados Pedidos</a></li>
+                    <li><a href="../Administracion/VerTipoPago.aspx">Ver TipoPagos</a></li>
+                </ul>
+            </li>
+
+
+
+            <li class="dropdown"  runat="server" id="navAdministradorEmpresa"  visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion Empresas <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="AgregarTrabajador.aspx">Agregar Trabajador</a></li>
+                    <li class="divider"></li>
+                    <li><a href="CargarSaldo.aspx">Cargar Saldo</a></li>
+                    <li class="divider"></li>
+                    <li><a href="EliminarTrabajador.aspx">Eliminar Trabajador</a></li>
+                    <li class="divider"></li>
+                    <li><a href="MiEmpresa.aspx">Mi Empresa</a></li>
+
+                </ul>
+            </li>
+
+
+
+        <li class="dropdown"  runat="server" id="navAdministracionProveedor"  visible="false">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion Proveedor <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="AgregarPlato.aspx">Agregar Plato</a></li>
+                <li class="divider"></li>
+                <li><a href="EliminarPlato.aspx">Eliminar Plato</a></li>
+                <li class="divider"></li>
+                <li><a href="ModificarPlato.aspx">Modificar Plato</a></li>
+
+            </ul>
+        </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="cart-info">
+                    <i class="fa fa-shopping-cart"></i>
+                    (<a href="#"><asp:Literal runat="server" ID="countCarro"/></a>) en tu carro (<a href="#">$<asp:Literal runat="server" ID="totalCarro"/></a>)
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

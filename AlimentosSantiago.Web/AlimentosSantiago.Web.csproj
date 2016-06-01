@@ -181,6 +181,7 @@
     <Content Include="Masters\Master.Master" />
     <Content Include="Productos\Producto.aspx" />
     <Content Include="Productos\Productos.aspx" />
+    <Content Include="Wuc\MenuNavegacion.ascx" />
     <Content Include="Wuc\Modal.ascx" />
     <Content Include="Wuc\ModalConfirmacion.ascx" />
     <None Include="Scripts\jquery-2.2.2.intellisense.js" />
@@ -580,6 +581,13 @@
     <Compile Include="WebUtils\JqueryBuilderHelper.cs" />
     <Compile Include="WebUtils\PaginaBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\MenuNavegacion.ascx.cs">
+      <DependentUpon>MenuNavegacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wuc\MenuNavegacion.ascx.designer.cs">
+      <DependentUpon>MenuNavegacion.ascx</DependentUpon>
     </Compile>
     <Compile Include="Wuc\Modal.ascx.cs">
       <DependentUpon>Modal.ascx</DependentUpon>

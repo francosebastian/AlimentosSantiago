@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using AlimentosSantiago.Dto;
 using AlimentosSantiago.Web.WebUtils;
+using AlimentosSantiago.Dao;
 namespace AlimentosSantiago.Web.Pedidos
 {
     public partial class NuevoPedido : PaginaBase
@@ -32,7 +33,20 @@ namespace AlimentosSantiago.Web.Pedidos
         }
         protected void btnPedido_Click(object sender, EventArgs e)
         {
-
+            PedidoMenu pedido = new PedidoMenu();
+            pedido.ClienteId = (int)Session["IdUsuario"];
+            pedido.Fecha = System.DateTime.Now;
+            pedido.TipoPagoId = ddlTipoPago.SelectedIndex;
+            pedido.DireccionUsuarioId = ddlDireccionUsuario.SelectedIndex;
+            pedido.DetallesPedidoMenu = CarritoCompras.Instance.Items;
+            
+            using (OracleDbContext db= new OracleDbContext())
+            {
+                pedido.Creado = System.DateTime.Now;
+                pedido.Modificado = System.DateTime.Now;
+                db.PedidoMenu.Add(pedido);
+                db.SaveChanges();
+            }
         }
     }
 }

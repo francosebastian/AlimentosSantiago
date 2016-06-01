@@ -7,54 +7,63 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AlimentosSantiago.Web.Masters {
+namespace AlimentosSantiago.Web.Wuc {
     
     
-    public partial class Master {
+    public partial class MenuNavegacion {
         
         /// <summary>
-        /// Control head.
+        /// Control navBar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navBar;
         
         /// <summary>
-        /// Control wucModal1.
+        /// Control navAdministracion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AlimentosSantiago.Web.Wuc.MenuNavegacion wucModal1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministracion;
         
         /// <summary>
-        /// Control form1.
+        /// Control navAdministradorEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministradorEmpresa;
         
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control navAdministracionProveedor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministracionProveedor;
         
         /// <summary>
-        /// Control wucModalMostararMensaje.
+        /// Control countCarro.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AlimentosSantiago.Web.Wuc.Modal wucModalMostararMensaje;
+        protected global::System.Web.UI.WebControls.Literal countCarro;
+        
+        /// <summary>
+        /// Control totalCarro.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal totalCarro;
     }
 }

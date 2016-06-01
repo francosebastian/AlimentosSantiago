@@ -129,7 +129,7 @@ namespace AlimentosSantiago.Web.WebUtils
         {
             decimal subTotal = 0;
             foreach (DetallePedidoMenu item in Items)
-                    subTotal += item.PrecioUnitario;
+                    subTotal += item.PrecioUnitario * item.Cantidad;
             return subTotal;
         }
         #endregion

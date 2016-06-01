@@ -1,6 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AlimentosSantiago.Web.Masters.Master" %>
-
 <%@ Register Src="~/Wuc/Modal.ascx" TagPrefix="Pulse" TagName="wucModal" %>
+<%@ Register Src="~/Wuc/MenuNavegacion.ascx" TagPrefix="Pulse" TagName="menuNavegacion" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -35,24 +36,12 @@
         <![endif]-->
 
     <header>
-        <div id="top-header">
+      
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="home-account">
-                            <a href="#">Home</a>
-                            <a href="#">Mi cuenta</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="cart-info">
-                            <i class="fa fa-shopping-cart"></i>
-                            (<a href="#">5 productos</a>) en tu carro (<a href="#">$45.80</a>)
-                        </div>
-                    </div>
+                    <Pulse:menuNavegacion ID="wucModal1" runat="server" />
                 </div>
             </div>
-        </div>
         <div id="main-header">
             <div class="container">
                 <div class="row">
