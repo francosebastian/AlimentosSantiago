@@ -12,7 +12,8 @@ namespace AlimentosSantiago.Web.Pedidos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            gvShoppingCart.DataSource = CarritoCompras.Instance.Items;
+            gvShoppingCart.DataBind();
         }
 
         protected void btnUpdateCart_Click(object sender, EventArgs e)
@@ -26,6 +27,10 @@ namespace AlimentosSantiago.Web.Pedidos
         }
 
         protected void gvShoppingCart_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+        protected void btnPedido_Click(object sender, EventArgs e)
         {
 
         }

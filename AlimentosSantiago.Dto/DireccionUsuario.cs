@@ -13,7 +13,13 @@ namespace AlimentosSantiago.Dto
         public DireccionUsuario() { PedidosUsuario = new List<PedidoMenu>(); }
         [Required]
         [StringLength(100)]
+        public string Nombre { get; set; }
+        [StringLength(100)]
         public string Direccion { get; set; }
+        [StringLength(100)]
+        public string Latitud { get; set; }
+        [StringLength(100)]
+        public string Longitud { get; set; }
         public int UsuarioId { get; set; }
         [ForeignKey("UsuarioId")]
         public virtual Usuario Usuario { get; set; }

@@ -10,6 +10,8 @@ namespace AlimentosSantiago.Dto
     public class DetallePedidoMenu : LayerSuperType, IEquatable<DetallePedidoMenu>
     {
         public int Cantidad { get; set; }
+        [NotMapped]
+        public String Nombre { get; set; }
         public int PrecioUnitario { get; set; }
         public int PedidoMenuId { get; set; }
         [ForeignKey("PedidoMenuId")]

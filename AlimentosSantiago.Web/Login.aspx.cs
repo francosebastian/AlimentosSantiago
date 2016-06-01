@@ -52,6 +52,7 @@ namespace AlimentosSantiago.Web
         }
         public void SetearSession(Usuario usuario)
         {
+            Session["IdUsuario"] = usuario.Id;
             switch (usuario.TipoUsuarioId)
             {
                 case (int)TiposUsuario.Administrador:

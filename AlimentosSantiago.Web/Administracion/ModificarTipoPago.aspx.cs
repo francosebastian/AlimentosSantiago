@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using AlimentosSantiago.Web.WebUtils;
+using System.Web.ModelBinding;
 
 namespace AlimentosSantiago.Web.Administracion
 {
@@ -28,14 +29,13 @@ namespace AlimentosSantiago.Web.Administracion
                 {
                     db.SaveChanges();
                 }
-                base.MostrarMensaje("Modificado correctamente");
-
             }
+            base.MostrarMensaje("Modificado correctamente");
         }
 
         // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
-        public AlimentosSantiago.Dto.TipoPago FvTipoPago_GetItem(int id)
+        public AlimentosSantiago.Dto.TipoPago FvTipoPago_GetItem([QueryString]int id)
         {
             using (OracleDbContext db = new OracleDbContext())
             {

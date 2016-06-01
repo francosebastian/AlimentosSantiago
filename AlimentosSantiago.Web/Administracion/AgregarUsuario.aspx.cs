@@ -1,5 +1,8 @@
-﻿using AlimentosSantiago.Dao;
+﻿using AlimentosSantiago.BusinessLogic;
+using AlimentosSantiago.BusinessLogic.Encriptador;
+using AlimentosSantiago.Dao;
 using AlimentosSantiago.Dto;
+using AlimentosSantiago.Web.WebUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +36,7 @@ namespace AlimentosSantiago.Web.Administracion
                     db.SaveChanges();
                 }
             }
+            base.MostrarMensaje("Registro Insertado correctamente");
         }
 
         protected void FvUsuario_ItemInserting(object sender, FormViewInsertEventArgs e)
@@ -50,7 +54,7 @@ namespace AlimentosSantiago.Web.Administracion
                 e.Cancel = true;
                 base.MostrarMensaje("El correo electronico ya posee un usuario registrado");
             }
-            base.MostrarMensaje("Registro Insertado correctamente");
+            
 
         }
     }

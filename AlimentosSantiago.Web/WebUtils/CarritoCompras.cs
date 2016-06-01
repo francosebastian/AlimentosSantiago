@@ -56,6 +56,7 @@ namespace AlimentosSantiago.Web.WebUtils
             // Create a new item to add to the cart
             DetallePedidoMenu newItem = new DetallePedidoMenu();
             newItem.PlatoId = plato.Id;
+            newItem.Nombre = plato.Nombre;
             if (plato.PromocionActiva)
             {
                 newItem.PrecioUnitario = plato.PrecioPromocion;

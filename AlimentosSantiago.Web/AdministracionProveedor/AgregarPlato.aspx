@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <asp:FormView ID="FvPlato" runat="server" ItemType="AlimentosSantiago.Dto.Plato"
         DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvPlato_InsertItem"
         RenderOuterTable="false">
@@ -50,7 +49,7 @@
                                                     <asp:CheckBox ID="CheckBox1" runat="server" AutoPostBack="false"
                                                         Checked="<%# BindItem.PromocionActiva %>" />
                                                     <asp:Label ID="lblCategoriaPlato" runat="server">Categoria Plato</asp:Label>
-                                                    <asp:DropDownList ID="ddlTipoUsuario" runat="server"
+                                                    <asp:DropDownList ID="ddlCategoriaPlato" runat="server"
                                                         DataSourceID="efCategoriaPlato" DataTextField="Nombre" DataValueField="Id" SelectedValue='<%# BindItem.CategoriaPlatoId %>'
                                                         AppendDataBoundItems="true">
                                                         <asp:ListItem Value="" Text="Seleccionar"></asp:ListItem>

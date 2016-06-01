@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201605302103178_NuevaBD2.Designer.cs">
       <DependentUpon>201605302103178_NuevaBD2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606010000572_AgregaCamposGeolocalizacion.cs" />
+    <Compile Include="Migrations\201606010000572_AgregaCamposGeolocalizacion.Designer.cs">
+      <DependentUpon>201606010000572_AgregaCamposGeolocalizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605302103178_NuevaBD2.resx">
       <DependentUpon>201605302103178_NuevaBD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606010000572_AgregaCamposGeolocalizacion.resx">
+      <DependentUpon>201606010000572_AgregaCamposGeolocalizacion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
