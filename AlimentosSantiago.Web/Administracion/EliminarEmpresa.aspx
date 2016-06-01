@@ -12,7 +12,7 @@
                            <div class="col-md-12">
                                <div class="heading-content">
                                    <h2>ELIMINAR EMPRESA</h2>
-                                   <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="EliminarEmpresa.aspx">Volver</a></span>
+                                   <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerEmpresas.aspx">Volver</a></span>
                                </div>
                            </div>
                        </div>
@@ -38,8 +38,8 @@
                                                    <div class="name col-md-12">
                                                        <asp:Label ID="lblEliminarEmpresa" runat="server">Eliminar Empresa</asp:Label>
                                                        <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
-                                                           title="Eliminar Empresa." placeholder="Empresa"
-                                                           myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                           title="Eliminar Empresa." placeholder="Empresa" Enabled="false"
+                                                           MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                        <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                        <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                            Checked="<%# BindItem.Deshabilitado %>" />

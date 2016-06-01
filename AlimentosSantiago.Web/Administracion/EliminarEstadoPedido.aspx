@@ -12,7 +12,7 @@
                                     <div class="col-md-12">
                                         <div class="heading-content">
                                             <h2>ELIMINAR ESTAADO PEDIDO</h2>
-                                            <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerCategoriaPlatos.aspx">Volver</a></span>
+                                            <span><a href="../MenuPrincipal.aspx">Menu /</a><a href="VerEstadoPedido.aspx">Volver</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -37,12 +37,12 @@
                                      <div class="row">
                                          <div class="name col-md-12">
                                              <asp:Label ID="lblEliminarEstadoPedido" runat="server">Eliminar Estado Pedido</asp:Label>
-                                             <asp:TextBox ID="txtEstadoPedido" runat="server" TextMode="SingleLine"
+                                             <asp:TextBox ID="txtEstadoPedido" runat="server" TextMode="SingleLine" Enabled="false"
                                                  title="Eliminar Estado Pedido." placeholder="Eliminar Estado Pedido"
                                                  myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
                                              <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                              <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
-                                                 title="Ingrese Detalle del Pedido." placeholder="Detalle del Pedido"
+                                                 title="Ingrese Detalle del Pedido." placeholder="Detalle del Pedido" Enabled="false"
                                                  myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
                                              <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                              <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"

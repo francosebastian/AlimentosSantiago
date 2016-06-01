@@ -39,11 +39,11 @@
                                                      <asp:Label ID="lblModificarEstadoPedido" runat="server">Modificar Estado Pedido</asp:Label>
                                                      <asp:TextBox ID="txtModificarEstadoPedido" runat="server" TextMode="SingleLine"
                                                          title="Modificar Estado Pedido." placeholder="Modificar Estado Pedido"
-                                                         myMaxLength="60" Text='<%# BindItem.Nombre %>' /><br />
+                                                         MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
                                                      <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                      <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                          title="Ingrese Detalle del Pedido." placeholder="Detalle del Pedido"
-                                                         myMaxLength="60" Text='<%# BindItem.Descripcion %>' /><br />
+                                                         MaxLength="100" Text='<%# BindItem.Descripcion %>' /><br />
                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                          Checked="<%# BindItem.Deshabilitado %>" />

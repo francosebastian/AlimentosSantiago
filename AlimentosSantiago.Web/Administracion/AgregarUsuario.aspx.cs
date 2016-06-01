@@ -6,6 +6,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using AlimentosSantiago.Web.WebUtils;
+using AlimentosSantiago.BusinessLogic.Encriptador;
+using AlimentosSantiago.BusinessLogic;
 
 namespace AlimentosSantiago.Web.Administracion
 {

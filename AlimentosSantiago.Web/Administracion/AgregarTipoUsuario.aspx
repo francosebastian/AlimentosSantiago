@@ -40,11 +40,11 @@
                                                                 <asp:Label ID="lblTipoUsuario" runat="server">Ingrese el Tipo de Usuario</asp:Label>
                                                                 <asp:TextBox ID="txtTipoUsuario" runat="server" TextMode="SingleLine"
                                                                     title="Ingrese Tipo de Usuario." placeholder="Ingrese Tipo de Usuario"
-                                                                    myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Campo" /><br /><br />
+                                                                    MaxLength="100" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Campo" /><br /><br />
                                                                 <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                                     title="Ingrese Detalle del Usuario." placeholder="Detalle del Usuario"
-                                                                    myMaxLength="60" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Campo" /><br />
+                                                                    MaxLength="100" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                                 <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                                 <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                                     Checked="<%# BindItem.Deshabilitado %>" />

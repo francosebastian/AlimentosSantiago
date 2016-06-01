@@ -41,11 +41,11 @@
                                                         <asp:Label ID="lblNombre" runat="server">Nombre</asp:Label>
                                                         <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
                                                             title="Ingrese Nombre Plato." placeholder="Ingrese Nombre Plato"
-                                                            myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br /><br />
+                                                            MaxLength="100" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br /><br />
                                                         <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                         <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Descripcion Plato"
-                                                            myMaxLength="60" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                            MaxLength="100" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                         <asp:Label ID="lblFotografia" runat="server">Fotografia</asp:Label>
                                                              
                                                         <telerik:RadAsyncUpload runat="server" ID="rauFoto" RenderMode="Auto"

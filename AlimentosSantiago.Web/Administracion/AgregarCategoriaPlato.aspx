@@ -39,7 +39,7 @@
                                                     <asp:Label ID="lblCategoriaPlato" runat="server">Ingrese Categoria de Plato </asp:Label>
                                                     <asp:TextBox ID="txtCategoriaPlato" runat="server" TextMode="SingleLine"
                                                         title="Ingrese Nueva Categoria" placeholder="Ingrese nueva Categoria de Platos"
-                                                        myMaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                        MaxLength="60" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br />
                                                     <br />
                                                     <asp:Label ID="Label1" runat="server">Descripcion</asp:Label>
                                                     <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
