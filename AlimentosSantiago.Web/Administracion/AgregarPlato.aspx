@@ -41,15 +41,15 @@
                                                         <asp:Label ID="lblNombre" runat="server">Nombre</asp:Label>
                                                         <asp:TextBox ID="txtNombre" runat="server" TextMode="SingleLine"
                                                             title="Ingrese Nombre Plato." placeholder="Ingrese Nombre Plato"
-                                                            MaxLength="100" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Camp.o" /><br /><br />
+                                                            MaxLength="100" Text='<%# BindItem.Nombre %>' required data-validation-required-message="Completa Este Campo" /><br /><br />
                                                         <asp:Label ID="lblDescripcion" runat="server">Descripcion</asp:Label>
                                                         <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Descripcion Plato"
-                                                            MaxLength="100" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Camp.o" /><br />
+                                                            MaxLength="100" Text='<%# BindItem.Descripcion %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                         <asp:Label ID="lblFotografia" runat="server">Fotografia</asp:Label>
                                                              
-                                                        <telerik:RadAsyncUpload runat="server" ID="rauFoto" RenderMode="Auto"
-                                                         AllowedFileExtensions=".jpg,.png"  Localization-Select="Examinar" Skin="Bootstrap" MultipleFileSelection="Disabled"/><br/>
+                                                        <telerik:RadAsyncUpload runat="server" ID="rauFoto" RenderMode="Auto" 
+                                                         AllowedFileExtensions=".jpg,.png"  Localization-Select="Examinar" Skin="Bootstrap" MultipleFileSelection="Disabled"  required data-validation-required-message="Completa Este Campo" /><br/>
                                                         <asp:Label ID="lblPrecio" runat="server">Precio </asp:Label>
                                                         <asp:TextBox ID="txtPrecio" runat="server" TextMode="Number"
                                                             title="Ingrese Descripcion Plato." placeholder="Ingrese Precio Plato"
