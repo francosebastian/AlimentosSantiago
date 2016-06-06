@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading-section">
-                            <h2>Modificar Plato</h2>
+                            <h2>Eliminar Plato</h2>
                             <img src="../images/under-heading.png" alt="" />
                         </div>
                     </div>

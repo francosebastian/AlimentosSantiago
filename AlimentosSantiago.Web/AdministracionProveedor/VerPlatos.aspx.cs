@@ -11,7 +11,7 @@ namespace AlimentosSantiago.Web.AdministracionProveedor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            efPlatos.WhereParameters["IdProveedor"].DefaultValue = Session["IdProveedor"].ToString().Trim();
         }
     }
 }

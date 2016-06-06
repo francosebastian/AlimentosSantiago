@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using AlimentosSantiago.Dto;
+using static AlimentosSantiago.Dto.Enumeraciones;
 using AlimentosSantiago.Web.WebUtils;
 using AlimentosSantiago.Dao;
 namespace AlimentosSantiago.Web.Pedidos
@@ -39,7 +40,17 @@ namespace AlimentosSantiago.Web.Pedidos
             pedido.TipoPagoId = ddlTipoPago.SelectedIndex;
             pedido.DireccionUsuarioId = ddlDireccionUsuario.SelectedIndex;
             pedido.DetallesPedidoMenu = CarritoCompras.Instance.Items;
-            
+
+            List<LogPedidoMenu> logs= new List<LogPedidoMenu>();
+            LogPedidoMenu log = new LogPedidoMenu();
+            log.EstadoPedidoId = (int)EstadosPedido.Realizado;
+            log.Creado = System.DateTime.Now;
+            log.Modificado = System.DateTime.Now;
+            log.Log = "Pedido Creado";
+            logs.Add(log);
+
+            pedido.LogsPedidoMenu = logs;
+            pedido.EstadoPedidoId = (int)EstadosPedido.Realizado;
             using (OracleDbContext db= new OracleDbContext())
             {
                 pedido.Creado = System.DateTime.Now;
@@ -47,6 +58,10 @@ namespace AlimentosSantiago.Web.Pedidos
                 db.PedidoMenu.Add(pedido);
                 db.SaveChanges();
             }
+
+            //vacia el carrito
+            CarritoCompras.Instance.ClearItems();
+            MostrarMensaje("Pedido creado");
         }
     }
 }

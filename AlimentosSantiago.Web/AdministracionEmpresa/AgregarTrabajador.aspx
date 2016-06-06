@@ -56,17 +56,10 @@
                                                     <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"
                                                         title="Ingrese Email Usuario." placeholder="Ingrese Email Usuario"
                                                         myMaxLength="60" Text='<%# BindItem.Email %>' required data-validation-required-message="Completa Este Campo" /><br />
-                                                    <asp:Label ID="lblTipoUsuario" runat="server">Tipo Usuario</asp:Label>
-                                                    <asp:DropDownList ID="ddlTipoUsuario" runat="server"
-                                                        DataSourceID="efTipoUsuario" DataTextField="Nombre" DataValueField="Id" SelectedValue='<%# BindItem.TipoUsuarioId %>'
-                                                        AppendDataBoundItems="true">
-                                                        <asp:ListItem Value="" Text="Seleccionar"></asp:ListItem>
-                                                    </asp:DropDownList><br />
-                                                    <ef:EntityDataSource ID="efTipoUsuario" runat="server"
-                                                        ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
-                                                        EntitySetName="TipoUsuario"
-                                                        Select="it.Id,it.Nombre">
-                                                    </ef:EntityDataSource>
+                                                     <asp:Label ID="lblEmail2" runat="server">Email</asp:Label>
+                                                    <asp:TextBox ID="txtEmail2" runat="server" TextMode="Email"
+                                                        title="Ingrese Email Usuario." placeholder="Re Ingrese Email Usuario"
+                                                        myMaxLength="60" Text='<%# BindItem.Email %>' required data-validation-required-message="Completa Este Campo" /><br />
                                                     <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                     <asp:CheckBox ID="chbDeshabilitado" runat="server" Text="Deshabilitado" AutoPostBack="false"
                                                         Checked="<%# BindItem.Deshabilitado %>" />

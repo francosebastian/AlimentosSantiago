@@ -88,12 +88,12 @@
        <ef:EntityDataSource ID="efCategoriaPlato" runat="server"
                                                         ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                         EntitySetName="CategoriaPlato"
-                                                        Select="it.Id,it.Nombre, it.Descripcion">
+                                                        Select="it.Id,it.Nombre, it.Descripcion" Where="it.Eliminado = false">
                                                     </ef:EntityDataSource>
      <ef:EntityDataSource ID="efPlato" runat="server"
                                                         ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                         EntitySetName="Plato"
-                                                        Include="CategoriaPlato">
+                                                        Include="CategoriaPlato" Where="it.Eliminado = false">
                                                     </ef:EntityDataSource>
      
 

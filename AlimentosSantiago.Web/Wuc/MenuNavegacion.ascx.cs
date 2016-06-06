@@ -38,7 +38,7 @@ namespace AlimentosSantiago.Web.Wuc
                         navAdministracion.Visible = true;
                         break;
                     case "Cliente":
-
+                        
                         break;
                     case "EncargadoConvenioEmpresa":
                         navAdministradorEmpresa.Visible = true;

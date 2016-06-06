@@ -47,7 +47,7 @@
                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                          Checked="<%# BindItem.Deshabilitado %>" />
-                                                     <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Insert" />
+                                                     <asp:Button runat="server" Text="Guardar" ID="btnGrabar" CommandName="Update" />
                                                  </div>
                                              </div>
                                          </div>

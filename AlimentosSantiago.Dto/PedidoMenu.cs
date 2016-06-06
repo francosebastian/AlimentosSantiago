@@ -21,6 +21,9 @@ namespace AlimentosSantiago.Dto
         public int ClienteId { get; set; }
         [ForeignKey("ClienteId")]
         public virtual Usuario Cliente { get; set; }
+        public int? EstadoPedidoId { get; set; }
+        [ForeignKey("EstadoPedidoId")]
+        public virtual EstadoPedido EstadoPedido { get; set; }
         public int? RepartidorId { get; set; }
         [ForeignKey("RepartidorId")]
         public virtual Usuario Repartidor { get; set; }

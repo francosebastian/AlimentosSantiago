@@ -118,6 +118,14 @@ namespace AlimentosSantiago.Web.WebUtils
             DetallePedidoMenu removedItem = Items.FirstOrDefault(i => i.PlatoId == plato.Id);
             Items.Remove(removedItem);
         }
+
+        /**
+        * VaciaCarrito() - Vacia el carrito de compras
+        */
+        public void ClearItems()
+        {
+            Items.Clear();
+        }
         #endregion
 
         #region Reporting Methods

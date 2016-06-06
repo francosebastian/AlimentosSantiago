@@ -78,12 +78,12 @@
                                                         <ef:EntityDataSource ID="efCategoriaPlato" runat="server"
                                                             ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                             EntitySetName="CategoriaPlato"
-                                                            Select="it.Id,it.Nombre">
+                                                            Select="it.Id,it.Nombre" Where="it.Eliminado = false">
                                                         </ef:EntityDataSource>
                                                           <ef:EntityDataSource ID="efProveedor" runat="server"
                                                             ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                             EntitySetName="Usuario"
-                                                            Select="it.Id,it.Nombre" Where="it.TipoUsuarioId = 3">
+                                                            Select="it.Id,it.Nombre" Where="it.TipoUsuarioId = 3 and it.Eliminado = false">
                                                         </ef:EntityDataSource>
                                                         <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                         <asp:CheckBox ID="chbDeshabilitado" runat="server"  AutoPostBack="false"

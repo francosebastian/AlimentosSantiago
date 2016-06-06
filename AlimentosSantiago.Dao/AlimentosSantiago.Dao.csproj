@@ -65,6 +65,10 @@
     <Compile Include="Migrations\201606010000572_AgregaCamposGeolocalizacion.Designer.cs">
       <DependentUpon>201606010000572_AgregaCamposGeolocalizacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606061854146_AgregaCampoEstadoCompra.cs" />
+    <Compile Include="Migrations\201606061854146_AgregaCampoEstadoCompra.Designer.cs">
+      <DependentUpon>201606061854146_AgregaCampoEstadoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606010000572_AgregaCamposGeolocalizacion.resx">
       <DependentUpon>201606010000572_AgregaCamposGeolocalizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606061854146_AgregaCampoEstadoCompra.resx">
+      <DependentUpon>201606061854146_AgregaCampoEstadoCompra.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,7 +36,7 @@
         </telerik:RadGrid>
         <ef:EntityDataSource ID="efEstadoPedido" runat="server"
             ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
-            EntitySetName="EstadoPedido">
+            EntitySetName="EstadoPedido" Where="it.Eliminado = false">
         </ef:EntityDataSource>
     </div>
 </asp:Content>

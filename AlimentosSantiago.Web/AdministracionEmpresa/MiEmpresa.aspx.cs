@@ -11,7 +11,7 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            efUsuarios.WhereParameters["IdEmpresa"].DefaultValue = Session["IdEmpresa"].ToString().Trim();
         }
     }
 }

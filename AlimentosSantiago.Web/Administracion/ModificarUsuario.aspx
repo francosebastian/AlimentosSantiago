@@ -60,13 +60,13 @@
                                                        <asp:Label ID="lblTipoUsuario" runat="server">Tipo Usuario</asp:Label>
                                                        <asp:DropDownList ID="ddlTipoUsuario" runat="server"
                                                            DataSourceID="efTipoUsuario" DataTextField="Nombre" DataValueField="Id" SelectedValue='<%# BindItem.TipoUsuarioId %>'
-                                                           AppendDataBoundItems="true">
+                                                           AppendDataBoundItems="true" >
                                                            <asp:ListItem Value="" Text="Seleccionar"></asp:ListItem>
                                                        </asp:DropDownList><br />
                                                        <ef:EntityDataSource ID="efTipoUsuario" runat="server"
                                                            ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                            EntitySetName="TipoUsuario"
-                                                           Select="it.Id,it.Nombre">
+                                                           Select="it.Id,it.Nombre" Where="it.Eliminado = false">
                                                        </ef:EntityDataSource>
                                                        <asp:CheckBox ID="chbDeshabilitado" runat="server" Text="Deshabilitado" AutoPostBack="false"
                                                            Checked="<%# BindItem.Deshabilitado %>" />

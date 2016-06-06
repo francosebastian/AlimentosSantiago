@@ -40,6 +40,7 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
                     db.SaveChanges();
                 }
             }
+            base.MostrarMensaje("Trabajador registrado correctamente");
         }
 
         protected void FvUsuario_ItemInserting(object sender, FormViewInsertEventArgs e)

@@ -44,13 +44,11 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion Empresas <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="AgregarTrabajador.aspx">Agregar Trabajador</a></li>
+                    <li><a href="../AdministracionEmpresa/AgregarTrabajador.aspx">Agregar Trabajador</a></li>
                     <li class="divider"></li>
-                    <li><a href="CargarSaldo.aspx">Cargar Saldo</a></li>
+                    <li><a href="../AdministracionEmpresa/CargarSaldo.aspx">Cargar Saldo</a></li>
                     <li class="divider"></li>
-                    <li><a href="EliminarTrabajador.aspx">Eliminar Trabajador</a></li>
-                    <li class="divider"></li>
-                    <li><a href="MiEmpresa.aspx">Mi Empresa</a></li>
+                    <li><a href="../AdministracionEmpresa/MiEmpresa.aspx">Mi Empresa</a></li>
 
                 </ul>
             </li>
@@ -61,12 +59,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion Proveedor <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="AgregarPlato.aspx">Agregar Plato</a></li>
+                <li><a href="../AdministracionProveedor/AgregarPlato.aspx">Agregar Plato</a></li>
                 <li class="divider"></li>
-                <li><a href="EliminarPlato.aspx">Eliminar Plato</a></li>
-                <li class="divider"></li>
-                <li><a href="ModificarPlato.aspx">Modificar Plato</a></li>
-
+                <li><a href="../AdministracionProveedor/VerPlatos.aspx">Eliminar Plato</a></li>
             </ul>
         </li>
         </ul>
@@ -74,7 +69,7 @@
             <li>
                 <div class="cart-info">
                     <i class="fa fa-shopping-cart"></i>
-                    (<a href="#"><asp:Literal runat="server" ID="countCarro"/></a>) en tu carro (<a href="#">$<asp:Literal runat="server" ID="totalCarro"/></a>)
+                    (<a href="../Pedidos/NuevoPedido.aspx"><asp:Literal runat="server" ID="countCarro"/></a>) en tu carro (<a href="../Pedidos/NuevoPedido.aspx">$<asp:Literal runat="server" ID="totalCarro"/></a>)
                 </div>
             </li>
         </ul>
