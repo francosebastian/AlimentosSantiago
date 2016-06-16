@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="VerPedido.aspx.cs" Inherits="AlimentosSantiago.Web.Pedidos.VerPedido" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="VerPedido.aspx.cs" Inherits="AlimentosSantiago.Web.AdministracionProveedor.VerPedido" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-            <div class="container">
+    <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading-section">
@@ -54,5 +53,4 @@
                     </div>
                 </div>
             </div>
-          
 </asp:Content>

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using AlimentosSantiago.Dao;
+using AlimentosSantiago.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,27 +19,26 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
 
         // El parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         // o ser representado con un atributo proveedor de valor, por ejemplo [QueryString]int id
-        public AlimentosSantiago.Dto.Usuario FvUsuario_GetItem(int id)
+        public AlimentosSantiago.Dto.Usuario FvUsuario_GetItem([QueryString]int id)
         {
-            return null;
+            using (OracleDbContext db = new OracleDbContext())
+            {
+                return db.Usuario.SingleOrDefault(t => t.Id == id);
+            }
         }
 
         // El nombre de parámetro del id. debe coincidir con el valor DataKeyNames establecido en el control
         public void FvUsuario_UpdateItem(int id)
         {
-            AlimentosSantiago.Dto.Usuario item = null;
-            // Cargar el elemento aquí, por ejemplo item = MyDataLayer.Find(id);
-            if (item == null)
+            using (OracleDbContext db = new OracleDbContext())
             {
-                // No se encontró el elemento
-                ModelState.AddModelError("", String.Format("No se encontró el elemento con id. {0}", id));
-                return;
-            }
-            TryUpdateModel(item);
-            if (ModelState.IsValid)
-            {
-                // Guarde los cambios aquí, por ejemplo MyDataLayer.SaveChanges();
-
+                Usuario item = db.Usuario.SingleOrDefault(t => t.Id == id);
+                TryUpdateModel(item);
+                item.Eliminado = true;
+                if (ModelState.IsValid)
+                {
+                    db.SaveChanges();
+                }
             }
         }
     }

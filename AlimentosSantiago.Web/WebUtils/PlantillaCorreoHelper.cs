@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 using System.Xml;
 using System.Xml.Xsl;
 
-namespace AlimentosSantiago.BusinessLogic.EnviadorCorreoHelpers
+namespace AlimentosSantiago.Web.WebUtils
 {
     /// <summary>
     /// Clase PlantillaCorreoHelper, dedicado a contener métodos que tienen que ver con el manejo de las plantillas para generar e-mail 

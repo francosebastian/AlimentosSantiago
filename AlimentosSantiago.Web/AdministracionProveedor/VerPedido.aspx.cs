@@ -1,15 +1,14 @@
-﻿using System;
+﻿using AlimentosSantiago.Dao;
+using AlimentosSantiago.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using AlimentosSantiago.Dao;
-using AlimentosSantiago.Dto;
-using Telerik.Web.UI;
 
-namespace AlimentosSantiago.Web.Pedidos
+namespace AlimentosSantiago.Web.AdministracionProveedor
 {
     public partial class VerPedido : System.Web.UI.Page
     {
@@ -31,7 +30,5 @@ namespace AlimentosSantiago.Web.Pedidos
                 RadGridPedidos.DataBind();
             }
         }
-
-       
     }
 }

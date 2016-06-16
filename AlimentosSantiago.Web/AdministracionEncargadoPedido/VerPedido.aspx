@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="VerPedido.aspx.cs" Inherits="AlimentosSantiago.Web.Pedidos.VerPedido" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Master.Master" AutoEventWireup="true" CodeBehind="VerPedido.aspx.cs" Inherits="AlimentosSantiago.Web.AdministracionEncargadoPedido.VerPedido" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-            <div class="container">
+      <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="heading-section">
@@ -44,6 +43,8 @@
                                                             </Columns>
                                                         </MasterTableView>
                                                     </telerik:RadGrid>
+                                                    <asp:Label ID="lblCambiarEstado" runat="server">Procesar Pedido</asp:Label>
+                                                    <asp:Button ID="btnCambiarEstado" runat="server" OnClick="btnCambiarEstado_Click" Text="Procesar" />
                                                 </div>
                                             </div>
                                         </div>
@@ -54,5 +55,4 @@
                     </div>
                 </div>
             </div>
-          
 </asp:Content>

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Carga de Saldo</h1> 
         <p>Para cargar saldos en carga masiva debera solicitar la plantilla a alimentos santiago.
-                            <br><br>Probando 12345.</p>
+                            <br><br>alimentossantiago@gmail.com</p>
         <telerik:RadScriptManager runat="server" ID="RadScriptManager1" />
                 <telerik:RadAsyncUpload runat="server" ID="AsyncUpload1" RenderMode="Auto"
                 AllowedFileExtensions=".xls,.xlsx"  Localization-Select="Abrir" Skin="Bootstrap" MultipleFileSelection="Disabled"/>

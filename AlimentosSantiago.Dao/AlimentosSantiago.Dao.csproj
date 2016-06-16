@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201606061854146_AgregaCampoEstadoCompra.Designer.cs">
       <DependentUpon>201606061854146_AgregaCampoEstadoCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606120312014_AgregarSaldo.cs" />
+    <Compile Include="Migrations\201606120312014_AgregarSaldo.Designer.cs">
+      <DependentUpon>201606120312014_AgregarSaldo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606061854146_AgregaCampoEstadoCompra.resx">
       <DependentUpon>201606061854146_AgregaCampoEstadoCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606120312014_AgregarSaldo.resx">
+      <DependentUpon>201606120312014_AgregarSaldo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

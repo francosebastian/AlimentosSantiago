@@ -139,9 +139,14 @@
     <Content Include="AdministracionEmpresa\EliminarTrabajador.aspx" />
     <Content Include="AdministracionEmpresa\MiEmpresa.aspx" />
     <Content Include="AdministracionEmpresa\ModificarTrabajador.aspx" />
+    <Content Include="AdministracionEncargadoPedido\GenerarRuta.aspx" />
+    <Content Include="AdministracionEncargadoPedido\VerPedido.aspx" />
+    <Content Include="AdministracionEncargadoPedido\VerPedidos.aspx" />
     <Content Include="AdministracionProveedor\AgregarPlato.aspx" />
     <Content Include="AdministracionProveedor\EliminarPlato.aspx" />
     <Content Include="AdministracionProveedor\ModificarPlato.aspx" />
+    <Content Include="AdministracionProveedor\VerPedido.aspx" />
+    <Content Include="AdministracionProveedor\VerPedidos.aspx" />
     <Content Include="AdministracionProveedor\VerPlatos.aspx" />
     <Content Include="Administracion\AgregarCategoriaPlato.aspx" />
     <Content Include="Administracion\AgregarEmpresa.aspx" />
@@ -252,6 +257,27 @@
     <Compile Include="AdministracionEmpresa\ModificarTrabajador.aspx.designer.cs">
       <DependentUpon>ModificarTrabajador.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministracionEncargadoPedido\GenerarRuta.aspx.cs">
+      <DependentUpon>GenerarRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEncargadoPedido\GenerarRuta.aspx.designer.cs">
+      <DependentUpon>GenerarRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEncargadoPedido\VerPedido.aspx.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEncargadoPedido\VerPedido.aspx.designer.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionEncargadoPedido\VerPedidos.aspx.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionEncargadoPedido\VerPedidos.aspx.designer.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministracionProveedor\AgregarPlato.aspx.cs">
       <DependentUpon>AgregarPlato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -272,6 +298,20 @@
     </Compile>
     <Compile Include="AdministracionProveedor\ModificarPlato.aspx.designer.cs">
       <DependentUpon>ModificarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPedido.aspx.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPedido.aspx.designer.cs">
+      <DependentUpon>VerPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPedidos.aspx.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionProveedor\VerPedidos.aspx.designer.cs">
+      <DependentUpon>VerPedidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministracionProveedor\VerPlatos.aspx.cs">
       <DependentUpon>VerPlatos.aspx</DependentUpon>
@@ -584,12 +624,15 @@
     </Compile>
     <Compile Include="WebUtils\BoostrapModalReference.cs" />
     <Compile Include="WebUtils\CarritoCompras.cs" />
+    <Compile Include="WebUtils\EnviadorCorreo.cs" />
     <Compile Include="WebUtils\eTipoPlanillaExcel.cs" />
     <Compile Include="WebUtils\ExcelReader.cs" />
     <Compile Include="WebUtils\JqueryBuilderHelper.cs" />
     <Compile Include="WebUtils\PaginaBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="WebUtils\PlantillaCorreoHelper.cs" />
+    <Compile Include="WebUtils\SerializadorObjetosHelper.cs" />
     <Compile Include="Wuc\MenuNavegacion.ascx.cs">
       <DependentUpon>MenuNavegacion.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

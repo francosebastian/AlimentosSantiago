@@ -43,9 +43,6 @@
   <ItemGroup>
     <Compile Include="PedidoMenuBL.cs" />
     <Compile Include="Encriptador\EncriptadorSHA256.cs" />
-    <Compile Include="EnviadorCorreoHelpers\EnviadorCorreo.cs" />
-    <Compile Include="EnviadorCorreoHelpers\PlantillaCorreoHelper.cs" />
-    <Compile Include="EnviadorCorreoHelpers\SerializadorObjetosHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidadorCorreo.cs" />
   </ItemGroup>

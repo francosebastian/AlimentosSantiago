@@ -53,6 +53,18 @@
                 </ul>
             </li>
 
+             <li class="dropdown"  runat="server" id="navCliente"  visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cliente<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../MiCuenta/MisDirecciones.aspx">Administrar Direcciones</a></li>
+                    <li class="divider"></li>
+                    <li><a href="../Pedidos/VerPedidos.aspx">VerPedidos</a></li>
+                    <li class="divider"></li>
+                    <li><a href="../MiCuenta/CambiarPassword.aspx">Cambiar Contraseña</a></li>
+
+                </ul>
+            </li>
 
 
         <li class="dropdown"  runat="server" id="navAdministracionProveedor"  visible="false">

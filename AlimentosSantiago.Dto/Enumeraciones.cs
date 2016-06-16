@@ -29,5 +29,11 @@ namespace AlimentosSantiago.Dto
             EnReparto = 4,
             Finalizado = 5
         };
+        [FlagsAttribute]
+        public enum ColumnasExcel
+        {
+            Correo = 1,
+            Saldo = 2
+        };
     }
 }

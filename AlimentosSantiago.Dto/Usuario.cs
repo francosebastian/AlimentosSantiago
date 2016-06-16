@@ -39,6 +39,7 @@ namespace AlimentosSantiago.Dto
         [ForeignKey("EmpresaId")]
         public virtual Empresa Empresa { get; set; }
         public int TipoUsuarioId { get; set; }
+        public int? Saldo { get; set; }
 
         [ForeignKey("TipoUsuarioId")]
         public virtual TipoUsuario TipoUsuario { get; set; }

@@ -51,8 +51,9 @@
                                             </asp:GridView>
                                             <asp:Button runat="server" ID="btnUpdateCart" Text="Actualizar carro" OnClick="btnUpdateCart_Click" />
                                         </div>
-                                        <div class="name col-md-12">
-                                            <asp:Label runat="server" ID="lblTipoPago" Text="Tipo de pago"/>
+                                        <asp:Panel ID="pnlOrden" runat="server" Visible="false">
+                                                <div class="name col-md-12">
+                                            <asp:Label runat="server" ID="lblTipoPago" Text="Tipo de pago" />
                                             <asp:DropDownList ID="ddlTipoPago" runat="server"
                                                 DataSourceID="efTipoPago" CssClass="form-control" DataTextField="Nombre" DataValueField="Id"
                                                 AppendDataBoundItems="true">
@@ -65,7 +66,7 @@
                                             </ef:EntityDataSource>
                                         </div>
                                         <div class="name col-md-12">
-                                            <asp:Label runat="server" ID="lblDireccionUsuario" Text="Direccion Pedido"/>
+                                            <asp:Label runat="server" ID="lblDireccionUsuario" Text="Direccion Pedido" />
                                             <asp:DropDownList ID="ddlDireccionUsuario" runat="server"
                                                 DataSourceID="efDireccionUsuario" CssClass="form-control" DataTextField="Nombre" DataValueField="Id"
                                                 AppendDataBoundItems="true">
@@ -74,13 +75,17 @@
                                             <ef:EntityDataSource ID="efDireccionUsuario" runat="server"
                                                 ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
                                                 EntitySetName="DireccionUsuario"
-                                                Select="it.Id,it.Nombre">
+                                                Select="it.Id,it.Nombre" Where="it.Eliminado = false and it.UsuarioId = @IdUsuario">
+                                                <WhereParameters>
+                                                    <asp:Parameter Name="IdUsuario" Type="Int32" />
+                                                </WhereParameters>
                                             </ef:EntityDataSource>
                                         </div>
                                         <div class="name col-md-12">
-                                             <asp:Label runat="server" ID="lblPedido" Text="Confirmar Pedido"/>
-                                             <asp:Button runat="server" ID="btnPedido" Text="Hacer Pedido" OnClick="btnPedido_Click" />
+                                            <asp:Label runat="server" ID="lblPedido" Text="Confirmar Pedido" />
+                                            <asp:Button runat="server" ID="btnPedido" Text="Hacer Pedido" OnClick="btnPedido_Click" />
                                         </div>
+                                        </asp:Panel>
                                     </div>
                                 </div>
                             </div>

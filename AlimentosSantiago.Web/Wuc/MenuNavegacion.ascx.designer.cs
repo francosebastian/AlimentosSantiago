@@ -40,6 +40,15 @@ namespace AlimentosSantiago.Web.Wuc {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministradorEmpresa;
         
         /// <summary>
+        /// Control navCliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navCliente;
+        
+        /// <summary>
         /// Control navAdministracionProveedor.
         /// </summary>
         /// <remarks>

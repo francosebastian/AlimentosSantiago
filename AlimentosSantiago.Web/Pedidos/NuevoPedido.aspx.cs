@@ -14,8 +14,13 @@ namespace AlimentosSantiago.Web.Pedidos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            efDireccionUsuario.WhereParameters["IdUsuario"].DefaultValue = Session["IdUsuario"].ToString().Trim();
             gvShoppingCart.DataSource = CarritoCompras.Instance.Items;
             gvShoppingCart.DataBind();
+            if (CarritoCompras.Instance.Items.Count>0)
+            {
+                pnlOrden.Visible = true;
+            }
         }
 
         protected void btnUpdateCart_Click(object sender, EventArgs e)

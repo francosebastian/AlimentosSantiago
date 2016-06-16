@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace AlimentosSantiago.BusinessLogic.EnviadorCorreoHelpers
+namespace AlimentosSantiago.Web.WebUtils
 {
     /// <summary>
     /// Clase EnviadorCorreo, encargada de contener lo necesario para el envio de correos

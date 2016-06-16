@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargaMasiva.cs" />
     <Compile Include="CategoriaPlato.cs" />
     <Compile Include="DetallePedidoMenu.cs" />
     <Compile Include="DireccionUsuario.cs" />
