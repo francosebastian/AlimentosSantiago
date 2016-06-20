@@ -76,6 +76,42 @@ namespace AlimentosSantiago.Web.AdministracionEncargadoPedido {
         protected global::Telerik.Web.UI.RadGrid RadGridPedidos;
         
         /// <summary>
+        /// Control pnlProcesar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlProcesar;
+        
+        /// <summary>
+        /// Control lblRepartidor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRepartidor;
+        
+        /// <summary>
+        /// Control ddlRepartidor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlRepartidor;
+        
+        /// <summary>
+        /// Control efTipoUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::Microsoft.AspNet.EntityDataSource.EntityDataSource efTipoUsuario;
+        
+        /// <summary>
         /// Control lblCambiarEstado.
         /// </summary>
         /// <remarks>

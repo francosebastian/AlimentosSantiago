@@ -15,14 +15,14 @@
                     <telerik:GridBoundColumn DataField="Fecha" HeaderText="Fecha" ItemStyle-CssClass="text-uppercase"></telerik:GridBoundColumn>
                     <telerik:GridBoundColumn DataField="EstadoPedido.Nombre" HeaderText="Estado" UniqueName="EstadoPedido" ItemStyle-CssClass="text-uppercase"></telerik:GridBoundColumn>
                     <telerik:GridHyperLinkColumn DataTextFormatString="+" DataNavigateUrlFields="Id" UniqueName="VerPedido"
-                        DataNavigateUrlFormatString="../MiCuenta/VerPedido.aspx?id={0}"
+                        DataNavigateUrlFormatString="../AdministracionProveedor/VerPedido.aspx?id={0}"
                         HeaderText="Ver Pedido" Text="+" AllowFiltering="false" />
                 </Columns>
             </MasterTableView>
         </telerik:RadGrid>
         <ef:EntityDataSource ID="efPedidos" runat="server"
             ContextTypeName="AlimentosSantiago.Dao.OracleDbContext"
-            EntitySetName="PedidoMenu" Include="LogsPedidoMenu, EstadoPedido, DetallesPedidoMenu.Plato" Where="it.Eliminado = false and it.EstadoPedidoId = @IdEstadoPedido and it.DetallesPedidoMenu.Plato = @IdEstadoPedido">
+            EntitySetName="PedidoMenu" Include="LogsPedidoMenu, EstadoPedido" Where="it.Eliminado = false and it.EstadoPedidoId = @IdEstadoPedido">
             <WhereParameters>
                 <asp:Parameter Name="IdEstadoPedido" Type="Int32" />
             </WhereParameters>

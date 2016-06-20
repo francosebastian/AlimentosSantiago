@@ -20,23 +20,13 @@ namespace AlimentosSantiago.Web.WebUtils
         /// <param name="fuente">Fuente externa de tipo genérica T</param>
         /// <param name="rutaXslt">Cadena de texto con la ruta del archivo xslt</param>
         /// <returns>Retorna la plantilla del correo en formato HTML mediante una cadena de texto</returns>
-        public static String TransformarPlantillaEnHtml<T>(T fuente, String rutaXslt) where T : class
+        public String TransformarPlantillaEnHtml<T>(T source, String rutaXslt) where T : class
         {
             try
             {
-                if (rutaXslt == null)
-                {
-                    //throw new ArgumentException(string.Format(PermanenteController.m_StringInvalido), "rutaXslt");
-                    return "";
-                }
-                if (fuente == null)
-                {
-                    //throw new ArgumentException(string.Format(PermanenteController.m_ConstanteGenericaInvalida), "source");
-                    return "";
-                }
-                string entrada = SerializadorObjetosHelper.SerializarObjeto<T>(fuente); entrada = entrada.Substring(1);
-                string salida;
-                using (StringReader sReader = new StringReader(entrada))
+                string input = SerializadorObjetosHelper.SerializarObjeto<T>(source); input = input.Substring(1);
+                string output;
+                using (StringReader sReader = new StringReader(input))
                 using (XmlReader xReader = XmlReader.Create(sReader))
                 using (StringWriter sWriter = new StringWriter())
                 using (XmlWriter xWriter = XmlWriter.Create(sWriter))
@@ -44,14 +34,13 @@ namespace AlimentosSantiago.Web.WebUtils
                     XslCompiledTransform xslt = new XslCompiledTransform();
                     xslt.Load(rutaXslt);
                     xslt.Transform(xReader, xWriter);
-                    salida = sWriter.ToString();
+                    output = sWriter.ToString();
                 }
-                return salida;
+                return output;
             }
             catch (Exception ex)
             {
-                //ControllerCustomExceptionConstructor.RegistrarLogCustomExcetionConstruido(ex); throw ex;
-                return "";
+                throw ex;
             }
         }
     }

@@ -43,6 +43,10 @@
                                                             </Columns>
                                                         </MasterTableView>
                                                     </telerik:RadGrid>
+                                                     <asp:Panel runat="server" Visible="false" id="pnlProcesar">
+                                                           <asp:Label ID="lblCambiarEstado" runat="server">Procesar Pedido</asp:Label>
+                                                    <asp:Button ID="btnCambiarEstado" runat="server" OnClick="btnCambiarEstado_Click" Text="Procesar" />
+                                                    </asp:Panel>
                                                 </div>
                                             </div>
                                         </div>

@@ -139,7 +139,6 @@
     <Content Include="AdministracionEmpresa\EliminarTrabajador.aspx" />
     <Content Include="AdministracionEmpresa\MiEmpresa.aspx" />
     <Content Include="AdministracionEmpresa\ModificarTrabajador.aspx" />
-    <Content Include="AdministracionEncargadoPedido\GenerarRuta.aspx" />
     <Content Include="AdministracionEncargadoPedido\VerPedido.aspx" />
     <Content Include="AdministracionEncargadoPedido\VerPedidos.aspx" />
     <Content Include="AdministracionProveedor\AgregarPlato.aspx" />
@@ -185,6 +184,10 @@
     <Content Include="MiCuenta\NuevoPassword.aspx" />
     <Content Include="packages.config" />
     <Content Include="Masters\Master.Master" />
+    <Content Include="PlantillasCorreo\NuevaCuenta.xslt" />
+    <Content Include="PlantillasCorreo\PedidoEnPreparacion.xslt" />
+    <Content Include="PlantillasCorreo\PedidoEnTransito.xslt" />
+    <Content Include="PlantillasCorreo\PedidoProcesado.xslt" />
     <Content Include="Productos\Producto.aspx" />
     <Content Include="Productos\Productos.aspx" />
     <Content Include="Wuc\MenuNavegacion.ascx" />
@@ -256,13 +259,6 @@
     </Compile>
     <Compile Include="AdministracionEmpresa\ModificarTrabajador.aspx.designer.cs">
       <DependentUpon>ModificarTrabajador.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdministracionEncargadoPedido\GenerarRuta.aspx.cs">
-      <DependentUpon>GenerarRuta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdministracionEncargadoPedido\GenerarRuta.aspx.designer.cs">
-      <DependentUpon>GenerarRuta.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdministracionEncargadoPedido\VerPedido.aspx.cs">
       <DependentUpon>VerPedido.aspx</DependentUpon>
@@ -622,6 +618,7 @@
     <Compile Include="Repartidor\VerRuta.aspx.designer.cs">
       <DependentUpon>VerRuta.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebUtils\ActionableException.cs" />
     <Compile Include="WebUtils\BoostrapModalReference.cs" />
     <Compile Include="WebUtils\CarritoCompras.cs" />
     <Compile Include="WebUtils\EnviadorCorreo.cs" />

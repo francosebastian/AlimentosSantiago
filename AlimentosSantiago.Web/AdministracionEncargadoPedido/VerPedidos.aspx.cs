@@ -11,7 +11,7 @@ namespace AlimentosSantiago.Web.AdministracionEncargadoPedido
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            efPedidos.WhereParameters["IdEstadoPedido"].DefaultValue = ((int)EstadosPedido.Realizado).ToString();
+       
         }
     }
 }

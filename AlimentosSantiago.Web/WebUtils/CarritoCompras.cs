@@ -57,6 +57,8 @@ namespace AlimentosSantiago.Web.WebUtils
             DetallePedidoMenu newItem = new DetallePedidoMenu();
             newItem.PlatoId = plato.Id;
             newItem.Nombre = plato.Nombre;
+            newItem.Creado = System.DateTime.Now;
+            newItem.Modificado = System.DateTime.Now;
             if (plato.PromocionActiva)
             {
                 newItem.PrecioUnitario = plato.PrecioPromocion;
@@ -74,6 +76,7 @@ namespace AlimentosSantiago.Web.WebUtils
                 {
                     if (item.Equals(newItem))
                     {
+                        item.Modificado = System.DateTime.Now;
                         item.Cantidad++;
                         return;
                     }

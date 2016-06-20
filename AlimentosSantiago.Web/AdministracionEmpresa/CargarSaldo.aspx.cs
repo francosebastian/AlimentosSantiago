@@ -39,7 +39,8 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
                     {
                         foreach (LogSaldo item in listaParaCargar)
                         {
-                            
+                            db.LogSaldo.Add(item);
+                            db.SaveChanges();
                         }
                     }
                     base.MostrarMensaje("Registros cargados correctamente");

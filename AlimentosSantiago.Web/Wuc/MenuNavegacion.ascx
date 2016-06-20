@@ -10,7 +10,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../Login.aspx">Login</a>
+        <a id="lnkLogin" runat="server" class="navbar-brand" href="../Login.aspx" visible="false">Login</a>
+        <a id="lnkUsuario" runat="server" class="navbar-brand" href="../Login.aspx" visible="false"><asp:Label ID="lblUserName" runat="server"/></a>
+
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
