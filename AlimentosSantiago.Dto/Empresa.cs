@@ -17,5 +17,7 @@ namespace AlimentosSantiago.Dto
         [StringLength(100)]
         public string Nombre { get; set; }
         public virtual ICollection<Usuario> Usuarios { get; set; }
+        [StringLength(100)]
+        public String PasswordDefecto { get; set; }
     }
 }

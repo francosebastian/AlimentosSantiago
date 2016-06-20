@@ -27,7 +27,6 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
             Usuario usuario = new Usuario();
             usuario.Creado = System.DateTime.Now;
             usuario.Modificado = System.DateTime.Now;
-            usuario.Password = encriptador.SHA256Encrypt("1234");
             usuario.EmpresaId = (int)(Session["IdEmpresa"]);
             usuario.TipoUsuarioId = (int)TiposUsuario.Cliente;
             TryUpdateModel(usuario);
@@ -35,7 +34,8 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
             {
                 using (OracleDbContext db = new OracleDbContext())
                 {
-
+                    usuario.Empresa= db.Empresa.FirstOrDefault(e => e.Id == usuario.EmpresaId);
+                    usuario.Password = encriptador.SHA256Encrypt(usuario.Empresa.PasswordDefecto);
                     db.Usuario.Add(usuario);
                     db.SaveChanges();
                 }

@@ -35,14 +35,5 @@ namespace AlimentosSantiago.Web.Administracion
             base.MostrarMensaje("Registro Insertado correctamente");
           
         }
-
-        protected void wucModalConfirmarAceptarFlujo_Confirmar(object sender, EventArgs e)
-        {
-        }
-
-        protected void FvCategoriaPlato_ItemInserting(object sender, FormViewInsertEventArgs e)
-        {
-            wucModalConfirmarAceptarFlujo.Mostrar("¿Está seguro que desea agregar Categoria de plato?", base.RegistrarJqueryBloque);
-        }
     }
 }

@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201606120312014_AgregarSaldo.Designer.cs">
       <DependentUpon>201606120312014_AgregarSaldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606200604562_creacionpassworddefecto.cs" />
+    <Compile Include="Migrations\201606200604562_creacionpassworddefecto.Designer.cs">
+      <DependentUpon>201606200604562_creacionpassworddefecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OracleDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201606120312014_AgregarSaldo.resx">
       <DependentUpon>201606120312014_AgregarSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606200604562_creacionpassworddefecto.resx">
+      <DependentUpon>201606200604562_creacionpassworddefecto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

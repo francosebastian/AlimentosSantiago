@@ -28,7 +28,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><strong>Login </strong></h3>
+                        <h3 class="panel-title"><strong>Login</strong></h3>
                     </div>
                     <div class="panel-body">
                             <div class="form-group">
@@ -42,7 +42,7 @@
                             <div class="form-group">
 
 
-                                <asp:Label ID="lblPassword" runat="server">Contraseña    <a href="/sessions/forgot_password">(Olvido la Contraseña?)</a </asp:Label>
+                                <asp:Label ID="lblPassword" runat="server">Contraseña <a href="/sessions/forgot_password">(Olvido la Contraseña?)</a </asp:Label>
                                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"
                                     title="Ingresar Contraseña." placeholder="Ingresar Contraseña "
                                     myMaxLength="60" /><br />

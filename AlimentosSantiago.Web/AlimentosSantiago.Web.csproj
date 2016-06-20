@@ -176,10 +176,12 @@
     <Content Include="Administracion\VerTipoUsuario.aspx" />
     <Content Include="Administracion\VerUsuarios.aspx" />
     <Content Include="BootStrap.js" />
+    <Content Include="CerrarSession.aspx" />
     <Content Include="Contactos.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MiCuenta\CambiarPassword.aspx" />
+    <Content Include="MiCuenta\MiDireccion.aspx" />
     <Content Include="MiCuenta\MisDirecciones.aspx" />
     <Content Include="MiCuenta\NuevoPassword.aspx" />
     <Content Include="packages.config" />
@@ -512,6 +514,13 @@
     <Compile Include="Administracion\VerUsuarios.aspx.designer.cs">
       <DependentUpon>VerUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CerrarSession.aspx.cs">
+      <DependentUpon>CerrarSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CerrarSession.aspx.designer.cs">
+      <DependentUpon>CerrarSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contactos.aspx.cs">
       <DependentUpon>Contactos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -546,6 +555,13 @@
     </Compile>
     <Compile Include="MiCuenta\CambiarPassword.aspx.designer.cs">
       <DependentUpon>CambiarPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiCuenta\MiDireccion.aspx.cs">
+      <DependentUpon>MiDireccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MiCuenta\MiDireccion.aspx.designer.cs">
+      <DependentUpon>MiDireccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="MiCuenta\MisDirecciones.aspx.cs">
       <DependentUpon>MisDirecciones.aspx</DependentUpon>

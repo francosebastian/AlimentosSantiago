@@ -119,16 +119,23 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
                     }
                     else
                     {
-                        logSaldo.Add(new LogSaldo
+                        if (BuscarUsuario(cadaItem.Correo)!= null)
                         {
-                            Log = "",
-                            Creado = System.DateTime.Now,
-                            Modificado = System.DateTime.Now,
-                            SaldoCargado = cadaItem.Saldo,
-                            Deshabilitado = false,
-                            Eliminado = false,
-                            UsuarioId = 1,
-                        });
+                            logSaldo.Add(new LogSaldo
+                            {
+                                Log = "Se ha cargado saldo",
+                                Creado = System.DateTime.Now,
+                                Modificado = System.DateTime.Now,
+                                SaldoCargado = cadaItem.Saldo,
+                                Deshabilitado = false,
+                                Eliminado = false,
+                                Usuario = BuscarUsuario(cadaItem.Correo)
+                            });
+                        }
+                        else
+                        {
+                            throw new ArgumentNullException();
+                        }
                     }
                 }
                 return logSaldo;
@@ -137,6 +144,14 @@ namespace AlimentosSantiago.Web.AdministracionEmpresa
             {
                 MostrarMensaje("Por favor compruebe que los registros en la hoja Excel");
                 throw ex;
+            }
+        }
+
+        protected Usuario BuscarUsuario(String correo)
+        {
+            using (OracleDbContext db=new OracleDbContext())
+            {
+                return db.Usuario.SingleOrDefault(u => u.Email== correo);
             }
         }
     }

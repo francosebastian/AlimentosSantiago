@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
         </button>
         <a id="lnkLogin" runat="server" class="navbar-brand" href="../Login.aspx" visible="false">Login</a>
-        <a id="lnkUsuario" runat="server" class="navbar-brand" href="../Login.aspx" visible="false"><asp:Label ID="lblUserName" runat="server"/></a>
+        <a id="lnkUsuario" runat="server" class="navbar-brand" href="../Home.aspx" visible="false"><asp:Label ID="lblUserName" runat="server"/></a>
 
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -37,6 +37,8 @@
                     <li><a href="../Administracion/VerCategoriaPlatos.aspx">Ver Categoria platos</a></li>
                     <li><a href="../Administracion/VerEstadoPedido.aspx">Ver Estados Pedidos</a></li>
                     <li><a href="../Administracion/VerTipoPago.aspx">Ver TipoPagos</a></li>
+                    <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
                 </ul>
             </li>
 
@@ -51,7 +53,8 @@
                     <li><a href="../AdministracionEmpresa/CargarSaldo.aspx">Cargar Saldo</a></li>
                     <li class="divider"></li>
                     <li><a href="../AdministracionEmpresa/MiEmpresa.aspx">Mi Empresa</a></li>
-
+                    <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
                 </ul>
             </li>
 
@@ -64,7 +67,26 @@
                     <li><a href="../Pedidos/VerPedidos.aspx">VerPedidos</a></li>
                     <li class="divider"></li>
                     <li><a href="../MiCuenta/CambiarPassword.aspx">Cambiar Contraseña</a></li>
-
+                    <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
+                </ul>
+            </li>
+             <li class="dropdown"  runat="server" id="navRepartidor"  visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Repartidor<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Repartidor/MisRutas.aspx">Ver Rutas</a></li>
+                          <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
+                </ul>
+            </li>
+               <li class="dropdown"  runat="server" id="navEncargadoPedido"  visible="false">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Repartidor<b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../AdministracionEncargadoPedido/VerPedidos.aspx">Ver Pedidos</a></li>
+                          <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
                 </ul>
             </li>
 
@@ -75,7 +97,11 @@
             <ul class="dropdown-menu">
                 <li><a href="../AdministracionProveedor/AgregarPlato.aspx">Agregar Plato</a></li>
                 <li class="divider"></li>
-                <li><a href="../AdministracionProveedor/VerPlatos.aspx">Eliminar Plato</a></li>
+                <li><a href="../AdministracionProveedor/VerPlatos.aspx">Ver Platos</a></li>
+                     <li class="divider"></li>
+                <li><a href="../AdministracionProveedor/VerPedidos.aspx">Ver Pedidos</a></li>
+                      <li class="divider"></li>
+                    <li><a href="../CerrarSession.aspx">Cerrar Session</a></li>
             </ul>
         </li>
         </ul>

@@ -14,8 +14,8 @@
                         <h1>Colaciones</h1>
                         <p>
                             Variedad en colaciones, puedes elegir entre frutas, lácteos , frutos secos o pan.
-                            < 31br />
-                            <br />
+                            <br/>
+                            <br/>
                             Colaciones "El Comilon"
                         </p>
                         <a href="single-post.html">Comprar Ahora</a>
@@ -27,8 +27,8 @@
                         <h1>Menus</h1>
                         <p>
                             Ve nuestra lista de menu y sorprendete con la gran variedad de comida que tenemos disponible para ti
-                            <br>
-                            <br>
+                            <br/>
+                            <br/>
                             Aprovecha de Nuestras Grandes OFERTAS en Menus
                         </p>
                         <a href="single-post.html">More Details</a>
@@ -40,8 +40,8 @@
                         <h1>Comidas saludables</h1>
                         <p>
                             sorprendete con nuestra variedad de comidas saludables 
-                            <br />
-                            <br />
+                            <br/>
+                            <br/>
                             Alimentos sin gluten, Alimentos con reducido contenido en grasa, colesterol y ácidos grasos saturados
                         </p>
                         <a href="single-post.html">Get Ready</a>
@@ -59,7 +59,7 @@
                 <div class="col-md-12">
                     <div class="heading-section">
                         <h2>Free Website Templates</h2>
-                        <img src="images/under-heading.png" alt="">
+                        <img src="images/under-heading.png" alt=""/>
                     </div>
                 </div>
             </div>

@@ -48,23 +48,43 @@ namespace AlimentosSantiago.Web
 
         public void FvUsuario_InsertItem()
         {
-            TextBox txtPassword = (TextBox)FvUsuario.FindControl("txtPassword");
-            EncriptadorSHA256 encriptador = new EncriptadorSHA256();
-
-            Usuario usuario = new Usuario();
-            usuario.Creado = System.DateTime.Now;
-            usuario.Modificado = System.DateTime.Now;
-            TryUpdateModel(usuario);
-            usuario.Password = encriptador.SHA256Encrypt(txtPassword.Text);
-            usuario.TipoUsuarioId = (int) TiposUsuario.Cliente;
-            if (ModelState.IsValid)
+            try
             {
-                using (OracleDbContext db = new OracleDbContext())
-                {
+                TextBox txtPassword = (TextBox)FvUsuario.FindControl("txtPassword");
+                EncriptadorSHA256 encriptador = new EncriptadorSHA256();
 
-                    db.Usuario.Add(usuario);
-                    db.SaveChanges();
+                Usuario usuario = new Usuario();
+                usuario.Creado = System.DateTime.Now;
+                usuario.Modificado = System.DateTime.Now;
+                TryUpdateModel(usuario);
+                usuario.Password = encriptador.SHA256Encrypt(txtPassword.Text);
+                usuario.TipoUsuarioId = (int)TiposUsuario.Cliente;
+                if (ModelState.IsValid)
+                {
+                    using (OracleDbContext db = new OracleDbContext())
+                    {
+
+                        db.Usuario.Add(usuario);
+                        db.SaveChanges();
+                    }
                 }
+                PresentadorCorreo presentador = new PresentadorCorreo();
+                EnviadorCorreo enviadorCorreo = new EnviadorCorreo();
+                enviadorCorreo.Destinatarios.Add(usuario.Email);
+                enviadorCorreo.TituloCorreo = String.Format("Su cuenta ha sido creada");
+                enviadorCorreo.Mensaje = new PlantillaCorreoHelper().TransformarPlantillaEnHtml<PresentadorCorreo>(presentador,
+                    Server.MapPath("~/PlantillasCorreo/NuevaCuenta.xslt"));
+                Boolean respuesta = enviadorCorreo.IntentarEnviar(); 
+                if (!respuesta)
+                {
+                    MostrarMensaje("Error al enviar el correo");
+                }
+                MostrarMensaje("Cuenta creada con exito");
+            }
+            catch (Exception)
+            {
+                MostrarMensaje("Error al crear cuenta, por favor intente mas tarde");
+                throw;
             }
         }
     }

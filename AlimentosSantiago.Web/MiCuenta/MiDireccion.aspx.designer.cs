@@ -7,117 +7,126 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AlimentosSantiago.Web.Wuc {
+namespace AlimentosSantiago.Web.MiCuenta {
     
     
-    public partial class MenuNavegacion {
+    public partial class MiDireccion {
         
         /// <summary>
-        /// Control navBar.
+        /// Control rptMarkers.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navBar;
+        protected global::System.Web.UI.WebControls.Repeater rptMarkers;
         
         /// <summary>
-        /// Control lnkLogin.
+        /// Control pnlMapa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkLogin;
+        protected global::System.Web.UI.WebControls.Panel pnlMapa;
         
         /// <summary>
-        /// Control lnkUsuario.
+        /// Control lblNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkUsuario;
+        protected global::System.Web.UI.WebControls.Label lblNombre;
         
         /// <summary>
-        /// Control lblUserName.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserName;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
-        /// Control navAdministracion.
+        /// Control lblDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministracion;
+        protected global::System.Web.UI.WebControls.Label lblDireccion;
         
         /// <summary>
-        /// Control navAdministradorEmpresa.
+        /// Control tbDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministradorEmpresa;
+        protected global::System.Web.UI.WebControls.TextBox tbDireccion;
         
         /// <summary>
-        /// Control navCliente.
+        /// Control hndLatitud.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navCliente;
+        protected global::System.Web.UI.WebControls.HiddenField hndLatitud;
         
         /// <summary>
-        /// Control navRepartidor.
+        /// Control hndLongitud.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navRepartidor;
+        protected global::System.Web.UI.WebControls.HiddenField hndLongitud;
         
         /// <summary>
-        /// Control navEncargadoPedido.
+        /// Control lblBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navEncargadoPedido;
+        protected global::System.Web.UI.WebControls.Label lblBuscar;
         
         /// <summary>
-        /// Control navAdministracionProveedor.
+        /// Control btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navAdministracionProveedor;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// Control countCarro.
+        /// Control pnlGuardar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal countCarro;
+        protected global::System.Web.UI.WebControls.Panel pnlGuardar;
         
         /// <summary>
-        /// Control totalCarro.
+        /// Control lblGuardar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal totalCarro;
+        protected global::System.Web.UI.WebControls.Label lblGuardar;
+        
+        /// <summary>
+        /// Control btnGuardar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardar;
     }
 }

@@ -40,6 +40,10 @@
                                                      <asp:TextBox ID="txtEmpresa" runat="server" TextMode="SingleLine"
                                                          title="Ingrese Nueva Empresa." placeholder="Empresa"
                                                          MaxLength="100" Text='<%# BindItem.Nombre %>' /><br />
+                                                     <asp:Label ID="lblPassword" runat="server">Password por defecto</asp:Label>
+                                                   <asp:TextBox ID="txtPassword" runat="server" TextMode="SingleLine"
+                                                       title="Ingrese password Empresa." placeholder="Password"
+                                                       MaxLength="100" Text='<%# BindItem.PasswordDefecto %>' required data-validation-required-message="Completa Este Campo" /><br /><br />
                                                      <asp:Label ID="lblDeshabilitado" runat="server">Deshabilitado</asp:Label>
                                                      <asp:CheckBox ID="chbDeshabilitado" runat="server" AutoPostBack="false"
                                                          Checked="<%# BindItem.Deshabilitado %>" />

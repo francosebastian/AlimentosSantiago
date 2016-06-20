@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:FormView ID="FvCategoriaPlato" runat="server" ItemType="AlimentosSantiago.Dto.CategoriaPlato"
-        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvCategoriaPlato_InsertItem" OnItemInserting="FvCategoriaPlato_ItemInserting"
+        DataKeyNames="Id" DefaultMode="Insert" InsertMethod="FvCategoriaPlato_InsertItem"
         RenderOuterTable="false">
         <InsertItemTemplate>
             <div id="heading">
@@ -59,9 +59,6 @@
                     </div>
                 </div>
             </div>
-
         </InsertItemTemplate>
-       
     </asp:FormView>
-     <Pulse:wucModalConfirmar ID="wucModalConfirmarAceptarFlujo" runat="server" OnConfirmar="wucModalConfirmarAceptarFlujo_Confirmar" /> 
 </asp:Content>

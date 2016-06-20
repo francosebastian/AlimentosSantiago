@@ -20,14 +20,5 @@ namespace AlimentosSantiago.Web.Administracion {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FormView FvCategoriaPlato;
-        
-        /// <summary>
-        /// Control wucModalConfirmarAceptarFlujo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::AlimentosSantiago.Web.Wuc.ModalConfirmacion wucModalConfirmarAceptarFlujo;
     }
 }

@@ -78,7 +78,7 @@
                                                     <div class="posts">
                                                         <div class="recent-post">
                                                             <div class="recent-post-thumb">
-                                                                <img src="images/recent-post1.jpg" alt="">
+                                                                <img src="../images/recent-post1.jpg" alt="">
                                                             </div>
                                                             <div class="recent-post-info">
                                                                 <h6><a href="#">Vestibulum molestie odio sit amet</a></h6>
@@ -87,7 +87,7 @@
                                                         </div>
                                                         <div class="recent-post">
                                                             <div class="recent-post-thumb">
-                                                                <img src="images/recent-post2.jpg" alt="">
+                                                                <img src="../images/recent-post2.jpg" alt="">
                                                             </div>
                                                             <div class="recent-post-info">
                                                                 <h6><a href="#">Vivamus mattis quam eget urna tincidunt</a></h6>
@@ -96,7 +96,7 @@
                                                         </div>
                                                         <div class="recent-post">
                                                             <div class="recent-post-thumb">
-                                                                <img src="images/recent-post3.jpg" alt="">
+                                                                <img src="../images/recent-post3.jpg" alt="">
                                                             </div>
                                                             <div class="recent-post-info">
                                                                 <h6><a href="#">Curabitur in nunc eget neque posuere</a></h6>
@@ -110,28 +110,28 @@
                                                     <div class="flickr-images">
                                                         <div class="row">
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image1.jpg" alt="">
+                                                                <img src="../images/flickr-image1.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image2.jpg" alt="">
+                                                                <img src="../images/flickr-image2.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image3.jpg" alt="">
+                                                                <img src="../images/flickr-image3.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image4.jpg" alt="">
+                                                                <img src="../images/flickr-image4.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image1.jpg" alt="">
+                                                                <img src="../images/flickr-image1.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image2.jpg" alt="">
+                                                                <img src="../images/flickr-image2.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image3.jpg" alt="">
+                                                                <img src="../images/flickr-image3.jpg" alt="">
                                                             </div>
                                                             <div class="col-md-4 col-sm-2 col-xs-3">
-                                                                <img src="images/flickr-image4.jpg" alt="">
+                                                                <img src="../images/flickr-image4.jpg" alt="">
                                                             </div>
                                                         </div>
                                                     </div>

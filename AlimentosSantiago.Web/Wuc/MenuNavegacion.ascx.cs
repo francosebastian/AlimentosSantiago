@@ -44,7 +44,7 @@ namespace AlimentosSantiago.Web.Wuc
             using (OracleDbContext db = new OracleDbContext())
             {
                 Usuario usuario = db.Usuario.Include("TipoUsuario").SingleOrDefault(u => u.Id == idUsuario );
-                switch (usuario.TipoUsuario.Nombre)
+                switch (usuario.TipoUsuario.Nombre.Trim())
                 {
                     case "Administrador":
                         navAdministracion.Visible = true;
@@ -56,21 +56,23 @@ namespace AlimentosSantiago.Web.Wuc
                         lnkUsuario.Visible = true;
                         lblUserName.Text = usuario.Nombre;
                         break;
-                    case "EncargadoConvenioEmpresa":
+                    case "Encargado Empresa":
                         navAdministradorEmpresa.Visible = true;
                         lnkUsuario.Visible = true;
                         lblUserName.Text = usuario.Nombre;
                         break;
-                    case "EncargadoEmpresaProveedora":
+                    case "Encargado Proveedor":
                         navAdministracionProveedor.Visible = true;
                         lnkUsuario.Visible = true;
                         lblUserName.Text = usuario.Nombre;
                         break;
-                    case "EncargadoPedidos":
+                    case "Encargado Pedidos":
+                        navEncargadoPedido.Visible = true;
                         lnkUsuario.Visible = true;
                         lblUserName.Text = usuario.Nombre;
                         break;
                     case "Repartidor":
+                        navRepartidor.Visible = true;
                         lnkUsuario.Visible = true;
                         lblUserName.Text = usuario.Nombre;
                         break;
